@@ -1,0 +1,143 @@
+// Global
+
+.page {
+	display: block;
+	padding-top: 230px;
+	width: 100%;
+	height: 100%;
+	min-width: 750px;
+	border: 1px solid red;
+	.page-title {
+		position: relative;
+		display: block;
+		width: 65px;
+		margin: 0 auto;
+		height: 65px;
+		text-align: center;
+		@include transform(rotate(-45deg));
+		i {
+			position: absolute;
+			display: table;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			padding-top: 11px; 
+			display: block;
+			font-size: 35px;
+			@include transform(rotate(45deg));
+		}
+		span {
+			display: none;
+		}
+	}
+}
+ 
+.logo-icon {
+	display: block;
+	margin: 0 auto;
+  	text-align: center;
+	i {
+		display: block;
+		position: relative;
+		margin: $logo-size / 5 auto;
+		width: $logo-size;
+		height: $logo-size;
+		border: $logo-size / 10 solid $logo-color;
+		@include transform(rotate(-45deg));
+		&:after, &:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width:  ($logo-size / 2) - ($logo-size / 3) + ($logo-size / 5);
+			height: ($logo-size / 2) - ($logo-size / 3) + ($logo-size / 5);
+        	@include box-sizing(border-box);
+		}
+		&:before {
+			top: $logo-size / 10;
+			left: $logo-size / 10;
+			border-left: ($logo-size / 10) + ($logo-size / 20) solid $logo-color;
+			border-bottom: ($logo-size / 10) + ($logo-size / 20) solid $logo-color;
+		}
+		&:after {
+			right: $logo-size / 10;
+			bottom: $logo-size / 10;
+			border-bottom: ($logo-size / 10) + ($logo-size / 20) solid $logo-color;
+		}
+	}
+	h2 {
+		margin-top: 15px;
+		display: inline-block;
+		color: $logo-color;
+		font-size: $logo-size / 3 + 5;
+		line-height: ($logo-size / 3) - ($logo-size / 20) + 5;
+		text-align: right;
+		text-transform: uppercase;
+		font-weight: $black;
+		span {
+			display: block;
+		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.35);
+	z-index: 5;
+	span {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 300px;
+		&.top {
+			top: 0;
+			@include background-image(linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%));
+		}
+		&.bottom {
+			bottom: 0;
+			@include background-image(linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%));
+		}
+	}
+}
+
+
+.scroll-down {
+	display: block;
+	text-indent: -9999px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -15px;
+	width: 30px;
+	height: 30px;
+	z-index: 10;
+	background-color: rgba(255, 255, 255, 0.25);
+	@include transform(rotate(-45deg));
+	@include transition(all 0.25s $ease-out);
+	&:after {
+		content: "";
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		left: 5px;
+		bottom: 5px;
+		border-left: 5px solid $white;
+		border-bottom: 5px solid $white;
+		@include box-sizing(border-box);
+		@include transition(all 0.25s $ease-out);
+	}
+	&:hover {
+		background-color: $white;
+		&:after {
+			border-color: #000;
+		}
+	}
+}
+
+
+

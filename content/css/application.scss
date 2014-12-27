@@ -1,0 +1,44 @@
+/**!
+ * Title: Application CSS
+ * Author: Wallace Erick
+ * Author URI: http://wallaceerick.com.br/
+ * Version: 1.0
+*/
+
+// Library
+@import "compass";
+
+// Mixins
+@import "mixins/animation";
+@import "mixins/appearance";
+@import "mixins/arrow";
+@import "mixins/backface-visibility";
+@import "mixins/background-size";
+@import "mixins/ellipsis";
+@import "mixins/keyframes";
+@import "mixins/placeholder";
+@import "mixins/user-select";
+@import "mixins/vertical-align";
+
+// Modules
+@import "modules/animations";
+@import "modules/variables";
+@import "modules/colors";
+@import "modules/icons";
+@import "modules/reset";
+@import "modules/helpers";
+@import "modules/sidebar";
+@import "modules/header";
+@import "modules/footer";
+
+// Pages
+@import "pages/global";
+@import "pages/home";
+@import "pages/about";
+
+// Partials
+@import "partials/carousel";
+@import "partials/loader";
+
+// Sprites
+@import "sprites/sprite";

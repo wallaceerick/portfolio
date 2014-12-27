@@ -1,0 +1,8 @@
+// Text with Ellipsys
+
+@mixin ellipsis ($value){
+	width: $value;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

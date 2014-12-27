@@ -1,0 +1,7 @@
+// Vertical Align
+
+@mixin vertical-align($value: 50%) {
+	position: relative;
+	top: $value;
+	@include transform(translateY(-$value))
+}

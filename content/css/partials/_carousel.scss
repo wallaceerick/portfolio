@@ -1,0 +1,44 @@
+// Carousel
+
+.owl-carousel {
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+	
+	.owl-wrapper {
+		display: none;
+		position: relative;
+		&:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+	}
+	.owl-item {
+		float: left;
+	}
+
+	.owl-wrapper,
+	.owl-item {
+		@include backface-visibility(hidden);
+		@include transform(translate3d(0, 0, 0));
+	}
+
+	.owl-wrapper-outer {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		&.autoHeight {
+			@include transition(height 500ms $ease);
+		}
+	}
+
+	.owl-controls {
+		@include user-select(none);
+	} 
+}
+

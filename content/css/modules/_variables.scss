@@ -1,0 +1,59 @@
+// Variables
+
+// Colours 
+$red: 								#e52732;
+$blue: 								#13c2fe;
+$orange: 							#E06400;
+$yellow: 							#f3e025;
+$purple: 							#8127cf;
+$green: 							#2acb0d;
+$pink: 								#ff0088;
+$white: 							#fff;
+$black: 							#000;
+
+// Logo
+$logo-color:                        $white;
+$logo-size:                         100px;
+
+// Social
+$rss: 								#f8bc2e;
+$google-plus: 						#333333;
+$facebook: 							#39599f;
+$twitter: 							#45b0e3;
+$youtube: 							#e70031;
+
+// Fonts
+$base-font-family:              	'brandon-grotesque';
+$base-font-color:              		$white;
+$base-font-size:              		12px;
+$light:              			    300;
+$regular:              			    400;
+$medium:              			    500;
+$bold:              			    700;
+$black:              			    900;
+
+// Messages
+$error-color:                       $red;
+$success-color:                     $green;
+$warning-color:                     $blue;
+$alert-color:                       $yellow;
+
+// Defaults
+$default-radius: 					3px;
+$input-color:                       $black;
+$input-border:                      $blue;
+
+// Wrapper
+$page-width: 						1080px;
+$header-height:            			85px;
+$footer-height:            			105px;
+$primary-slider-height: 			350px;
+
+// Easing
+$linear: 							cubic-bezier(0, 0, 1, 1);
+$ease: 								cubic-bezier(0.25, 0.1, 0.25, 1);
+$ease-in: 							cubic-bezier(0.42, 0, 1, 1);
+$ease-out: 							cubic-bezier(0, 0, 0.58, 1);
+$ease-in-out: 						cubic-bezier(0.42, 0, 0.58, 1);
+
+
