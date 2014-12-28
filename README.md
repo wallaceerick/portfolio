@@ -1,48 +1,10 @@
 ![Mercado Arte](http://wallaceerick.com.br/clientes/mercado-arte/_html/content/images/sprite/logo.png)
 
-## Telas do Site
-
-Página | Status | Homologação
------------- | ------------- | -------------
-index.php | Finalizado ✔ | Validado ✔
-obras.php | Finalizado ✔ | Validado ✔
-artistas.php | Finalizado ✔ | Validado ✔
-parceiros.php | Finalizado ✔ | Validado ✔
-busca.php | Finalizado ✔ |Validado ✔
-favoritos.php | Finalizado ✔ |Validado ✔
-cadastro-1.php | Finalizado ✔ | Validado ✔
-cadastro-2.php | Finalizado ✔ | Validado ✔
-cadastro-3.php | Finalizado ✔ | Validado ✔
-cadastro-4.php | Finalizado ✔ | Validado ✔
-artista-home.php | Finalizado ✔ | Validado ✔
-artista-biografia.php | Finalizado ✔ | Validado ✔
-artista-obras.php | Finalizado ✔ | Validado ✔
-artista-obras-detalhe.php | Finalizado ✔ | Validado ✔
-
-## Telas do Admin
-
-Página | Status | Homologação
------------- | ------------- | -------------
-index.php | Finalizado ✔ | Enviar +
-dados-cadastrais.php | Finalizado ✔ | Enviar +
-obras.php | Finalizado ✔ | Enviar +
-obras-cadastro.php | Finalizado ✔ | Enviar +
-obras-busca.php | Finalizado ✔ | Enviar +
-plano.php | Finalizado ✔ | Enviar +
-cadastros.php | Finalizado ✔ | Enviar +
-cadastros-detalhe.php | Finalizado ✔ | Enviar +
-financeiro-contratos.php | Finalizado ✔ | Enviar +
-financeiro-planos.php | Finalizado ✔ | Enviar +
-
-## About
-
-O Mercado Arte disponibiliza para os artistas a oportunidade de ter uma página na Web para exibir seus trabalhos e para o público em geral a chance de acessibilidade a um universo artístico criativo que vai muito além do que se apresenta em galerias, museus e sites atualmente.
-
 ## Browser Support
 
 ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)
 --- | --- | --- | --- | ---
-IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔
+IE 9+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔
 
 ## Documentação
 
@@ -120,6 +82,6 @@ Gerados dinâmicamente pelo grunt, com as propriedades e classes de cada objeto.
 
 
 ## Changelog
- * *2014-11-03*   v0.0.0.1   Initial Files.
+ * *2014-12-27*   v0.0.0.1   Initial Files.
 
 
