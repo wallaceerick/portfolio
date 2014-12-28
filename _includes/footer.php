@@ -1,8 +1,8 @@
 
-<script src="content/js/_jquery.js"></script>
-<script src="content/js/_preloader.js"></script>
-<script src="content/js/_hash.js"></script>
-<script src="content/js/_custom.js"></script>
+<script src="assets/js/_jquery.js"></script>
+<script src="assets/js/_preloader.js"></script>
+<script src="assets/js/_hash.js"></script>
+<script src="assets/js/_custom.js"></script>
 <script>
 (function(d){
 	var config = {

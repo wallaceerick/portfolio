@@ -1,10 +1,107 @@
 // Header
 
-header {
+header#header {
+	display: block;
+	position: fixed;
+	top: 20px;
+	left: 0;
 	width: 100%;
-	height: 200px;
-	position: absolute;
-	top: 0; 
-	left: 0; 
-	background: #ccc; 
-}  
+	height: 75px; 
+	z-index: 9999;
+}
+
+nav#menu {
+	float: right;
+	ul {
+		padding-top: 23px;
+		li {
+			display: inline-block;
+			margin: 0 0 0 20px;
+			a {
+				display: block;
+				border-top: 3px solid #303030;
+				color: #4f4f4f;
+				padding: 10px 10px 5px 10px;
+				text-transform: uppercase;
+				font-size: 15px;
+				font-weight: $bold;
+				&:hover {
+					border-top-color: #fff;
+					color: #fff;
+				}
+				&.current {
+					color: #fff;
+				}
+			}
+		}
+	}
+	// Para fundos brancos
+	&.black {
+		ul li a {  
+			border-top-color: #cfcfcf;
+			color: #cfcfcf;
+			&:hover {
+				border-top-color: #000;
+				color: #000;
+			}
+			&.current {
+				color: #000;
+			}
+		}
+	}
+}
+
+
+.logo {
+	float: left;
+	padding-left: 60px;
+	.logo-icon {
+		position: absolute;
+		top: -33px;
+		left: -15px;
+		@include transform(scale(0.5));
+	}
+	h1 {
+		float: left;
+		font-family: $base-font-family;
+		padding: 15px 0 0 14px;
+		color: #fff;
+		font-size: 30px;
+		line-height: 23px;
+		font-weight: $black;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		span {
+			display: block;
+			font-family:  Georgia, Times, 'Times New Roman', serif!important;
+			text-transform: none;
+			color: #767676;
+			font-size: 14px;
+			font-style: italic;
+			font-weight: normal;
+			padding-left: 2px;
+			letter-spacing: normal;
+		}
+	}
+	// Para fundos brancos
+	&.black {
+		.logo-icon {
+			i {
+				border-color: #000;
+				&:after {
+					border-bottom-color: #000;
+				}
+				&:before {
+					border-left-color: #000;
+					border-bottom-color: #000;
+				}
+			}
+		}
+		h1 {
+			color: #000;
+			span {
+				color: #ababab;
+			}
+		}
+	}
+}

@@ -37,7 +37,7 @@ module.exports = function(grunt){
                 algorithm:  'binary-tree',
                 src:        'assets/images/sprites/*.png',
                 destImg:    'assets/images/sprite.png',
-                destCSS:    'assets/css/modules/_sprite.scss',
+                destCSS:    'assets/css/<sprites></sprites>/_sprite.scss',
                 cssFormat:  'css',
                 imgPath:    '../images/sprite.png',
                 cssClass: function (sprite){

@@ -49,7 +49,7 @@
 
 		<link rel="canonical" href="index" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
 	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
 		
 	</head>
