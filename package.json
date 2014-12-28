@@ -1,17 +1,24 @@
 {
   "name": "portfolio",
   "version": "0.0.1",
-  "title": "Wallace Erick | Desenvolvedor Front-End &amp; Designer",
-  "homepage": "https://github.com/wallaceerick/portfolio",
+  "title": "Wallace Erick | Front-End Developer &amp; Designer",
+  "homepage": "http://wallaceerick.com.br",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wallaceerick/portfolio"
+  },
   "author": {
     "name": "Wallace Erick",
     "email": "wallace_erick@hotmail.com",
     "url": "http://wallaceerick.com.br"
   },
-  "description": ". :)",
+  "description": "My personal projects! :)",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.9",
-    "grunt-spritesmith": "~3.0.0",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-spritesmith": "~1.21.0",
+    "grunt-ftp-deploy": "0.0.9"
   }
 }
