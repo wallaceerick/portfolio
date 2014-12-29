@@ -16,6 +16,7 @@
 @import "mixins/background-size";
 @import "mixins/ellipsis";
 @import "mixins/keyframes";
+@import "mixins/perspective";
 @import "mixins/placeholder";
 @import "mixins/user-select";
 @import "mixins/vertical-align";
@@ -35,6 +36,7 @@
 @import "pages/global";
 @import "pages/home";
 @import "pages/about";
+@import "pages/portfolio";
 
 // Partials
 @import "partials/carousel";

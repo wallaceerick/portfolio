@@ -5,17 +5,10 @@ body {
 	}
 	
 	// Custom Colours
-	&.red {
-		.highlight {
-			color: $red;
-		}
-		nav#menu .current {
-			border-top-color: $red;
-		}
-	}
 	&.blue {
-		.highlight {
-			color: $blue;
+		.highlight,
+		.small-arrows li:hover {
+			color: $blue!important;
 		}
 		nav#menu .current {
 			border-top-color: $blue;
@@ -25,6 +18,14 @@ body {
 		}
 		.page-title {
 			@include box-shadow(4px 0px 0px 0px darken($blue, 15%) inset, 0px -4px 0px 0px darken($blue, 15%) inset);
+		}
+	}
+	&.red {
+		.highlight {
+			color: $red;
+		}
+		nav#menu .current {
+			border-top-color: $red;
 		}
 	}
 	&.orange {

@@ -60,10 +60,10 @@ $(function(){
 					data: 'projeto=' + theHash,
 					success: function(data){
 						$('.loading').hide();
-						$('#result').html(data);
-						$('#result .title').delay(300).fadeIn(300);
-						$('#result img').delay(600).fadeIn(300);
-						$('#result .infos').delay(900).slideDown(700);
+						$('#project').html(data);
+						$('#project .title').delay(300).fadeIn(300);
+						$('#project img').delay(600).fadeIn(300);
+						$('#project .infos').delay(900).slideDown(700);
 					}	
 				});
 			}

@@ -3,7 +3,7 @@
 // Loader
 body {
 	//overflow: hidden; 
-	display: none; 
+	// display: none; 
 }
 
 #overlay {
@@ -26,7 +26,7 @@ body {
 		margin: 0 0 0 -540px;
 		#logo { 
 			margin: 0 auto;
-			@extend .sprite-logo;
+			// @extend .sprite-logo;
 		}
 		#percentage {
 			position: absolute !important;

@@ -1,16 +1,10 @@
-/*
- *  jQuery OwlCarousel v1.3.3
- *
- *  Copyright (c) 2013 Bartosz Wojciechowski
- *  http://www.owlgraphic.com/owlcarousel/
- *
- *  Licensed under MIT
- *
+/*!
+ * Title: OWL Carousel
+ * Author: OWL Graphic
+ * Author URI: http://owlgraphic.com/
+ * Version: 1.3.2
+ * Documentation: http://owlgraphic.com/owlcarousel/#customizing
  */
-
-/*JS Lint helpers: */
-/*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
-/*jslint nomen: true, continue:true */
 
 if (typeof Object.create !== "function") {
     Object.create = function (obj) {
@@ -65,8 +59,8 @@ if (typeof Object.create !== "function") {
         logIn : function () {
             var base = this;
 
-            base.$elem.data("owl-originalStyles", base.$elem.attr("style"));
-            base.$elem.data("owl-originalClasses", base.$elem.attr("class"));
+            base.$elem.data("owl-originalStyles", base.$elem.attr("style"))
+                      .data("owl-originalClasses", base.$elem.attr("class"));
 
             base.$elem.css({opacity: 0});
             base.orignalItems = base.options.items;
@@ -411,11 +405,13 @@ if (typeof Object.create !== "function") {
                 "class" : "owl-prev",
                 "html" : base.options.navigationText[0] || ""
             });
+            base.buttonPrev.append('<i class="icon icon-arrow-left-big"></i>');
 
             base.buttonNext = $("<div/>", {
                 "class" : "owl-next",
                 "html" : base.options.navigationText[1] || ""
             });
+            base.buttonNext.append('<i class="icon icon-arrow-right-big"></i>');
 
             buttonsWrapper
                 .append(base.buttonPrev)
@@ -476,7 +472,8 @@ if (typeof Object.create !== "function") {
                     paginationButton = $("<div/>", {
                         "class" : "owl-page"
                     });
-                    paginationButtonInner = $("<span></span>", {
+                    //paginationButtonInner = $("<span></span>", {
+                    paginationButtonInner = $("", {
                         "text": base.options.paginationNumbers === true ? counter : "",
                         "class": base.options.paginationNumbers === true ? "owl-numbers" : ""
                     });

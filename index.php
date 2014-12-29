@@ -28,7 +28,7 @@
 
 		<title>Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
- 		<meta name="viewport" content="width=1080" />
+ 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="" />
 	    <meta name="keywords" content="" />
 	    <meta name="revisit" content="3 days" />
@@ -55,28 +55,8 @@
 	</head>
 
 	<body class="blue">
-
-		<header id="header">
-			<div class="wrapper">
-				<span class="logo">
-					<a href="#home">
-						<span class="logo-icon">
-							<i></i>
-						</span>
-						<h1>Wallace Erick <span>Front-End Developer &amp; Designer</span></h1>
-					</a>
-				</span>
-				<nav id="menu">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#" class="current">Sobre</a></li>
-						<li><a href="#">Portfólio</a></li>
-						<li><a href="#">Contato</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		
+		<?php include('_includes/header.php'); ?>
 
 		<section id="home" class="page">
 			<div class="content page">
@@ -87,11 +67,14 @@
 				<h3>Desenvolvedor Front-End</h3>
 				<p>Pensando criativamente. <span class="highlight">Codando continuamente.</span></p>
 			</div>
-			<a href="#about" class="scroll-down js-scroll">Sobre Mim</a>
 			<span class="overlay">
 				<span class="top"></span>
 				<span class="bottom"></span>
 			</span>
+			<a href="#" class="scroll-down js-scroll">
+				<i class="icon icon-arrow icon-down-medium-arrow"></i>
+				<span>Sobre Mim</span>
+			</a>
 		</section>
 
 		<section id="about" class="page">
@@ -101,25 +84,132 @@
 			</h2>
 		</section>
 
-		<section id="projects" class="page">
+		<section id="portfolio" class="page">
 			<ul class="js-hashchange">
 				<li><a href="?projeto=sadia.html" name="#!sadia.html">Sadia</a></li>
 				<li><a href="?projeto=natura.html" name="#!natura.html">Natura</a></li>
 				<li><a href="?projeto=biopet.html" name="#!biopet.html">Biopet</a></li>
 				<li><a href="?projeto=toyota.html" name="#!toyota.html">Toyota</a></li>
 				<li><a href="?projeto=gendai.html" name="#!gendai.html">Gendai</a></li>
-			</ul> 
-
-			<div id="content">
-				<div class="loading">
-					<img src="images/loading.gif" height="25" width="25" />
-				</div>
-	            <div id="result"> 
-	            	<?php echo $page;?>
-	            </div> 
-	        </div>
-
+			</ul>
 		</section>
+
+			<div class="loading">
+				<img src="images/loading.gif" height="25" width="25" />
+			</div>
+	
+		<span class="project-overlay"></span>
+		<section id="project">
+			
+			<header class="project-header">
+				<span class="square flipper">
+					<span class="square-inner flipper-inner">
+						<div class="front">
+							<span class="face-inner">
+								<h2>Toyota</h2>
+								<h3>Visita à Fábrica</h4>
+								<hr />
+							</span>
+						</div>
+						<div class="back toyota">
+							<span class="face-inner">
+								<img src="assets/images/portfolio/toyota/logo.png" alt="" />
+							</span>
+						</div>
+					</span>
+				</span>
+				<span class="date mounth">
+					<span>Mês</span>
+					<strong>Dez</strong>
+				</span>
+				<span class="date year">
+					<span>Ano</span>
+					<strong>14</strong>
+				</span>
+
+				<a href="#details" class="scroll-down">
+					<i class="icon icon-arrow icon-down-medium-arrow"></i>
+					<span>Detalhes</span>
+				</a>
+				<a href="#close" class="close-page">
+					<i class="icon icon-close"></i>
+					<span>Fechar</span>
+				</a>
+			</header> <!-- /project-header -->
+
+			<article class="project-content wrapper">
+				<h3>Sobre</h3>
+				<p>A campanha #jogapramim da Sadia, teve início em 27 de março de 2014 e término em 02 de julho de 2014 e será realizada em todo o território nacional. Essa campanha permite aos participantes ganharem prêmios como uma camiseta da seleção até R$ 1 milhão de reais.</p>
+				<a href="#" class="colored-link">http://promo.sadia.com.br/</a>
+
+				<br class="clear" />
+
+				<span class="column column-half">
+					<h4>Detalhes</h4>
+					<ul>
+						<li><strong>Agência:</strong> DigiPronto</li>
+						<li><strong>Data:</strong> Março de 2014</li>
+						<li><strong>Duração:</strong> 2 Semanas</li>
+						<li><strong>Ferramentas:</strong> Photoshop e Sublimet Text 2</li>
+						<li><strong>Categoria:</strong> Sistemas</li>
+						<li><strong>Status:</strong> Online *</li>
+					</ul>
+				</span>
+
+				<span class="column column-half">
+					<h4>Tecnologias</h4>
+					<ul class="bullet">
+						<li>CSS3</li>
+						<li>HTML5</li>
+						<li>JS</li>
+						<li>Sass</li>
+						<li>Responsive Design</li>
+						<li>PHP</li>
+					</ul>
+				</span>
+
+				<h3>Layouts</h3>
+			</article>
+
+			<article class="project-slides">
+				<ul class="small-arrows">
+					<li class="previous-image">
+						<i class="icon icon-left-medium-arrow"></i>
+						<span>Anterior</span>
+					</li>
+					<li class="next-image">
+						<i class="icon icon-right-medium-arrow"></i>
+						<span>Próximo</span>
+					</li>
+				</ul>
+
+				<span class="slider-inner">
+					<span class="slider-button previous-image">
+						<i class="icon icon-left-small-arrow"></i>
+						<span>Anterior</span>
+					</span>
+					<span class="slider-button next-image">
+						<i class="icon icon-right-small-arrow"></i>
+						<span>Próximo</span>
+					</span>
+					<div class="owl-carousel js-projects-carousel">
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" width="1900" height="2000" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+					</div>
+				</span>
+			</article>
+
+			<br class="clear" />
+
+
+			<?php echo $page; ?>
+
+        </section>
 
 		<footer id="footer">
 			<ul>

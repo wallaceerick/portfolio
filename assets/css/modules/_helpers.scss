@@ -109,6 +109,10 @@
     cursor: image-url('grabbing.png') 8 8, move;
 }
 
+.bullet {
+	padding-left: 23px;
+}
+
 // Rounded Corners
 .rounded {
 	@include border-radius($default-radius);

@@ -1,0 +1,16 @@
+// Perspective
+
+@mixin perspective ($value){
+    -webkit-perspective: $value;
+	-moz-perspective: $value;
+	-ms-perspective: $value;
+	perspective: $value;
+	
+	-webkit-transform: perspective($value + px);
+	-moz-transform: perspective($value + px);
+	-ms-transform: perspective($value + px);
+	transform: perspective($value + px);
+}
+
+
+    

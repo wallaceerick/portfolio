@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     // Cached selectors to improve performance
     var loadedContent         = $('body'),
-        primaryBanner      	  = $('.js-primary-banner'),
+        projectsCarousel 	  = $('.js-projects-carousel'),
         scrollLinks      	  = $('.js-scroll');
 
     // Preloader
@@ -35,15 +35,21 @@ $(document).ready(function(){
     });
 
     // Banner: Home
-    if (primaryBanner[0]){
-        primaryBanner.owlCarousel({
-        	// autoPlay: 			5000,
-            slideSpeed:         1000,
+    if (projectsCarousel[0]){
+        projectsCarousel.owlCarousel({
+            slideSpeed:         1500,
             pagination:         true,
             navigation:         false,
             itemsDesktop:       false,
             itemsDesktopSmall:  false,
-            singleItem:       	true
+            singleItem:       	true,
+            autoHeight: 		true
+        });
+        $('.previous-image').click(function(){
+            projectsCarousel.trigger('owl.prev');
+        });
+        $('.next-image').click(function(){
+            projectsCarousel.trigger('owl.next');
         });
     }
 

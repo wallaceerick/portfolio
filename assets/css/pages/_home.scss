@@ -6,7 +6,7 @@
 	background: #000 image-url('landscape.jpg') center top no-repeat;
 	.content {
 		width: 100%;
-		height: 100%;
+		// height: 100%;
 		text-align: center;
 		position: absolute;
 		top: 90px;
@@ -27,5 +27,8 @@
 		font-weight: $light;
 		font-size: 25px;
 		margin-top: -25px;
+	}
+	.scroll-down {
+		bottom: 250px;
 	}
 } 
