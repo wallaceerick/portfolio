@@ -5,6 +5,7 @@
  * Version: 1.0
  */
 
+
 $(document).ready(function(){
 
     // Cached selectors to improve performance
@@ -34,7 +35,7 @@ $(document).ready(function(){
         event.preventDefault();
     });
 
-    // Banner: Home
+    // Carousel to Layouts
     if (projectsCarousel[0]){
         projectsCarousel.owlCarousel({
             slideSpeed:         1500,
@@ -42,8 +43,8 @@ $(document).ready(function(){
             navigation:         false,
             itemsDesktop:       false,
             itemsDesktopSmall:  false,
-            singleItem:       	true,
-            autoHeight: 		true
+            autoHeight: 		true,
+            singleItem:       	true
         });
         $('.previous-image').click(function(){
             projectsCarousel.trigger('owl.prev');
@@ -52,6 +53,26 @@ $(document).ready(function(){
             projectsCarousel.trigger('owl.next');
         });
     }
+
+    $(window).scroll(function(){
+    	var headerHeight 		= 90,
+    		carouselTop 		= $('.js-slides').offset().top,
+    		contentTop 		    = $('.js-content').offset().top - 90,
+    		windowTop 			= $(window).scrollTop();
+
+    	console.log(windowTop + ' ' + contentTop);
+
+		if (windowTop >= carouselTop) {
+			$('.slider-button').addClass('fixed');
+	    }
+	    else if(windowTop >= contentTop){
+	    	$('#header').addClass('black');
+	    }
+	    else {
+	    	$('#header').removeClass('black');
+			$('.slider-button').removeClass('fixed');
+	    }
+	});
 
 
 });

@@ -99,7 +99,7 @@
 			</div>
 	
 		<span class="project-overlay"></span>
-		<section id="project">
+		<section id="project" class="opened">
 			
 			<header class="project-header">
 				<span class="square flipper">
@@ -107,7 +107,7 @@
 						<div class="front">
 							<span class="face-inner">
 								<h2>Toyota</h2>
-								<h3>Visita à Fábrica</h4>
+								<h3>Visita à Fábrica</h3>
 								<hr />
 							</span>
 						</div>
@@ -137,7 +137,7 @@
 				</a>
 			</header> <!-- /project-header -->
 
-			<article class="project-content wrapper">
+			<article class="project-content wrapper js-content">
 				<h3>Sobre</h3>
 				<p>A campanha #jogapramim da Sadia, teve início em 27 de março de 2014 e término em 02 de julho de 2014 e será realizada em todo o território nacional. Essa campanha permite aos participantes ganharem prêmios como uma camiseta da seleção até R$ 1 milhão de reais.</p>
 				<a href="#" class="colored-link">http://promo.sadia.com.br/</a>
@@ -171,7 +171,7 @@
 				<h3>Layouts</h3>
 			</article>
 
-			<article class="project-slides">
+			<article class="project-slides js-slides">
 				<ul class="small-arrows">
 					<li class="previous-image">
 						<i class="icon icon-left-medium-arrow"></i>
@@ -194,18 +194,15 @@
 					</span>
 					<div class="owl-carousel js-projects-carousel">
 						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" width="1900" height="2000" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-						<img src="assets/images/portfolio/toyota/1.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/2.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/3.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/4.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/5.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/6.jpg" alt="" />
+						<img src="assets/images/portfolio/toyota/7.jpg" alt="" />
 					</div>
 				</span>
 			</article>
-
-			<br class="clear" />
-
 
 			<?php echo $page; ?>
 
