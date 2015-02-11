@@ -14,23 +14,21 @@ $(function(){
 			window.location.href = url;
 		}
 
-		if(hash)
-		{
+		if(hash){
 			loadPage(hash);
 		}
 		
 		// Pega o clique nos links
-		$('ul.js-hashchange li a').click(function(){
+		$('.js-hashchange li a').click(function(){
 
 			var obj = $(this);
 			hash = obj.attr('name');
 			window.location.hash = hash;
 
-			$('ul.js-hashchange li a').removeClass('selected');
-			obj.addClass('selected');
+			$('.js-hashchange li').removeClass('selected');
+			// obj.parent().parent().addClass('selected');
 
-			if(hash)
-			{
+			if(hash){
 				loadPage(hash);
 			}
 			return false;
@@ -59,11 +57,10 @@ $(function(){
 					type: 'GET',
 					data: 'projeto=' + theHash,
 					success: function(data){
+						var page = theHash.replace('.html', '');
+						$('.loaded-content').remove();
 						$('.loading').hide();
-						$('#project').html(data);
-						$('#project .title').delay(300).fadeIn(300);
-						$('#project img').delay(600).fadeIn(300);
-						$('#project .infos').delay(900).slideDown(700);
+						$('li.' + page).addClass('selected').append(data);
 					}	
 				});
 			}

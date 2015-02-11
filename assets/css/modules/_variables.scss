@@ -26,11 +26,12 @@ $youtube: 							#e70031;
 $base-font-family:              	'brandon-grotesque';
 $base-font-color:              		$white;
 $base-font-size:              		12px;
+$thin:                			    100;
 $light:              			    300;
 $regular:              			    400;
 $medium:              			    500;
 $bold:              			    700;
-$black:              			    900;
+$extra-bold:              			900;
 
 // Messages
 $error-color:                       $red;
@@ -45,7 +46,7 @@ $input-border:                      $blue;
 $square-size: 						245px;
 
 // Wrapper
-$page-width: 						1080px;
+$page-width: 						960px;
 $header-height:            			85px;
 $footer-height:            			105px;
 $primary-slider-height: 			350px;

@@ -23,8 +23,8 @@
 
 // Modules
 @import "modules/animations";
+@import "modules/fonts";
 @import "modules/variables";
-@import "modules/colors";
 @import "modules/icons";
 @import "modules/reset";
 @import "modules/helpers";
@@ -35,8 +35,7 @@
 // Pages
 @import "pages/global";
 @import "pages/home";
-@import "pages/about";
-@import "pages/portfolio";
+@import "pages/pages";
 
 // Partials
 @import "partials/carousel";

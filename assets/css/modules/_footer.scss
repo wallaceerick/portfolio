@@ -4,20 +4,22 @@ footer#footer {
 	display: block;
 	padding-top: 80px;
 	text-align: center;
+	position: relative;
 	ul {
 		display: table;
 		margin: 0 auto;
 		li {
 			margin: 0 20px;
-			display: inline-block;
+			display: block;
+			float: left;
 			position: relative;
 			a {
 				display: block;
 				text-align: center;
 				width: 60px;
 				height: 60px;
-				border: 5px solid #000;
-				color: #000;
+				border: 1px solid $black;
+				color: $black;
 				font-size: 31px;
 				@include transform(rotate(-45deg));
 				span {
@@ -25,24 +27,63 @@ footer#footer {
 				}
 				i {
 					display: block;
-					margin-top: 9px;
+					width: 60px;
+					height: 60px;
+					// background-color: red;
+					padding-top: 13px;
+					text-indent: -3px;
 					@include transform(rotate(45deg));
-					&.icon-linkedin {
-						padding-left: 9px;
+					&.icon-facebook {
+						padding-top: 11px;
+						text-indent: -9px;
 					}
 				}
 				&:hover {
-					color: #fff;
-					background-color: #000;
+					color: $white;
+					background-color: $black;
 				}
 			}
 		}
 	}
+	.quick-mail {
+		position: absolute;
+		bottom: 35px;
+		left: 40px;
+		color: #c7c7c7;
+		text-transform: uppercase;
+		font-size: 17px;
+		font-weight: $regular;
+		&:hover { 
+			color: $black;
+		}
+	}
+	.to-top {
+		position: absolute;
+		bottom: 35px;
+		right: 40px;
+		color: $black;
+		text-transform: uppercase;
+		font-size: 17px;
+		font-weight: $regular;
+		i {
+			display: block;
+			margin-bottom: 4px;
+		}
+		&:hover {
+			@include transform(translateY(-10px));
+		}
+	}
 	p {
 		display: inline-block;
-		margin-top: 70px;
-		color: #000;
-		font-size: 20px;
+		color: $black;
+		font-size: 17px;
+		padding: 70px 0 30px 0;
+		text-transform: uppercase;
+		font-weight: $regular;
+		line-height: 22px;
+		span {
+			display: block;
+		}
 	}
 }
 

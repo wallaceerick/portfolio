@@ -1,17 +1,49 @@
-
-<script src="assets/js/_jquery.js"></script>
-<script src="assets/js/_preloader.js"></script>
-<script src="assets/js/_hash.js"></script>
-<script src="assets/js/_carousel.js"></script>
-<script src="assets/js/_custom.js"></script>
-<script>
-(function(d){
-	var config = {
-		kitId: 'uzz8xmd',
-		scriptTimeout: 3000
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-})(document); 
-</script>
-
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<footer id="footer">
+			<ul class="social">
+				<li>
+					<a href="#">
+						<i class="icon icon-facebook"></i>
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-twitter"></i>
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-linkedin"></i>
+						<span>Linkedin</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-codepen"></i>
+						<span>Codepen</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-github"></i>
+						<span>Github</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon icon-bitbucket"></i>
+						<span>BitBucket</span>
+					</a>
+				</li>
+			</ul>
+			
+			<a href="mailto:wallaceerick.dev@gmail.com?subject=Contato pelo Site" class="quick-mail">wallaceerick.dev@gmail.com</a>
+			<p>Copyright &copy; 2008/2015. <span>Alguns Direitos Reservados.</span></p>
+			<a href="#" class="to-top">
+				<i class="icon icon-arrow-up"></i>
+				<span>Subir</span>
+			</a>
+		</footer>
+		
+		<?php include('_includes/scripts.php'); ?>

@@ -11,28 +11,103 @@ $(document).ready(function(){
     // Cached selectors to improve performance
     var loadedContent         = $('body'),
         projectsCarousel 	  = $('.js-projects-carousel'),
-        scrollLinks      	  = $('.js-scroll');
+        logoHeader      	  = $('.js-logo-icon'),
+        logoHome        	  = $('.js-logo-home'),
+        scrollLinks      	  = $('.js-scroll'),
+        overlayMenu      	  = $('.js-overlay-menu'),
+        pullButton 			  = $('.js-pull'),
+        pullContent 		  = $('.js-menu-content'),
+        animatedText 		  = $('.js-animated-text'),
+        animatedIcon 		  = $('.js-animated-icon'),
+        projectItem 		  = $('.js-projects li');
 
     // Preloader
     loadedContent.jpreLoader({
-        showPercentage:       true,
+        showPercentage:       false,
         autoClose:            true,
-        onetimeLoad:          true,
+        onetimeLoad:          false,
         splashFunction: function(){
             //console.log('Carregando...');
         }
     }, function(){
+    	if(animatedText[0]){
+    		animatedText.addClass('init-animation');
+    	}
+    	if(animatedIcon[0]){
+    		animatedIcon.addClass('init-animation');
+    	}
+    	/*
+    	var pathname = window.location.pathname,
+    		url      = pathname.replace('/~wallace/portfolio/', '');
+
+		if(url == 'index.php'){
+
+		}*/
         //console.log('Carregado!');
     });
 
-    scrollLinks.bind('click',function(event){
-        var $anchor = $(this);
- 
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500);
-        
-        event.preventDefault();
+    // Menu
+    pullButton.click(function(e){
+    	e.preventDefault();
+    	var buttonText = $(this).find('p'),
+    		windowTop = $(window).scrollTop();
+
+    	// Remove dark class
+    	pullButton.removeClass('dark');
+    	logoHeader.removeClass('dark');
+
+    	// Show overlay
+    	overlayMenu.stop().fadeToggle(300);
+
+    	// Add opened class
+    	$(this).toggleClass('opened');
+
+    	// Show menu
+    	pullContent.stop().fadeToggle(300); 
+
+    	// Change button text
+    	if($(this).hasClass('opened')){
+    		buttonText.text('Close');
+    		logoHome.stop().fadeIn(300);
+    		loadedContent.css('overflow', 'hidden');
+    	}
+    	else {
+			buttonText.text('Menu');
+			logoHome.stop().fadeOut(300);
+			loadedContent.css('overflow', 'auto');
+
+    		console.log(windowTop);
+    		if(windowTop >= 810){
+    			pullButton.addClass('dark');
+    		}
+    		else {
+    			pullButton.removeClass('dark');
+    		}
+    		if(windowTop >= 920){
+    			logoHeader.addClass('dark');
+    		}
+    		else {
+    			logoHeader.removeClass('dark');
+    		}
+    	}
+
+    	// Animate menu
+    	setTimeout(function() {
+		    pullContent.find('li').delay(1000).toggleClass('opened');
+		}, 600);
+    	
+    	
+    });
+
+    // Projects Rollover
+    projectItem.hover(function(){
+    	$(this).find('a').removeClass('hidden');
+    	$(this).find('.number').hide();
+    	$(this).find('.image').fadeIn(300).addClass('init-animation');
+    }, function(){
+    	$(this).find('a').addClass('hidden');
+    	$(this).find('.number').show();
+    	$(this).find('.image').hide().removeClass('init-animation');
     });
 
     // Carousel to Layouts
@@ -55,23 +130,26 @@ $(document).ready(function(){
     }
 
     $(window).scroll(function(){
-    	var headerHeight 		= 90,
-    		carouselTop 		= $('.js-slides').offset().top,
-    		contentTop 		    = $('.js-content').offset().top - 90,
-    		windowTop 			= $(window).scrollTop();
+    	var windowTop = $(window).scrollTop();
 
-    	console.log(windowTop + ' ' + contentTop);
+    	// console.log(windowTop);
 
-		if (windowTop >= carouselTop) {
-			$('.slider-button').addClass('fixed');
-	    }
-	    else if(windowTop >= contentTop){
-	    	$('#header').addClass('black');
+    	// Pull Button
+		if (windowTop >= 810) {
+			pullButton.addClass('dark');
 	    }
 	    else {
-	    	$('#header').removeClass('black');
-			$('.slider-button').removeClass('fixed');
+	    	pullButton.removeClass('dark');
 	    }
+
+	    // Header Logo
+		if (windowTop >= 920) {
+			logoHeader.addClass('dark');
+	    }
+	    else {
+	    	logoHeader.removeClass('dark');
+	    }
+
 	});
 
 

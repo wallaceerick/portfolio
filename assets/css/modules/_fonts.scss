@@ -1,0 +1,35 @@
+// Fonts
+
+@font-face {
+    font-family: 'DidotItalic';
+    font-weight: 100;
+    // font-weight: 400;
+    font-style: normal;
+    src: font-url('didot/italic.eot');
+    src: font-url('didot/italic.eot?#iefix') format('embedded-opentype'), 
+         font-url('didot/italic.woff') format('woff'), 
+         font-url('didot/italic.ttf') format('truetype'), 
+         font-url('didot/italic.svg#DidotItalic') format('svg');
+}
+/*
+@font-face {
+    font-family: 'DidotRegular';
+    font-weight: 400;
+    font-style: normal;
+    src: font-url('didot/regular.eot');
+    src: font-url('didot/regular.eot?#iefix') format('embedded-opentype'), 
+         font-url('didot/regular.woff') format('woff'), 
+         font-url('didot/regular.ttf') format('truetype'), 
+         font-url('didot/regular.svg#DidotRegular') format('svg');
+}
+@font-face {
+    font-family: 'DidotBold';
+    font-weight: 400;
+    font-style: normal;
+    src: font-url('didot/bold.eot');
+    src: font-url('didot/bold.eot?#iefix') format('embedded-opentype'), 
+         font-url('didot/bold.woff') format('woff'), 
+         font-url('didot/bold.ttf') format('truetype'), 
+         font-url('didot/bold.svg#DidotBold') format('svg');
+}
+*/

@@ -1,34 +1,37 @@
 // Home
 
+.homepage {
+	width: 100%;
+	overflow: hidden!important;
+}
+
 #home {
-	height: 1070px;
-	padding-top: 0!important;
-	background: #000 image-url('landscape.jpg') center top no-repeat;
-	.content {
-		width: 100%;
-		// height: 100%;
-		text-align: center;
+	background: #000;
+	
+	.logo-icon,
+	.animated-text,
+	.button {
 		position: absolute;
-		top: 90px;
-		left: 0;
-		z-index: 10;
-		padding-top: 0!important;
-		border: none!important;
+		left: 50%;
+		z-index: 9900;
 	}
-	.overlay {
-		height: 1070px;
+
+	.logo-icon {
+		top: 95px;
+		margin-left: -90px;
 	}
-	h3 {
-		font-size: 70px;
-		font-weight: $light;
-		margin-top: 105px;
+
+	.button {
+		bottom: 95px;
+		margin-left: -130px;
 	}
-	p {
-		font-weight: $light;
-		font-size: 25px;
-		margin-top: -25px;
-	}
-	.scroll-down {
-		bottom: 250px;
+
+	.animated-text {
+		width: 750px;
+		height: 350px;
+		top: 50%;
+		margin: -100px 0 0 -375px;
+		text-align: center;
+		// border: 1px solid red;
 	}
 } 

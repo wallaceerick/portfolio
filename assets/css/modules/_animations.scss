@@ -15,12 +15,63 @@
     }   
 }
 
-// 2. Linear Rotation
-@include keyframes(rotation) {
+// 2. Scroll Mouse
+@include keyframes(mouse-move) {
     0% {
-        @include transform(rotate(0deg));
+        bottom: 10px;
     } 
+    15%   {
+        bottom: 25px;
+    } 
+    30%   {
+        bottom: 10px;
+    } 
+    45% {
+        bottom: 25px;
+    }  
+    60% {
+        bottom: 10px;
+    }  
     100%   {
-        @include transform(rotate(360deg));
+        bottom: 10px;
+    }  
+}
+
+// 3. Animate Scale Image
+@include keyframes(scaled-image) {
+    0% {
+        @include transform(scale(1));
+    } 
+    50%   {
+        @include transform(scale(1.4));
+    }  
+    100%   {
+        @include transform(scale(1));
+    }  
+}
+
+// 4. Animate Vertical Image
+@include keyframes(down-up-image) {
+    0% {
+        top: 0;
+    } 
+    50%   {
+        top: -900px;
+    }  
+    100%   {
+        top: 0;
+    }  
+}
+
+// 5. Animate Vertical Image
+@include keyframes(up-down-image) {
+    0% {
+        top: 0;
+    } 
+    50%   {
+        top: -400px;
+    }  
+    100%   {
+        top: 0;
     }  
 }

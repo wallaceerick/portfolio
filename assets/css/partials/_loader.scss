@@ -3,30 +3,78 @@
 // Loader
 body {
 	//overflow: hidden; 
-	// display: none; 
+	display: none; 
 }
 
 #overlay {
 	background-color: #fff;
-	background-color: rgba(255, 255, 255, 0.85); 
-	#bar {
-		top: 0;
-		left: 0;
-		height: 4px!important;
+	#bars {
+		position: relative;
+		width: 250px;
+		height: 250px;
 		background-color: $red;
+		display: none;
 	}
 	#slide {
 	}
 	#loader {
 		position: absolute;
-		width: 300px;
-		height: 90px;
-		top: 70px;
+		width: 250px;
+		height: 250px;
+		top: 50%!important;
 		left: 50%!important;
-		margin: 0 0 0 -540px;
-		#logo { 
-			margin: 0 auto;
-			// @extend .sprite-logo;
+		margin: -125px 0 0 -125px;
+		border: 7px solid #dedede;
+		@include transform(rotate(-45deg));
+		.bars {
+			display: block;
+			width: 250px;
+			height: 250px;
+			position: absolute;
+			top: -6px;
+			left: -6px;
+
+		}
+		.bar-corner {
+			display: block;
+			position: absolute;
+			height: 7px;
+			background-color: $black; 
+			&.bar-top-corner,
+			&.bar-bottom-corner {
+				height: 7px;
+			}
+			&.bar-left-corner,
+			&.bar-right-corner {
+				width: 7px;
+			}
+			&.bar-top-corner {
+				top: 0;
+				left: 0;
+			}
+			&.bar-bottom-corner {
+				bottom: 0;
+				right: 0; 
+			}
+			&.bar-right-corner {
+				top: 0;
+				left: 0;
+			}
+			&.bar-left-corner {
+				bottom: 0;
+				right: 0; 
+			}
+		}
+		#logo {
+			display: inline-block;
+			@include transform(translateX(72px) translateY(42px));
+			i {
+				border-color: transparent!important;
+				@include transform(scale(2));
+				&:after, &:before {
+					border-color: $black;
+				}
+			}
 		}
 		#percentage {
 			position: absolute !important;

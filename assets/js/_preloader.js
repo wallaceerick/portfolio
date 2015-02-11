@@ -82,9 +82,10 @@
 		
 		jLoader = $('<div></div>')
 		.attr('id', 'loader')
-		.attr('class', 'block loader')
+		.attr('class', 'loader-border')
 		.appendTo(jOverlay);
-		
+		jLoader.append('<span class="bars"><span class="bar-corner bar-top-corner"></span><span class="bar-corner bar-right-corner"></span><span class="bar-corner bar-bottom-corner"></span><span class="bar-corner bar-left-corner"></span></span>');
+
 		var posWidth = $(window).width() - $(jLoader).width();
 		$(jLoader).css({
 			position: 'absolute',
@@ -93,17 +94,17 @@
 		});
 		
 		jBar = $('<div></div>')
-		.attr('id', 'bar')
+		.attr('id', 'bars')
 		.css({
-			width: '0%',
-			height: '100%'
+			width: '0%'
 		})
-		.appendTo(jOverlay);
-
+		// .appendTo(jOverlay);
+		.appendTo(jLoader); 
+		
 		jLogo = $('<div></div>')
 		.attr('id', 'logo')
-		.attr('class', 'block logo-loader')
-		.appendTo(jLoader).append('<span></span>');
+		.attr('class', 'logo-icon')
+		.appendTo(jLoader).append('<i></i>'); 
 		
 		if(jpreOptions.showPercentage) {
 			jPer = $('<div></div>')
@@ -176,8 +177,18 @@
 		current++;
 
 		var per = Math.round((current / items.length) * 100);
+		/*
 		$(jBar).stop().animate({
 			width: per + '%'
+		}, 500, 'linear');
+		*/
+
+		
+		$('.bar-top-corner, .bar-bottom-corner').stop().animate({
+			width: per + '%'
+		}, 500, 'linear');
+		$('.bar-right-corner, .bar-left-corner').stop().animate({
+			height: per + '%'
 		}, 500, 'linear');
 		
 		if(jpreOptions.showPercentage) {
