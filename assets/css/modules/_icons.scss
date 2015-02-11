@@ -1,11 +1,11 @@
 // Font Icon
 @font-face {
 	font-family: 'Icons';
-	src: font-url('icons/icons.eot?-ra3k2h');
-	src: font-url('icons/icons.eot?#iefix-ra3k2h') format('embedded-opentype'),
-		 font-url('icons/icons.woff?-ra3k2h') format('woff'),
-		 font-url('icons/icons.ttf?-ra3k2h') format('truetype'),
-		 font-url('icons/icons.svg?-ra3k2h#Icons') format('svg');
+	src: font-url('icons/icomoon.eot?z80drq');
+	src: font-url('icons/icomoon.eot?#iefixz80drq') format('embedded-opentype'),
+		 font-url('icons/icomoon.woff?z80drq') format('woff'),
+		 font-url('icons/icomoon.ttf?z80drq') format('truetype'),
+		 font-url('icons/icomoon.svg?z80drq#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,64 +24,56 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-keyboard-right:before {
+	content: "\e60c";
+}
+
+.icon-keyboard-left:before {
+	content: "\e60d";
+}
+
+.icon-link:before {
+	content: "\e005";
+}
+
+.icon-arrow-left:before {
+	content: "\e094";
+}
+
+.icon-arrow-right:before {
+	content: "\e095";
+}
+
+.icon-arrow-up:before {
+	content: "\e096";
+}
+
+.icon-arrow-down:before {
+	content: "\e097";
+}
+
+.icon-plus:before {
+	content: "\e114";
+}
+
+.icon-minus:before {
+	content: "\e115";
+}
+
+.icon-check:before {
+	content: "\e116";
+}
+
+.icon-cross:before {
+	content: "\e117";
+}
+
 .icon-bitbucket:before {
 	content: "\e600";
 }
 
-.icon-forward:before {
-	content: "\e969";
-}
-
-.icon-smile:before {
-	content: "\e9e1";
-}
-
-.icon-tongue:before {
-	content: "\e9e3";
-}
-
-.icon-sad:before {
-	content: "\e9e5";
-}
-
-.icon-plus:before {
-	content: "\ea0a";
-}
-
-.icon-minus:before {
-	content: "\ea0b";
-}
-
-.icon-cross:before {
-	content: "\ea0f";
-}
-
-.icon-checked:before {
-	content: "\ea10";
-}
-
-.icon-unchecked:before {
-	content: "\ea11";
-}
-
-.icon-arrow-up:before {
-	content: "\ea3a";
-}
-
-.icon-arrow-right:before {
-	content: "\ea3c";
-}
-
-.icon-arrow-down:before {
-	content: "\ea3e";
-}
-
-.icon-arrow-left:before {
-	content: "\ea40";
-}
-
-.icon-embed:before {
-	content: "\ea80";
+.icon-spinner:before {
+	content: "\e97b";
 }
 
 .icon-google-plus:before {
@@ -104,7 +96,7 @@
 	content: "\ea9c";
 }
 
-.icon-flickr2:before {
+.icon-flickr:before {
 	content: "\eaa1";
 }
 
@@ -114,18 +106,6 @@
 
 .icon-github:before {
 	content: "\eab3";
-}
-
-.icon-apple:before {
-	content: "\eabf";
-}
-
-.icon-android:before {
-	content: "\eac1";
-}
-
-.icon-windows:before {
-	content: "\eac3";
 }
 
 .icon-skype:before {

@@ -10,7 +10,6 @@ $(document).ready(function(){
 
     // Cached selectors to improve performance
     var loadedContent         = $('body'),
-        projectsCarousel 	  = $('.js-projects-carousel'),
         logoHeader      	  = $('.js-logo-icon'),
         logoHome        	  = $('.js-logo-home'),
         scrollLinks      	  = $('.js-scroll'),
@@ -110,25 +109,6 @@ $(document).ready(function(){
     	$(this).find('.image').hide().removeClass('init-animation');
     });
 
-    // Carousel to Layouts
-    if (projectsCarousel[0]){
-        projectsCarousel.owlCarousel({
-            slideSpeed:         1500,
-            pagination:         true,
-            navigation:         false,
-            itemsDesktop:       false,
-            itemsDesktopSmall:  false,
-            autoHeight: 		true,
-            singleItem:       	true
-        });
-        $('.previous-image').click(function(){
-            projectsCarousel.trigger('owl.prev');
-        });
-        $('.next-image').click(function(){
-            projectsCarousel.trigger('owl.next');
-        });
-    }
-
     $(window).scroll(function(){
     	var windowTop = $(window).scrollTop();
 
@@ -152,6 +132,8 @@ $(document).ready(function(){
 
 	});
 
+	// Ajuste a posição das setas do slider de acordo com o tamanho da imagem
+						
 
 });
 

@@ -75,3 +75,13 @@
         top: 0;
     }  
 }
+
+// 6. Rotation
+@include keyframes(rotation) {
+    0% {
+        @include transform(rotate(0));
+    } 
+    100%   {
+        @include transform(rotate(360deg));
+    }   
+}
