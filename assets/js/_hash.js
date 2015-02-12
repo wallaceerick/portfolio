@@ -23,7 +23,6 @@ $(function(){
 			var obj = $(this);
 			hash = obj.attr('name');
 			window.location.hash = hash; 
-			alert(hash);
 
 			$('.js-hashchange li').removeClass('selected');
 			// obj.parent().parent().addClass('selected');
