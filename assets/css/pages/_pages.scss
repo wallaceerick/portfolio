@@ -3,7 +3,8 @@
 #page {
 	position: relative;
 	overflow: hidden;
-	height: 1000px;
+	// height: 1000px;
+	height: 650px;
 	margin-top: -20px;
 
 	.page-icon {
@@ -18,7 +19,7 @@
 		margin: 0 0 0 -75px;
 		z-index: 20;
 		@include opacity(0);
-		@include transform(scale(0.4) rotate(-45deg));
+		@include transform(rotate(-45deg));
 		i {
 			display: inline-block;
 			width: 150px;
@@ -27,11 +28,11 @@
 			font-size: 90px;
 			// background-color: red;
 			padding-top: 30px;
-			text-indent: -8px;
+			text-indent: -8px; 
 			@include opacity(0);
 			@include transform(rotate(45deg));
 		}
-		&.init-animation {
+		&.init-animation { 
 			@include opacity(1);
 			@include transform(scale(1) rotate(-45deg));
 			@include transition(all .5s $ease-out);
@@ -47,22 +48,29 @@
 		width: 100%;
 		height: 290px;
 		top: 50%;
-		margin: -100px 0 0 0;
+		margin: 0;
+		left: 0;
 		text-align: center;
 		// border: 1px solid red;
 	}
 
 	.animated-image {
 		display: block;
-		height: 1000px;
+		height: 650px;
 		overflow: hidden;
+		img {
+			width: auto;
+			height: auto;
+		}
 		.overlay {
 			position: absolute;
-			height: 1000px;
+			height: 650px;
 		}
 	}
 
 	.mouse {
+		display: none;
+
 		width: 45px;
 		height: 75px;
 		background-color: $white;
@@ -273,7 +281,8 @@
 }
 
 .project-details {
-	padding-top: 300px;
+	// padding-top: 300px;
+	padding-top: 50px;
 	text-align: left;
 	.title {
 		font-family: 'DidotItalic';
@@ -385,15 +394,49 @@
 		.next-button {
 			display: block;
 			position: absolute;
-			top: 403px;
-			color: $white;
-			font-size: 100px;
-			padding: 10px 30px 0 30px;
-			background-color: rgba(0, 0, 0, 0.40);
+			top: 400px;
+			// color: $white;
+			color: $black;
+			// font-size: 100px;
+			// padding: 10px 30px 0 30px;
+			// background-color: rgba(0, 0, 0, 0.40);
+			width: 50px;
+			height: 50px;
 			z-index: 100;
-			@include transition(background-color 0.2s $ease);
+			@include transition(all 0.2s $ease);
+			&:after, 
+			&:before {
+				display: block;
+				content: '';
+				background-color: $black;
+				position: absolute;
+				width: 100%;
+				height: 8px;
+				left: 0;
+				@include transition(all 0.2s $ease);
+			}
+			&:after {
+				top: 7px;
+				@include transform(rotate(40deg));
+			}
+			&:before {
+				bottom: 7px;
+				@include transform(rotate(-40deg));
+			}
 			&:hover {
-				background-color: rgba(0, 0, 0, 0.70);
+				// background-color: rgba(0, 0, 0, 0.70);
+				&:after, 
+				&:before {
+					left: 8px;
+				}
+				&:after {
+					top: 9px;
+					@include transform(rotate(35deg));
+				}
+				&:before {
+					bottom: 9px;
+					@include transform(rotate(-35deg));
+				}
 			}
 			span {
 				display: none;
@@ -405,10 +448,74 @@
 			}
 		}
 		.prev-button {
-			left: 110px;
+			left: 40px;
+			@include transform(rotate(-180deg));
 		}
 		.next-button {
-			right: 110px;
+			right: 40px;
+		}
+	}
+}
+
+.quick-projects {
+	display: block;
+	margin-top: 100px;
+	.project {
+		display: block;
+		width: 50%;
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+		&.project-left {
+			float: left;
+		}
+		&.project-right {
+			float: right;
+		}
+		.title {
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -40px;
+			text-align: center;
+			z-index: 10; 
+			h3 {
+				display: inline-block;
+				color: $white;
+				font-size: 40px;
+				font-family: $light;
+				letter-spacing: 3px;
+				text-transform: uppercase;
+				border: 1px solid #fff;
+				padding: 10px 25px;
+			}
+		}
+		img {
+			max-width: 100%;
+			@include transition(all 0.2s $ease);
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: 5;
+			//@include filter-gradient(#000000, #000000, horizontal); 
+			//@include background-image(radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 51%,rgba(0,0,0,1) 100%));
+		}
+		a {
+			&:hover {
+				span {
+					background-color: rgba(0, 0, 0, 0.8);
+				}
+				img {
+					@include transform(scale(1.5));
+				}
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-![Mercado Arte](http://wallaceerick.com.br/clientes/mercado-arte/_html/content/images/sprite/logo.png)
+![Wallace Erick](http://wallaceerick.com.br/new/html/assets/images/logo.png)
 
 ## Browser Support
 
@@ -79,6 +79,9 @@ Recursos de estilização para secões que utilizam alguma interação via javas
 Gerados dinâmicamente pelo grunt, com as propriedades e classes de cada objeto.
 
 * `_sprite.scss`: Imagens diversas do site, que tem um tamanho bom para estar no arquivo de sprite.
+
+## Insert New Projects
+1. Atualizar o .htaccess
 
 
 ## Changelog

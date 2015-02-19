@@ -50,20 +50,20 @@
     }  
 }
 
-// 4. Animate Vertical Image
+// 4. Animate Down/Up Image
 @include keyframes(down-up-image) {
     0% {
         top: 0;
     } 
     50%   {
-        top: -900px;
+        top: -400px;
     }  
     100%   {
         top: 0;
     }  
 }
 
-// 5. Animate Vertical Image
+// 5. Animate Up/Down Image
 @include keyframes(up-down-image) {
     0% {
         top: 0;

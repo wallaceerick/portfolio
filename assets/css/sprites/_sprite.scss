@@ -1,18 +1,24 @@
 .icon-checked {
   background-image: url(../images/sprite.png);
-  background-position: 0px -25px;
+  background-position: -155px -50px;
   width: 15px;
   height: 10px;
 }
 .icon-flag-br {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: -155px 0px;
   width: 30px;
   height: 20px;
 }
 .icon-flag-en {
   background-image: url(../images/sprite.png);
-  background-position: -35px 0px;
+  background-position: -155px -25px;
   width: 30px;
   height: 20px;
+}
+.icon-toyota {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 150px;
+  height: 150px;
 }

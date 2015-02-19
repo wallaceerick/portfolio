@@ -12,14 +12,21 @@ $(document).ready(function(){
     var loadedContent         = $('body'),
         logoHeader      	  = $('.js-logo-icon'),
         logoHome        	  = $('.js-logo-home'),
+
         scrollLinks      	  = $('.js-scroll'),
         overlayMenu      	  = $('.js-overlay-menu'),
+
         pullButton 			  = $('.js-pull'),
         pullContent 		  = $('.js-menu-content'),
+
         animatedText 		  = $('.js-animated-text'),
         animatedIcon 		  = $('.js-animated-icon'),
-        projectItem 		  = $('.js-projects li');
 
+        projectsCarousel      = $('.js-projects-carousel'),
+        projectItem 		  = $('.js-projects li'),
+        projectPrev 		  = $('.js-project-prev-button'),
+        projectNext 		  = $('.js-project-next-button');
+				        
     // Preloader
     loadedContent.jpreLoader({
         showPercentage:       false,
@@ -115,7 +122,7 @@ $(document).ready(function(){
     	// console.log(windowTop);
 
     	// Pull Button
-		if (windowTop >= 810) {
+		if (windowTop >= 460) {
 			pullButton.addClass('dark');
 	    }
 	    else {
@@ -123,7 +130,7 @@ $(document).ready(function(){
 	    }
 
 	    // Header Logo
-		if (windowTop >= 920) {
+		if (windowTop >= 570) {
 			logoHeader.addClass('dark');
 	    }
 	    else {
@@ -132,6 +139,36 @@ $(document).ready(function(){
 
 	});
 
+	// Slider dos projetos
+	if(projectsCarousel[0]){
+		projectsCarousel.owlCarousel({
+	        slideSpeed:         1000,
+	        pagination:         true,
+	        navigation:         false,
+	        itemsDesktop:       false,
+	        itemsDesktopSmall:  false,
+	        autoHeight: 		true,
+	        singleItem:       	true,
+	        afterInit: function(){
+	        	//
+	        }
+	    });
+
+	    projectPrev.click(function(e){
+	    	e.preventDefault();
+	        projectsCarousel.trigger('owl.prev');
+	        $('html, body').stop().animate({
+	            scrollTop: projectTop + 500
+	        }, 500); 
+	    });
+	    projectNext.click(function(e){
+	    	e.preventDefault();
+	        projectsCarousel.trigger('owl.next');
+	        $('html, body').stop().animate({
+	            scrollTop: projectTop + 520
+	        }, 500); 
+	    });
+	}
 	// Ajuste a posição das setas do slider de acordo com o tamanho da imagem
 						
 

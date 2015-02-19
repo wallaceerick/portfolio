@@ -3,10 +3,12 @@
 .homepage {
 	width: 100%;
 	overflow: hidden!important;
+	background-color: $black;
 }
 
 #home {
 	background: #000;
+	height: 100%;
 	
 	.logo-icon,
 	.animated-text,
@@ -16,7 +18,7 @@
 		z-index: 9900;
 	}
 
-	.logo-icon {
+	.logo-icon { 
 		top: 95px;
 		margin-left: -90px;
 	}

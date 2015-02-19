@@ -1,4 +1,19 @@
-<!DOCTYPE HTML>
+<?php
+	$page = '';
+	if(isset($_GET['_escaped_fragment_']) || isset($_GET['projeto']))
+	{
+		$page = isset($_GET['_escaped_fragment_']) ? $_GET['_escaped_fragment_'] : $_GET['projeto'];
+		if(file_exists('projetos/' . $page))
+		{
+			$content = file_get_contents('projetos/' . $page);
+			$page = $content;
+		}
+		else
+		{
+			$page = 'Página não encontrada!';	
+		}
+	}
+?><!DOCTYPE HTML>
 <html lang="pt-BR">
 
 	<head prefix="og: http://ogp.me/ns#">
@@ -61,8 +76,14 @@
 		</section>
 
 		<section id="projects">
+			
+			<div class="ajax-loading js-ajax-loading">
+				<i class="icon icon-spinner icon-animated"></i>
+			</div>
 
-			<ol class="js-projects">
+			<?php // echo $page; ?> 
+
+			<ol class="js-projects js-hashchange">
 
 				<li class="toyota">
 					<span class="number">01</span>
@@ -70,7 +91,7 @@
 						<h4 class="title">Toyota</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="?projeto=toyota.html" name="#!toyota.html" class="js-load-project hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -84,7 +105,7 @@
 						<h4 class="title">Sadia</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="?projeto=sadia.html" name="#!sadia.html" class="js-load-project hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -98,7 +119,7 @@
 						<h4 class="title">Natura</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="?projeto=natura.html" name="#!natura.html" class="js-load-project hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -112,7 +133,7 @@
 						<h4 class="title">Biopet</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="?projeto=biopet.html" name="#!biopet.html" class="js-load-project hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -126,7 +147,7 @@
 						<h4 class="title">Onda</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="?projeto=onda.html" name="#!onda.html" class="js-load-project hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>

@@ -6,7 +6,7 @@
 
 		<title>Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
- 		<meta name="viewport" content="width=device-width" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
 	    <meta name="keywords" content="" />
 	    <meta name="revisit" content="3 days" />
@@ -30,7 +30,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
 	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 		
-	</head>
+	</head>  
 
 	<body class="homepage">
 		
@@ -50,7 +50,7 @@
 
 			<a href="/projects" class="button">
 				<span>Meus Projetos</span>
-				<i class="icon icon-right-medium-arrow"></i>
+				<i class="icon icon-arrow-right"></i>
 			</a> 
 
 			<span class="animated-image animate-scale">

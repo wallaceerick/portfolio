@@ -1,6 +1,10 @@
-<script src="assets/js/_jquery.js"></script>
+<?php $url = basename($_SERVER['PHP_SELF']); ?>
+	
+		<script src="assets/js/_jquery.js"></script>
 		<script src="assets/js/_preloader.js"></script>
-		<script src="assets/js/_hash.js"></script>
+		<?php if($url == 'projects-with-ajax.php'){ ?>
+			<script src="assets/js/_hash.js"></script>
+		<?php } ?>
 		<script src="assets/js/_carousel.js"></script>
 		<script src="assets/js/_custom.js"></script>
 		<script>

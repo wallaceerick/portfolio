@@ -1,5 +1,6 @@
 <?php $url = basename($_SERVER['PHP_SELF']); ?>
-<header id="header">
+	
+	<header id="header">
 		
 		<h1 class="logo-icon <?php if($url == 'index.php'){ echo 'hide js-logo-home '; } ?>js-logo-icon">
 			<a href="/">
@@ -18,7 +19,7 @@
 	<div class="overlay overlay-menu js-overlay-menu">
 		<nav id="menu" class="js-menu-content">
 			<ul>
-				<li class="projects<?php if($url == 'projects.php'){ echo ' current'; } ?>">
+				<li class="projects<?php if($url == 'projects.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="/projects">
 							<strong>P</strong>
@@ -26,7 +27,7 @@
 						</a>
 					</span>
 				</li>
-				<li class="about<?php if($url == 'projects.php'){ echo ' about'; } ?>">
+				<li class="about<?php if($url == 'about.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="/about">
 							<strong>S</strong>
@@ -42,7 +43,7 @@
 						</a>
 					</span>
 				</li>
-				<li class="contact<?php if($url == 'projects.php'){ echo ' contact'; } ?>">
+				<li class="contact<?php if($url == 'contact.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="/contact">
 							<strong>C</strong>
@@ -53,3 +54,4 @@
 			</ul>
 		</nav>
 	</div> <!-- /overlay-menu -->
+	
