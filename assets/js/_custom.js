@@ -13,6 +13,7 @@ $(document).ready(function(){
         logoHeader      	  = $('.js-logo-icon'),
         logoHome        	  = $('.js-logo-home'),
 
+        backToTop			  = $('.js-to-top'),
         scrollLinks      	  = $('.js-scroll'),
         overlayMenu      	  = $('.js-overlay-menu'),
 
@@ -169,7 +170,13 @@ $(document).ready(function(){
 	        }, 500); 
 	    });
 	}
-	// Ajuste a posição das setas do slider de acordo com o tamanho da imagem
+
+	// Back top Top
+	backToTop.click(function(){
+		$('html, body').stop().animate({
+		    scrollTop: 0
+		}, 1200);
+	});
 						
 
 });
