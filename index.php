@@ -25,10 +25,10 @@
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="index" />
+		<link rel="canonical" href="/index" />
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
 		
 	</head>  
 
@@ -55,7 +55,7 @@
 
 			<span class="animated-image animate-scale">
 				<span class="overlay"></span>
-				<img src="assets/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="content/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 		</section>

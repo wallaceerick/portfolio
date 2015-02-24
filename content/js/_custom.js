@@ -38,7 +38,7 @@ $(document).ready(function(){
         autoClose:            true,
         onetimeLoad:          false,
         splashFunction: function(){
-            console.log('Carregando...');
+            // console.log('Carregando...');
         }
     }, function(){
     	if(animatedText[0]){

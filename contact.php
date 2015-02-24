@@ -14,7 +14,6 @@
 	    <meta name="url" content="" />
 	    <meta name="copyright" content="" />
 	    <meta name="author" content="" />
-		<meta name="fragment" content="!" />
 
 	    <meta property="og:image" content="content/images/share.png" />
 	    <meta property="og:title" content="" />
@@ -25,10 +24,10 @@
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="index" />
+		<link rel="canonical" href="/contact" />
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
 		
 	</head>  
 
@@ -82,7 +81,7 @@
 
 			<span class="animated-image animate-vertical animate-contact">
 				<span class="overlay"></span>
-				<img src="assets/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 		</section>

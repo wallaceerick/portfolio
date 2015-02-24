@@ -13,9 +13,13 @@ module.exports = function(grunt){
             },
             dist: {
                 files: {
-                    'assets/js/application.js': [
-                        'assets/js/_one.js', 
-                        'assets/js/_two.js'
+                    'content/js/application.js': [
+                        'content/js/_jquery.js', 
+                        'content/js/_preloader.js', 
+                        // 'content/js/_hash.js', // Required to projects with ajax
+                        'content/js/_carousel.js', 
+                        'content/js/_custom.js',
+                        'content/js/_form.js'
                     ]
                 },
                 options: {
@@ -35,9 +39,9 @@ module.exports = function(grunt){
             all: {
                 padding:    5,
                 algorithm:  'binary-tree',
-                src:        'assets/images/sprites/*.png',
-                destImg:    'assets/images/sprite.png',
-                destCSS:    'assets/css/sprites/_sprite.scss',
+                src:        'content/images/sprites/*.png',
+                destImg:    'content/images/sprite.png',
+                destCSS:    'content/css/sprites/_sprite.scss',
                 cssFormat:  'css',
                 imgPath:    '../images/sprite.png',
                 cssClass: function (sprite){
@@ -55,9 +59,10 @@ module.exports = function(grunt){
                     authKey: 'connection'
                 },
                 src: './',
-                dest: '/public_html/clientes/grunt-boilerplate/simple',
+                dest: '/public_html/new/html/',
                 exclusions: [
                             // Useless Files
+                            './_backups',
                             './node_modules',
                             './.sass-cache',
                             './**/.DS_Store',
@@ -70,17 +75,24 @@ module.exports = function(grunt){
                             './.git',
 
                             // CSS
-                            './assets/css/mixins/*',
-                            './assets/css/modules/*',
-                            './assets/css/partials/*',
-                            './assets/css/application.scss',
+                            './content/css/mixins/*',
+                            './content/css/modules/*',
+                            './content/css/pages/*',
+                            './content/css/partials/*',
+                            './content/css/responsive/*',
+                            './content/css/sprites/*',
+                            './content/css/application.scss',
 
                             // JS
-                            './assets/js/_one.js',
-                            './assets/js/_two.js',
+                            './content/js/_jquery.js', 
+                            './content/js/_preloader.js', 
+                            './content/js/_hash.js',
+                            './content/js/_carousel.js', 
+                            './content/js/_form.js', 
+                            './content/js/_custom.js',
 
                             // Images
-                            './assets/images/sprites'
+                            './content/images/sprites/*'
                 ]
             }
         }

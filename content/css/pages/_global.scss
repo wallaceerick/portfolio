@@ -115,6 +115,12 @@
 			&.step-3 {
 				@include transform(translateX(-100px));
 			}
+			&.about {
+				@include transform(translateX(-100px));
+			}
+			&.me {
+				@include transform(translateX(130px));
+			}
 		}
 		&.single-word {
 			letter-spacing: 50px;

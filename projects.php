@@ -25,10 +25,10 @@
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="projects" />
+		<link rel="canonical" href="/projects" />
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
 		
 	</head>
 
@@ -49,7 +49,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="assets/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -74,7 +74,7 @@
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="assets/images/portfolio/toyota/thumb.jpg" alt="">
+						<img src="content/images/portfolio/toyota/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -88,7 +88,7 @@
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
-						<img src="assets/images/portfolio/sadia/thumb.jpg" alt="">
+						<img src="content/images/portfolio/sadia/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -102,7 +102,7 @@
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="assets/images/portfolio/natura/thumb.jpg" alt="">
+						<img src="content/images/portfolio/natura/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -116,7 +116,7 @@
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="assets/images/portfolio/biopet/thumb.jpg" alt="">
+						<img src="content/images/portfolio/biopet/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 				
@@ -130,7 +130,7 @@
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="assets/images/portfolio/onda/thumb.jpg" alt="">
+						<img src="content/images/portfolio/onda/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 			</ol>

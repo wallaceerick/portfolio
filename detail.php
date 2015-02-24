@@ -14,7 +14,6 @@
 	    <meta name="url" content="" />
 	    <meta name="copyright" content="" />
 	    <meta name="author" content="" />
-		<meta name="fragment" content="!" />
 
 	    <meta property="og:image" content="content/images/share.png" />
 	    <meta property="og:title" content="" />
@@ -27,8 +26,8 @@
 
 		<link rel="canonical" href="projects" />
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
 		
 	</head>
 
@@ -49,7 +48,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="assets/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -100,11 +99,11 @@
 		        <a href="#" class="next-button js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="assets/images/portfolio/toyota/1.jpg" alt="" />
-		            <img src="assets/images/portfolio/toyota/2.jpg" alt="" />
-		            <img src="assets/images/portfolio/toyota/3.jpg" alt="" />
-		            <img src="assets/images/portfolio/toyota/4.jpg" alt="" />
-		            <img src="assets/images/portfolio/toyota/5.jpg" alt="" />
+		            <img src="content/images/portfolio/toyota/1.jpg" alt="" />
+		            <img src="content/images/portfolio/toyota/2.jpg" alt="" />
+		            <img src="content/images/portfolio/toyota/3.jpg" alt="" />
+		            <img src="content/images/portfolio/toyota/4.jpg" alt="" />
+		            <img src="content/images/portfolio/toyota/5.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -117,7 +116,7 @@
 						<h3>Sadia</h3>
 					</div>
 					<span></span>
-					<img src="assets/images/portfolio/sadia/thumb.jpg" alt="" />
+					<img src="content/images/portfolio/sadia/thumb.jpg" alt="" />
 				</a>
 			</div>
 			<div class="project project-right">
@@ -126,7 +125,7 @@
 						<h3>Biopet</h3>
 					</div>
 					<span></span>
-					<img src="assets/images/portfolio/biopet/thumb.jpg" alt="" />
+					<img src="content/images/portfolio/biopet/thumb.jpg" alt="" />
 				</a>
 			</div>
 		</section>

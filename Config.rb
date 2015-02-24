@@ -1,8 +1,8 @@
 # Configuration
-css_dir 		= 'assets/css'
-sass_dir 		= 'assets/css'
-images_dir 		= 'assets/images'
-fonts_dir 		= 'assets/fonts'
+css_dir 		= 'content/css'
+sass_dir 		= 'content/css'
+images_dir 		= 'content/images'
+fonts_dir 		= 'content/fonts'
 
 # Output
 relative_assets = true

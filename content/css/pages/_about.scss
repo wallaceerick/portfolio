@@ -1,0 +1,117 @@
+// About
+
+#about {
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 110px;
+	i {
+		display: inline-block;
+		margin: 30px auto;
+	}
+	p, a {
+		text-decoration: none;
+		color: $black;
+		font-weight: $light;
+	}
+	a {
+		font-weight: $medium;
+	}
+}
+
+.services,
+.skills {
+	padding: 60px 0 100px 0;
+	text-align: center;
+	h3 {
+		font-size: 70px;
+		line-height: 70px;
+		font-weight: $regular;
+		letter-spacing: 20px;
+		text-transform: uppercase;
+	}
+	h4 {
+		display: inline;
+		font-family: 'DidotRegular';
+		font-size: 30px;
+		font-style: italic;
+		position: relative;
+		&:after, 
+		&:before {
+			content: '';
+			position: absolute;
+			top: 14px;
+			width: 100px;
+			height: 2px;
+		}
+		&:before {
+			right: -110px;
+		}
+		&:after {
+			left: -110px;
+		}
+	}
+	ul {
+		width: 90%;
+		min-width: 960px;
+		margin: 0 auto;
+		padding-top: 125px;
+		li {
+			display: inline-block;
+			width: 20%;
+			margin: 0 6.5% 85px 6.5%;
+			i {
+				display: inline-block;
+				margin: 0 auto;
+			}
+			h5 {
+				font-size: 25px;
+				font-weight: $light;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				span {
+					font-weight: $regular;
+				}
+			}
+		}
+	}
+}
+
+.services {
+	background-color: #222322;
+	h3 {
+		color: $white;
+	}
+	h4 {
+		color: #5f5f5f;
+		&:after, 
+		&:before {
+			background-color: #5f5f5f;
+		}
+	}
+	h5 {
+		color: #5f5f5f;
+		span {
+			color: $white;
+		}
+	}
+}
+
+.skills {
+	h3 {
+		color: #222322;
+	}
+	h4 {
+		color: #b3b3b3;
+		&:after, 
+		&:before {
+			background-color: #b3b3b3;
+		}
+	}
+	h5 {
+		color: #cacaca;
+		span {
+			color: $black;
+		}
+	}
+}
