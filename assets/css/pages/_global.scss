@@ -163,8 +163,41 @@
 	}
 }
 
-// Overlay
+// Animated Content
+.animated-content {
+	@include opacity(0);
+	@include transition(all 0.5s $ease-out);
+	&.init-animation {
+		@include opacity(1);
+	} 
+}
 
+// Animated Form
+.animated-form {
+	@include opacity(0);
+	@include transition(all 0.5s $ease-out);
+	.fs-fields li label, .fs-numbers {
+		@include opacity(0);
+		@include transform(translateY(30px));
+		@include transition(transform 0.8s $ease-out);
+	}
+	.fs-fields li input {
+		width: 1px;
+		@include transition(width 0.8s $ease-out);
+	}
+	&.init-animation {
+		@include opacity(1);
+		.fs-fields li label, .fs-numbers {
+			@include opacity(1);
+			@include transform(translateY(0px));
+		}
+		.fs-fields li input {
+			width: 100%;
+		}
+	} 
+}
+
+// Overlay
 .overlay {
 	position: fixed;
 	top: 0;

@@ -51,7 +51,7 @@
 
 			</div>
 
-			<div id="fs-form-wrap" class="fs-form-wrap">
+			<div id="fs-form-wrap" class="fs-form-wrap animated-form js-animated-form">
 				
 				<form id="contact-form" class="fs-form fs-form-full js-contact-form">
 					<ol class="fs-fields">

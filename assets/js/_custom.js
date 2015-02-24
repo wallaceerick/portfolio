@@ -22,6 +22,8 @@ $(document).ready(function(){
 
         animatedText 		  = $('.js-animated-text'),
         animatedIcon 		  = $('.js-animated-icon'),
+        animatedContent 	  = $('.js-animated-content'),
+        animatedForm	      = $('.js-animated-form'),
 
         contactForm  		  = $('.js-contact-form'),
 
@@ -36,7 +38,7 @@ $(document).ready(function(){
         autoClose:            true,
         onetimeLoad:          false,
         splashFunction: function(){
-            //console.log('Carregando...');
+            console.log('Carregando...');
         }
     }, function(){
     	if(animatedText[0]){
@@ -45,14 +47,12 @@ $(document).ready(function(){
     	if(animatedIcon[0]){
     		animatedIcon.addClass('init-animation');
     	}
-    	/*
-    	var pathname = window.location.pathname,
-    		url      = pathname.replace('/~wallace/portfolio/', '');
-
-		if(url == 'index.php'){
-
-		}*/
-        //console.log('Carregado!');
+    	if(animatedContent[0]){
+    		animatedContent.addClass('init-animation');
+    	}
+    	if(animatedForm[0]){
+    		animatedForm.addClass('init-animation');
+    	}
     });
 
     // Menu
