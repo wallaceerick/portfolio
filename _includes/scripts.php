@@ -6,6 +6,7 @@
 			<script src="assets/js/_hash.js"></script>
 		<?php } ?>
 		<script src="assets/js/_carousel.js"></script>
+		<script src="assets/js/_form.js"></script>
 		<script src="assets/js/_custom.js"></script>
 		<script>
 			(function(d) {

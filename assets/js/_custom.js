@@ -23,6 +23,8 @@ $(document).ready(function(){
         animatedText 		  = $('.js-animated-text'),
         animatedIcon 		  = $('.js-animated-icon'),
 
+        contactForm  		  = $('.js-contact-form'),
+
         projectsCarousel      = $('.js-projects-carousel'),
         projectItem 		  = $('.js-projects li'),
         projectPrev 		  = $('.js-project-prev-button'),
@@ -105,6 +107,17 @@ $(document).ready(function(){
     	
     	
     });
+ 
+
+	//contactForm
+	if(contactForm[0]){
+		contactForm.find('input').focusin(function(){
+			$('.fs-continue').removeClass('is-textarea').fadeIn(300);
+		});
+		contactForm.find('textarea').focusin(function(){
+			$('.fs-continue').addClass('is-textarea').fadeIn(300);
+		});
+	}
 
     // Projects Rollover
     projectItem.hover(function(){
@@ -117,30 +130,7 @@ $(document).ready(function(){
     	$(this).find('.image').hide().removeClass('init-animation');
     });
 
-    $(window).scroll(function(){
-    	var windowTop = $(window).scrollTop();
-
-    	// console.log(windowTop);
-
-    	// Pull Button
-		if (windowTop >= 460) {
-			pullButton.addClass('dark');
-	    }
-	    else {
-	    	pullButton.removeClass('dark');
-	    }
-
-	    // Header Logo
-		if (windowTop >= 570) {
-			logoHeader.addClass('dark');
-	    }
-	    else {
-	    	logoHeader.removeClass('dark');
-	    }
-
-	});
-
-	// Slider dos projetos
+	// Project slider
 	if(projectsCarousel[0]){
 		projectsCarousel.owlCarousel({
 	        slideSpeed:         1000,
@@ -176,6 +166,30 @@ $(document).ready(function(){
 		$('html, body').stop().animate({
 		    scrollTop: 0
 		}, 1200);
+	});
+
+	// Change logo and pull color dark/light
+    $(window).scroll(function(){
+    	var windowTop = $(window).scrollTop();
+
+    	// console.log(windowTop);
+
+    	// Pull Button
+		if (windowTop >= 460) {
+			pullButton.addClass('dark');
+	    }
+	    else {
+	    	pullButton.removeClass('dark');
+	    }
+
+	    // Header Logo
+		if (windowTop >= 570) {
+			logoHeader.addClass('dark');
+	    }
+	    else {
+	    	logoHeader.removeClass('dark');
+	    }
+
 	});
 						
 

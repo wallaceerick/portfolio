@@ -32,7 +32,7 @@
 		
 	</head>  
 
-	<body class="homepage">
+	<body class="fullscreen">
 		
 		<?php include('_includes/header.php'); ?>
 

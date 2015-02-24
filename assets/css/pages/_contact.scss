@@ -1,0 +1,28 @@
+// Home
+
+#contact {
+	height: 100%;
+	
+	.overlay {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	#page {
+		margin: 0!important;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		.animated-text {
+			height: 170px;
+			margin-top: -85px;
+		}
+		h3 {
+			padding-top: 58px;
+			span {
+				font-weight: $light;
+			}
+		}
+	}
+} 

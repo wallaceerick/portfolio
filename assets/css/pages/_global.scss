@@ -1,5 +1,12 @@
-// CSS Logo
- 
+// Global
+
+.fullscreen {
+	width: 100%;
+	overflow: hidden!important;
+	background-color: $black;
+}
+
+// CSS Logo 
 .logo-icon {
 	display: block;
 	margin: 0 auto;
@@ -72,6 +79,12 @@
 			top: 0;
 			left: 0;
 			@include animation(down-up-image 30s linear infinite);
+		}
+	}
+	&.animate-contact {
+		img {
+			min-width: 1800px;
+			@include animation(contact-image 60s linear infinite);
 		}
 	}
 }
@@ -179,13 +192,15 @@
 
 // Buttons
 .button {
+	font-family: $base-font-family;
 	text-transform: uppercase;
 	color: $white;
 	font-weight: $light!important;
 	font-size: 20px;
-	border: 1px solid $white;
+	border: 1px solid $white!important;
 	padding: 20px 35px;
 	letter-spacing: 2px;
+	cursor: pointer;
 	@include transition(all .5s $ease-out);
 	span {
 		display: inline-block;
@@ -256,5 +271,3 @@
 		}
 	}
 }
-
-

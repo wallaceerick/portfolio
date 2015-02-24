@@ -76,7 +76,23 @@
     }  
 }
 
-// 6. Rotation
+// 6. Animate Up/Down to COntact Page
+@include keyframes(contact-image) {
+    0% {
+        top: 0;
+    } 
+    45%   {
+        top: -800px;
+    } 
+    90%   {
+        top: 0;
+    }  
+    100%   {
+        top: 0;
+    }  
+}
+
+// 7. Rotation
 @include keyframes(rotation) {
     0% {
         @include transform(rotate(0));
