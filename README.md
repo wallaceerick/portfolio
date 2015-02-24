@@ -80,18 +80,20 @@ Gerados dinâmicamente pelo grunt, com as propriedades e classes de cada objeto.
 
 * `_sprite.scss`: Imagens diversas do site, que tem um tamanho bom para estar no arquivo de sprite.
 
-### Help
 #### Remove .DS_Store files
 ```bash
 sudo find . -name '*.DS_Store' -type f -delete
 ```
 
 
+
+
 ## Changelog
- * *2015-02-24*   v0.0.0.5   About Me
- * *2015-02-19*   v0.0.0.4   Project Detail
- * *2015-02-11*   v0.0.0.3   Projects
- * *2015-01-03*   v0.0.0.2   Home
- * *2014-12-27*   v0.0.0.1   Initial Files.
+ * **2015-02-24**   v0.0.0.6   *About Me*
+ * **2015-02-23**   v0.0.0.5   *Contact*
+ * **2015-02-19**   v0.0.0.4   *Project Detail*
+ * **2015-02-11**   v0.0.0.3   *Projects*
+ * **2015-01-03**   v0.0.0.2   *Home*
+ * **2014-12-27**   v0.0.0.1   *Initial Files*
 
 
