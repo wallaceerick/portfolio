@@ -1,3 +1,4 @@
+<?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -16,19 +17,23 @@
 	    <meta name="author" content="" />
 		<meta name="fragment" content="!" />
 
-	    <meta property="og:image" content="content/images/share.png" />
+	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta property="og:title" content="" />
 	    <meta property="og:url" content="" />
 	    <meta property="og:description" content="" />
  
-	    <meta itemprop="image" content="content/images/share.png" />
+	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="/projects" />
+		<link rel="canonical" href="<?php echo $base_url ?>projects" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+
+	    <!--[if lt IE 9]>
+			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+		<![endif]--> 
 		
 	</head>
 
@@ -49,7 +54,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -70,11 +75,11 @@
 						<h4 class="title">Toyota</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="content/images/portfolio/toyota/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -84,11 +89,11 @@
 						<h4 class="title">Sadia</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
-						<img src="content/images/portfolio/sadia/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -98,11 +103,11 @@
 						<h4 class="title">Natura</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="content/images/portfolio/natura/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/natura/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 
@@ -112,11 +117,11 @@
 						<h4 class="title">Biopet</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="content/images/portfolio/biopet/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 				
@@ -126,11 +131,11 @@
 						<h4 class="title">Onda</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="content/images/portfolio/onda/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/onda/thumb.jpg" alt="">
 					</span> <!-- /image -->
 				</li>
 			</ol>

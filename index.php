@@ -1,3 +1,4 @@
+<?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -16,19 +17,23 @@
 	    <meta name="author" content="" />
 		<meta name="fragment" content="!" />
 
-	    <meta property="og:image" content="content/images/share.png" />
+	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta property="og:title" content="" />
 	    <meta property="og:url" content="" />
 	    <meta property="og:description" content="" />
  
-	    <meta itemprop="image" content="content/images/share.png" />
+	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="/index" />
+		<link rel="canonical" href="<?php echo $base_url ?>" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+
+	    <!--[if lt IE 9]>
+			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+		<![endif]--> 
 		
 	</head>  
 
@@ -48,14 +53,14 @@
 				<h3>Desenvolvedor</h3>
 			</span>
 
-			<a href="/projects" class="button">
+			<a href="<?php echo $base_url ?>projects" class="button">
 				<span>Meus Projetos</span>
 				<i class="icon icon-arrow-right"></i>
 			</a> 
 
 			<span class="animated-image animate-scale">
 				<span class="overlay"></span>
-				<img src="content/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php echo $base_url ?>content/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 		</section>

@@ -1,3 +1,4 @@
+<?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -15,19 +16,23 @@
 	    <meta name="copyright" content="" />
 	    <meta name="author" content="" />
 
-	    <meta property="og:image" content="content/images/share.png" />
+	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta property="og:title" content="" />
 	    <meta property="og:url" content="" />
 	    <meta property="og:description" content="" />
  
-	    <meta itemprop="image" content="content/images/share.png" />
+	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="/projects" />
+		<link rel="canonical" href="<?php echo $base_url ?>projects" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+
+	    <!--[if lt IE 9]>
+			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+		<![endif]--> 
 		
 	</head>
 
@@ -48,7 +53,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -64,10 +69,10 @@
 			<p>Atualmente moro em Caieiras/SP. Atuo como desenvolvedor Front-End desde 2007.</p>
 			<p>Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, <br />SEO e Responsive Design, além de frameworks como Wordpress e Opencart.</p>
 			<p>Tecnologias como Sass e Grunt são de uso obrigatório em meus projetos.</p>
-			<p>Faça o <a href="/content/download/curriculo.pdf">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
+			<p>Faça o <a href="<?php echo $base_url ?>content/download/curriculo.pdf">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
 		</section>
 
-		<section class="services">
+		<section class="services js-services-section">
 			<h3>Serviços</h3>
 			<h4>O que posso fazer pra te ajudar</h4>
 
@@ -95,7 +100,7 @@
 			</ul>
 		</section>
 
-		<section class="skills">
+		<section class="skills js-skills-section">
 			<h3>Habilidades</h3>
 			<h4>Comprometimento e qualidade</h4>
 

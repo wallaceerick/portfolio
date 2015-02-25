@@ -1,37 +1,37 @@
 <footer id="footer">
 			<ul class="social">
 				<li>
-					<a href="#">
+					<a href="https://www.facebook.com/wallace.erick">
 						<i class="icon icon-facebook"></i>
 						<span>Facebook</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="https://twitter.com/wallaceerick">
 						<i class="icon icon-twitter"></i>
 						<span>Twitter</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="https://www.linkedin.com/in/wallaceerick">
 						<i class="icon icon-linkedin"></i>
 						<span>Linkedin</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="http://codepen.io/wallaceerick/">
 						<i class="icon icon-codepen"></i>
 						<span>Codepen</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="https://github.com/wallaceerick/">
 						<i class="icon icon-github"></i>
 						<span>Github</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="bitbucket.org/wallaceerick">
 						<i class="icon icon-bitbucket"></i>
 						<span>BitBucket</span>
 					</a>

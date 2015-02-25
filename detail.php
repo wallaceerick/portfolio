@@ -1,3 +1,4 @@
+<?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -15,19 +16,23 @@
 	    <meta name="copyright" content="" />
 	    <meta name="author" content="" />
 
-	    <meta property="og:image" content="content/images/share.png" />
+	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta property="og:title" content="" />
 	    <meta property="og:url" content="" />
 	    <meta property="og:description" content="" />
  
-	    <meta itemprop="image" content="content/images/share.png" />
+	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="projects" />
+		<link rel="canonical" href="<?php echo $base_url ?>detail" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+
+	    <!--[if lt IE 9]>
+			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+		<![endif]--> 
 		
 	</head>
 
@@ -48,7 +53,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -99,11 +104,11 @@
 		        <a href="#" class="next-button js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="content/images/portfolio/toyota/1.jpg" alt="" />
-		            <img src="content/images/portfolio/toyota/2.jpg" alt="" />
-		            <img src="content/images/portfolio/toyota/3.jpg" alt="" />
-		            <img src="content/images/portfolio/toyota/4.jpg" alt="" />
-		            <img src="content/images/portfolio/toyota/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/2.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/3.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/4.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/5.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -116,7 +121,7 @@
 						<h3>Sadia</h3>
 					</div>
 					<span></span>
-					<img src="content/images/portfolio/sadia/thumb.jpg" alt="" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/sadia/thumb.jpg" alt="" />
 				</a>
 			</div>
 			<div class="project project-right">
@@ -125,7 +130,7 @@
 						<h3>Biopet</h3>
 					</div>
 					<span></span>
-					<img src="content/images/portfolio/biopet/thumb.jpg" alt="" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/biopet/thumb.jpg" alt="" />
 				</a>
 			</div>
 		</section>

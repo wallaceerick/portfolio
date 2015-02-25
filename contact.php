@@ -1,3 +1,4 @@
+<?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -15,19 +16,23 @@
 	    <meta name="copyright" content="" />
 	    <meta name="author" content="" />
 
-	    <meta property="og:image" content="content/images/share.png" />
+	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta property="og:title" content="" />
 	    <meta property="og:url" content="" />
 	    <meta property="og:description" content="" />
  
-	    <meta itemprop="image" content="content/images/share.png" />
+	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 	    <meta itemprop="name" content="" />
 	    <meta itemprop="url" content="" />
 
-		<link rel="canonical" href="/contact" />
+		<link rel="canonical" href="<?php echo $base_url ?>contact" />
 		
-		<link rel="stylesheet" type="text/css" href="content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+
+	    <!--[if lt IE 9]>
+			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+		<![endif]--> 
 		
 	</head>  
 
@@ -52,7 +57,7 @@
 
 			<div id="fs-form-wrap" class="fs-form-wrap animated-form js-animated-form">
 				
-				<form id="contact-form" class="fs-form fs-form-full js-contact-form">
+				<form id="contact-form" action="sender.php" method="post" class="fs-form fs-form-full js-contact-form">
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="name">Qual seu nome?</label>
@@ -71,7 +76,7 @@
 							<textarea class="fs-anim-lower" id="message" name="message"></textarea>
 						</li>
 					</ol>
-					<button class="button fs-submit" type="submit">
+					<button id="submit-form" class="button fs-submit" type="submit">
 						<span>Enviar</span>
 						<i class="icon icon-arrow-right"></i>
 					</button>
@@ -81,7 +86,7 @@
 
 			<span class="animated-image animate-vertical animate-contact">
 				<span class="overlay"></span>
-				<img src="content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 		</section>

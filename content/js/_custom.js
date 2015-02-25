@@ -27,6 +27,9 @@ $(document).ready(function(){
 
         contactForm  		  = $('.js-contact-form'),
 
+        serviceSection  	  = $('.js-services-section'),
+        skillSection  		  = $('.js-skills-section'),
+
         projectsCarousel      = $('.js-projects-carousel'),
         projectItem 		  = $('.js-projects li'),
         projectPrev 		  = $('.js-project-prev-button'),
@@ -172,7 +175,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
     	var windowTop = $(window).scrollTop();
 
-    	// console.log(windowTop);
+    	console.log(windowTop);
 
     	// Pull Button
 		if (windowTop >= 460) {
@@ -188,6 +191,19 @@ $(document).ready(function(){
 	    }
 	    else {
 	    	logoHeader.removeClass('dark');
+	    }
+
+	    // About Page
+	    if(serviceSection[0] && skillSection[0]){
+	    	if (windowTop > 1130 && windowTop < 2095) {
+	    		// alert('agora eh');
+	    		logoHeader.removeClass('dark').addClass('light');
+				pullButton.removeClass('dark').addClass('light');
+		    }
+	    	if (windowTop > 2096) {
+	    		logoHeader.removeClass('light').addClass('dark');
+				pullButton.removeClass('light').addClass('dark');
+		    }
 	    }
 
 	});

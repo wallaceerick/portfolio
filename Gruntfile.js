@@ -14,10 +14,11 @@ module.exports = function(grunt){
             dist: {
                 files: {
                     'content/js/application.js': [
-                        'content/js/_jquery.js', 
-                        'content/js/_preloader.js', 
+                        'content/js/_jquery.js',
+                        'content/js/_preloader.js',
                         // 'content/js/_hash.js', // Required to projects with ajax
-                        'content/js/_carousel.js', 
+                        'content/js/_carousel.js',
+                        'content/js/_contact.js',
                         'content/js/_custom.js',
                         'content/js/_form.js'
                     ]

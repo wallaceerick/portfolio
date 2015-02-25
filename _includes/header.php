@@ -3,7 +3,7 @@
 	<header id="header">
 		
 		<h1 class="logo-icon <?php if($url == 'index.php'){ echo 'hide js-logo-home '; } ?>js-logo-icon">
-			<a href="/">
+			<a href="<?php echo $base_url ?>">
 				<i></i>
 				<span>Wallace Erick</span>
 			</a>
@@ -19,33 +19,33 @@
 	<div class="overlay overlay-menu js-overlay-menu">
 		<nav id="menu" class="js-menu-content">
 			<ul>
-				<li class="projects<?php if($url == 'projects.php'){ echo 'current'; } ?>">
+				<li class="<?php echo $base_url ?>projects <?php if($url == 'projects.php'){ echo 'current'; } ?>">
 					<span>
-						<a href="/projects">
+						<a href="<?php echo $base_url ?>projects">
 							<strong>P</strong>
 							<span>Portfólio</span>
 						</a>
 					</span>
 				</li>
-				<li class="about<?php if($url == 'about.php'){ echo 'current'; } ?>">
+				<li class="<?php echo $base_url ?>about <?php if($url == 'about.php'){ echo 'current'; } ?>">
 					<span>
-						<a href="/about">
+						<a href="<?php echo $base_url ?>about">
 							<strong>S</strong>
 							<span>Sobre</span>
 						</a>
 					</span>
 				</li>
-				<li class="blog">
+				<li class="<?php echo $base_url ?>blog">
 					<span>
-						<a href="/blog" target="_blank">
+						<a href="<?php echo $base_url ?>blog" target="_blank">
 							<strong>B</strong>
 							<span>Blog</span>
 						</a>
 					</span>
 				</li>
-				<li class="contact<?php if($url == 'contact.php'){ echo 'current'; } ?>">
+				<li class="<?php echo $base_url ?>contact <?php if($url == 'contact.php'){ echo 'current'; } ?>">
 					<span>
-						<a href="/contact">
+						<a href="<?php echo $base_url ?>contact">
 							<strong>C</strong>
 							<span>Contato</span>
 						</a>
