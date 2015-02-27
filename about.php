@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>About • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Sobre Mim • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />

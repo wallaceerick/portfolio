@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Contact • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Contato • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -48,7 +48,7 @@
 					<i class="icon icon-mail"></i>
 				</span>
 					
-				<span class="animated-text js-animated-text">
+				<span class="animated-text js-animated-text form-response js-response-form">
 					<h2>Contato</h2>
 					<h3>Posso <span>te ajudar?</span></h3>
 				</span>
@@ -56,8 +56,8 @@
 			</div>
 
 			<div id="fs-form-wrap" class="fs-form-wrap animated-form js-animated-form">
-				
-				<form id="contact-form" action="sender.php" method="post" class="fs-form fs-form-full js-contact-form">
+
+				<form id="contact-form" method="post" class="fs-form fs-form-full js-contact-form">
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="name">Qual seu nome?</label>

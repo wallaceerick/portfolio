@@ -4,7 +4,10 @@ $(function(){
 	var name,
 		email,
 		phone,
-		message;
+		message,
+		form     = $('.js-animated-form'),
+		response = $('.js-response-form'),
+		page     = $('#page');
 
 	$('#submit-form').on('click', function(){
 
@@ -27,13 +30,32 @@ $(function(){
 				}			
 			}).done(function(data){
 				if (data == 'enviado') {
-					alert(' email enviado');
+					// Hide Form
+					form.find('form').fadeOut(300);
+
+					// Shoe Icon
+					page.delay(400).fadeIn(300);
+
+					// Update Message
+					response.addClass('success-message');
+					response.find('h2').html('Sucesso');
+					response.find('h3').html('Sua mensagem foi <span>enviada com sucesso!</span>');
+					response.delay(400).fadeIn(500);
 				}
 				else {
-					alert('erro');
+					form.find('form').fadeOut(300);
+
+					page.delay(400).fadeIn(300);
+
+					response.addClass('error-message');
+					response.find('h2').html('Erro');
+					response.find('h3').html('Desculpe, ocorreu <span>um erro no envio!</span>');
+					response.delay(400).fadeIn(500);
 				} 
 			}); 
 		}
+
+		return false
 
 	});
 

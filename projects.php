@@ -65,35 +65,35 @@
 
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="animated-content js-animated-content">
 
 			<ol class="js-projects">
 
-				<li class="toyota">
-					<span class="number">01</span>
-					<span class="info">
-						<h4 class="title">Toyota</h4>
-						<h5 class="category">Institucional</h5>
-						<hr />
-						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
-					</span> <!-- /info -->
-					<span class="image">
-						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/thumb.jpg" alt="">
-					</span> <!-- /image -->
-				</li>
-
 				<li class="sadia">
-					<span class="number">02</span>
+					<span class="number">01</span>
 					<span class="info">
 						<h4 class="title">Sadia</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/preview.jpg" alt="Sadia #jogapramim">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="toyota">
+					<span class="number">02</span>
+					<span class="info">
+						<h4 class="title">Toyota</h4>
+						<h5 class="category">Institucional</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota Tour">
 					</span> <!-- /image -->
 				</li>
 
@@ -103,11 +103,11 @@
 						<h4 class="title">Natura</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/natura/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/natura/preview.jpg" alt="Natura SOU">
 					</span> <!-- /image -->
 				</li>
 
@@ -117,11 +117,11 @@
 						<h4 class="title">Biopet</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>biopet" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/preview.jpg" alt="Biopet">
 					</span> <!-- /image -->
 				</li>
 				
@@ -131,11 +131,11 @@
 						<h4 class="title">Onda</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>detail.php" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>onda" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/onda/thumb.jpg" alt="">
+						<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda">
 					</span> <!-- /image -->
 				</li>
 			</ol>

@@ -547,10 +547,10 @@ if ( typeof define === 'function' && define.amd ) {
 		var message = '';
 		switch( err ) {
 			case 'NOVAL' : 
-				message = 'Please, fill the field before continuing!';
+				message = 'Preencha esse campo para continuar!';
 				break;
 			case 'INVALIDEMAIL' : 
-				message = 'Please, fill a valid e-mail address!';
+				message = 'Coloque um e-mail verdadeiro!';
 				break;
 			// ...
 		};

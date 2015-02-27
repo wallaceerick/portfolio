@@ -81,10 +81,17 @@ ErrorDocument 404 http://wallaceerick.com.br/not-found
 Options +FollowSymLinks
 RewriteEngine on
 
+# Commom Pages
 RewriteRule ^home$ index.php [L]
 RewriteRule ^about$ about.php [L]
 RewriteRule ^projects$ projects.php [L]
 RewriteRule ^contact$ contact.php [L]
+RewriteRule ^not-found$ not-found.php [L]
 
-# For Projects
-RewriteRule ^projects/sadia$ projects/sadia.php [L]
+# Projects
+RewriteRule ^sadia$ sadia.php [L]
+RewriteRule ^toyota$ toyota.php [L]
+RewriteRule ^natura$ natura.php [L]
+RewriteRule ^biopet$ biopet.php [L]
+RewriteRule ^onda$ onda.php [L]
+

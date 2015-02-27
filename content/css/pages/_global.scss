@@ -173,8 +173,27 @@
 .animated-content {
 	@include opacity(0);
 	@include transition(all 0.5s $ease-out);
+
+	ol li {
+		.title {
+			letter-spacing: 0px;
+			@include transition(all 0.8s $ease-out);
+		}
+		.category {
+			letter-spacing: 0px;
+			@include transition(all 0.8s $ease-out);
+		}
+	}
 	&.init-animation {
-		@include opacity(1);
+		@include opacity(1); 
+		ol li {
+			.title {
+				letter-spacing: 20px;
+			}
+			.category {
+				letter-spacing: 8px;
+			}
+		}
 	} 
 }
 
@@ -210,14 +229,14 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.80);
+	background-color: rgba(0, 0, 0, 0.70);
 	z-index: 50;
 	span {
 		content: "";
 		position: absolute;
-		left: 0;
+		left: 0; 
 		width: 100%;
-		height: 300px;
+		height: 300px; 
 		&.top {
 			top: 0;
 			@include background-image(linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%));

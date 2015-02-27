@@ -97,10 +97,31 @@
 .fs-form-overview .fs-fields::before {
 	display: block;
 	color: #3b3f45;
-	content: 'Revise sua mensagem:';
+	// content: 'Revise sua mensagem:';
+	content: '';
 	font-weight: $medium;
 	color: $white;
 	font-size: 50px;
+}
+
+.form-response {
+	h3 {
+		letter-spacing: 5px!important;
+	}
+	&.success-message {
+		h3 {
+			color: green!important;
+		}
+	}
+	&.error-message {
+		h3 {
+			color: red!important;
+		}
+	}
+}
+
+.success-message {
+
 }
 
 @include keyframes(animFadeIn) {
@@ -110,7 +131,7 @@
 	100% {
 		opacity: 1;
 	} 
-}
+} 
 
 @include keyframes(animMove) {
     0% {
