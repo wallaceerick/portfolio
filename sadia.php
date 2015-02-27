@@ -40,10 +40,10 @@
 		
 		<?php include('_includes/header.php'); ?>
 
-		<section id="page">
+		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-natura"></i>
+				<i class="icon icon-sadia"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
@@ -60,14 +60,19 @@
 				<span class="scroll"></span>
 			</span>
 
-			<span class="diagonal"></span>
+			<span class="diagonal">
+				<a href="<?php echo $base_url ?>projects" class="back">
+					<span>Voltar</span>
+					<i class="icon icon-keyboard-left"></i>
+				</a>
+			</span>
 
 		</section>
 
-		<article class="project-details">
+		<article class="project-details animated-content js-animated-content">
 
 		    <div class="row wrapper">
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
 		    			<li><strong>Agência:</strong> DigiPronto</li>
@@ -78,7 +83,7 @@
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Tecnologias:</h6>
 		    		<ul class="check-list">
 		    			<li>CSS3</li>
@@ -89,7 +94,7 @@
 		    			<li>PHP</li>
 		    		</ul>
 		    	</span>
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
 		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
 		            <a href="http://sadia.com.br" target="_blank" class="external">

@@ -41,7 +41,7 @@
 		
 		<?php include('_includes/header.php'); ?>
 
-		<section id="page">
+		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
 				<i class="icon icon-bulb"></i>
@@ -140,7 +140,7 @@
 				</li>
 			</ol>
 
-			<a href="#" class="load-more">
+			<a href="#" class="load-more js-btn-more">
 				<i class="icon icon-plus"></i>
 				<span>Carregar Mais</span>
 			</a>

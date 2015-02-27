@@ -184,6 +184,9 @@
 			@include transition(all 0.8s $ease-out);
 		}
 	}
+	.animated-column {
+		display: none;
+	}
 	&.init-animation {
 		@include opacity(1); 
 		ol li {
@@ -193,6 +196,9 @@
 			.category {
 				letter-spacing: 8px;
 			}
+		}
+		.animated-column {
+			display: inline-block;
 		}
 	} 
 }

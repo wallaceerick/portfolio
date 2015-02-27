@@ -19,7 +19,7 @@
 	<div class="overlay overlay-menu js-overlay-menu">
 		<nav id="menu" class="js-menu-content">
 			<ul>
-				<li class="<?php echo $base_url ?>projects <?php if($url == 'projects.php'){ echo 'current'; } ?>">
+				<li class="projects <?php if($url == 'projects.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="<?php echo $base_url ?>projects">
 							<strong>P</strong>
@@ -27,7 +27,7 @@
 						</a>
 					</span>
 				</li>
-				<li class="<?php echo $base_url ?>about <?php if($url == 'about.php'){ echo 'current'; } ?>">
+				<li class="about <?php if($url == 'about.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="<?php echo $base_url ?>about">
 							<strong>S</strong>
@@ -35,15 +35,15 @@
 						</a>
 					</span>
 				</li>
-				<li class="<?php echo $base_url ?>blog">
+				<li class="blog">
 					<span>
-						<a href="<?php echo $base_url ?>blog" target="_blank">
+						<a href="<?php echo $base_url ?>blog" target="_blank" class="js-btn-blog">
 							<strong>B</strong>
 							<span>Blog</span>
 						</a>
 					</span>
 				</li>
-				<li class="<?php echo $base_url ?>contact <?php if($url == 'contact.php'){ echo 'current'; } ?>">
+				<li class="contact <?php if($url == 'contact.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="<?php echo $base_url ?>contact">
 							<strong>C</strong>

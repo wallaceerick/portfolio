@@ -40,7 +40,7 @@
 		
 		<?php include('_includes/header.php'); ?>
 
-		<section id="page">
+		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
 				<i class="icon icon-toyota"></i>
@@ -60,11 +60,16 @@
 				<span class="scroll"></span>
 			</span>
 
-			<span class="diagonal"></span>
+			<span class="diagonal">
+				<a href="<?php echo $base_url ?>projects" class="back">
+					<span>Voltar</span>
+					<i class="icon icon-keyboard-left"></i>
+				</a>
+			</span>
 
 		</section>
 
-		<article class="project-details">
+		<article class="project-details animated-content js-animated-content">
 
 		    <div class="row wrapper">
 		    	<span class="column column-third">

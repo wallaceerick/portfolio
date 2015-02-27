@@ -24,6 +24,7 @@ $(document).ready(function(){
         animatedIcon 		  = $('.js-animated-icon'),
         animatedContent 	  = $('.js-animated-content'),
         animatedForm	      = $('.js-animated-form'),
+        animatedHead     	  = $('.js-animated-page-head'),
 
         contactForm  		  = $('.js-contact-form'),
 
@@ -33,7 +34,10 @@ $(document).ready(function(){
         projectsCarousel      = $('.js-projects-carousel'),
         projectItem 		  = $('.js-projects li'),
         projectPrev 		  = $('.js-project-prev-button'),
-        projectNext 		  = $('.js-project-next-button');
+        projectNext 		  = $('.js-project-next-button'),
+
+        btnMore 		     = $('.js-btn-more'),
+        btnBlog 		     = $('.js-btn-blog');
 				        
     // Preloader
     loadedContent.jpreLoader({
@@ -44,19 +48,38 @@ $(document).ready(function(){
             // console.log('Carregando...');
         }
     }, function(){
-    	if(animatedText[0]){
-    		animatedText.addClass('init-animation');
+    	if(animatedHead[0]){
+    		animatedHead.addClass('init-animation');
     	}
-    	if(animatedIcon[0]){
-    		animatedIcon.addClass('init-animation');
-    	}
-    	if(animatedContent[0]){
-    		animatedContent.addClass('init-animation');
-    	}
-    	if(animatedForm[0]){
-    		animatedForm.addClass('init-animation');
-    	}
+    	setInterval(function(){
+	    	if(animatedText[0]){
+	    		animatedText.addClass('init-animation');
+	    	}
+	    	if(animatedIcon[0]){
+	    		animatedIcon.addClass('init-animation');
+	    	}
+	    	if(animatedContent[0]){
+	    		animatedContent.addClass('init-animation');
+	    	}
+	    	if(animatedForm[0]){
+	    		animatedForm.addClass('init-animation');
+	    	}
+    	}, 1000);
     });
+
+    // REMOVER
+    if(btnMore[0]){
+    	btnMore.click(function(e){
+    		e.preventDefault();
+    		alert('Por enquanto, só coloquei esses 5. Em breve vou inserir a lista completa pra você visualizar! :)');
+    	});
+    }
+    if(btnBlog[0]){
+    	btnBlog.click(function(e){
+    		e.preventDefault();
+    		alert('Estou atualizando o layout do Blog pra ficar fininho também, logo eu atualizo esse link! :D');
+    	});
+    }
 
     // Menu
     pullButton.click(function(e){

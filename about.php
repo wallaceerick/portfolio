@@ -40,7 +40,7 @@
 		
 		<?php include('_includes/header.php'); ?>
 
-		<section id="page">
+		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
 				<i class="icon icon-user"></i>
@@ -64,7 +64,7 @@
 
 		</section>
 
-		<section id="about">
+		<section id="about" class="animated-content js-animated-content">
 			<i class="icon icon-profile"></i>
 			<p>Atualmente moro em Caieiras/SP. Atuo como desenvolvedor Front-End desde 2007.</p>
 			<p>Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, <br />SEO e Responsive Design, além de frameworks como Wordpress e Opencart.</p>
@@ -72,7 +72,7 @@
 			<p>Faça o <a href="<?php echo $base_url ?>content/download/curriculo.pdf">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
 		</section>
 
-		<section class="services js-services-section">
+		<section class="services js-services-section animated-content js-animated-content">
 			<h3>Serviços</h3>
 			<h4>O que posso fazer pra te ajudar</h4>
 
@@ -100,7 +100,7 @@
 			</ul>
 		</section>
 
-		<section class="skills js-skills-section">
+		<section class="skills js-skills-section animated-content js-animated-content">
 			<h3>Habilidades</h3>
 			<h4>Comprometimento e qualidade</h4>
 
