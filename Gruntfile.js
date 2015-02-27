@@ -19,8 +19,7 @@ module.exports = function(grunt){
                         // 'content/js/_hash.js', // Required to projects with ajax
                         'content/js/_carousel.js',
                         'content/js/_contact.js',
-                        'content/js/_custom.js',
-                        'content/js/_form.js'
+                        'content/js/_custom.js'
                     ]
                 },
                 options: {
