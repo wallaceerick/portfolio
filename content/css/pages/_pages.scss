@@ -566,6 +566,7 @@
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.6);
 			z-index: 5;
+			@include transition(all 0.5s $ease);
 			//@include filter-gradient(#000000, #000000, horizontal); 
 			//@include background-image(radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 51%,rgba(0,0,0,1) 100%));
 		}

@@ -16,6 +16,7 @@ $(document).ready(function(){
         backToTop			  = $('.js-to-top'),
         scrollLinks      	  = $('.js-scroll'),
         overlayMenu      	  = $('.js-overlay-menu'),
+        audioPlayer      	  = $('.js-audio-player'),
 
         pullButton 			  = $('.js-pull'),
         pullContent 		  = $('.js-menu-content'),
@@ -48,10 +49,14 @@ $(document).ready(function(){
             // console.log('Carregando...');
         }
     }, function(){
+    	
     	if(animatedHead[0]){
     		animatedHead.addClass('init-animation');
     	}
-    	setInterval(function(){
+    	
+
+    	// Animations
+    	setTimeout(function(){
 	    	if(animatedText[0]){
 	    		animatedText.addClass('init-animation');
 	    	}
@@ -64,7 +69,40 @@ $(document).ready(function(){
 	    	if(animatedForm[0]){
 	    		animatedForm.addClass('init-animation');
 	    	}
-    	}, 1000);
+	    	// Sound
+    		audioPlayer[0].play();
+    	}, 1000);  
+
+		// Slider
+		if(projectsCarousel[0]){
+			projectsCarousel.owlCarousel({
+		        slideSpeed:         1000,
+		        pagination:         true,
+		        navigation:         false,
+		        itemsDesktop:       false,
+		        itemsDesktopSmall:  false,
+		        autoHeight: 		true,
+		        singleItem:       	true,
+		        afterInit: function(){
+		        	//
+		        }
+		    });
+
+		    projectPrev.click(function(e){
+		    	e.preventDefault();
+		        projectsCarousel.trigger('owl.prev');
+		        $('html, body').stop().animate({
+		            scrollTop: projectTop + 500
+		        }, 500); 
+		    });
+		    projectNext.click(function(e){
+		    	e.preventDefault();
+		        projectsCarousel.trigger('owl.next');
+		        $('html, body').stop().animate({
+		            scrollTop: projectTop + 520
+		        }, 500); 
+		    });
+		}
     });
 
     // REMOVER
@@ -111,7 +149,7 @@ $(document).ready(function(){
 			logoHome.stop().fadeOut(300);
 			loadedContent.css('overflow', 'auto');
 
-    		console.log(windowTop);
+    		// console.log(windowTop);
     		if(windowTop >= 810){
     			pullButton.addClass('dark');
     		}
@@ -156,37 +194,6 @@ $(document).ready(function(){
     	$(this).find('.image').hide().removeClass('init-animation');
     });
 
-	// Project slider
-	if(projectsCarousel[0]){
-		projectsCarousel.owlCarousel({
-	        slideSpeed:         1000,
-	        pagination:         true,
-	        navigation:         false,
-	        itemsDesktop:       false,
-	        itemsDesktopSmall:  false,
-	        autoHeight: 		true,
-	        singleItem:       	true,
-	        afterInit: function(){
-	        	//
-	        }
-	    });
-
-	    projectPrev.click(function(e){
-	    	e.preventDefault();
-	        projectsCarousel.trigger('owl.prev');
-	        $('html, body').stop().animate({
-	            scrollTop: projectTop + 500
-	        }, 500); 
-	    });
-	    projectNext.click(function(e){
-	    	e.preventDefault();
-	        projectsCarousel.trigger('owl.next');
-	        $('html, body').stop().animate({
-	            scrollTop: projectTop + 520
-	        }, 500); 
-	    });
-	}
-
 	// Back top Top
 	backToTop.click(function(){
 		$('html, body').stop().animate({
@@ -198,7 +205,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
     	var windowTop = $(window).scrollTop();
 
-    	console.log(windowTop);
+    	// console.log(windowTop);
 
     	// Pull Button
 		if (windowTop >= 460) {

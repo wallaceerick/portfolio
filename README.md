@@ -1,4 +1,4 @@
-![Wallace Erick](http://wallaceerick.com.br/new/html/content/images/logo-dark.png)
+![Wallace Erick](http://wallaceerick.com.br/new/content/images/logo-dark.png)
 
 ## Browser Support
 

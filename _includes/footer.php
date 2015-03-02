@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer id="footer" class="animated-content js-animated-content">
 			<ul class="social">
 				<li>
 					<a href="https://www.facebook.com/wallace.erick">

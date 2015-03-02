@@ -109,17 +109,17 @@
 		        <a href="#" class="next-button js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/toyota/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/onda/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/onda/2.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/onda/3.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/onda/4.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/onda/5.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
 		</article>
 
-		<section class="quick-projects">
+		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
 				<a href="<?php echo $base_url ?>biopet">
 					<div class="title">

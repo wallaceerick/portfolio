@@ -119,7 +119,7 @@
 
 		</article>
 
-		<section class="quick-projects">
+		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
 				<a href="<?php echo $base_url ?>sadia">
 					<div class="title">
