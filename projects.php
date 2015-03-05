@@ -57,19 +57,30 @@
 				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
-			<span class="mouse">
-				<span class="scroll"></span>
-			</span>
+			<ul class="project-navigation animated-content js-animated-content">
+				<li class="filter active" data-filter="all">Tudo</li>
+				<li class="filter" data-filter=".institucional">Institucional</li>
+				<li class="filter" data-filter=".sistemas">Sistema</li>
+				<li class="filter" data-filter=".wordpress">Wordpress</li>
+				<li class="filter" data-filter=".loja">Loja Virtual</li>
+				<li class="filter" data-filter=".responsivo">Responsivo</li>
+				<li class="filter" data-filter=".mobile">Mobile</li>
+			</ul>
 
 			<span class="diagonal"></span>
 
+			<!--
+			<span class="mouse">
+				<span class="scroll"></span>
+			</span> 
+			-->
+
 		</section>
 
-		<section id="projects" class="animated-content js-animated-content">
+		<section id="projects" class="animated-content js-animated-content"> 
 
-			<ol class="js-projects">
-
-				<li class="sadia">
+			<ol id="portfolio" class="js-projects">
+				<li class="mix sadia sistemas" data-value="1">
 					<span class="number">01</span>
 					<span class="info">
 						<h4 class="title">Sadia</h4>
@@ -83,7 +94,7 @@
 					</span> <!-- /image -->
 				</li>
 
-				<li class="toyota">
+				<li class="mix toyota institucional" data-value="2">
 					<span class="number">02</span>
 					<span class="info">
 						<h4 class="title">Toyota</h4>
@@ -97,7 +108,7 @@
 					</span> <!-- /image -->
 				</li>
 
-				<li class="natura">
+				<li class="mix natura sistemas" data-value="3">
 					<span class="number">03</span>
 					<span class="info">
 						<h4 class="title">Natura</h4>
@@ -111,7 +122,7 @@
 					</span> <!-- /image -->
 				</li>
 
-				<li class="biopet">
+				<li class="mix biopet wordpress" data-value="4">
 					<span class="number">04</span>
 					<span class="info">
 						<h4 class="title">Biopet</h4>
@@ -125,7 +136,7 @@
 					</span> <!-- /image -->
 				</li>
 				
-				<li class="onda">
+				<li class="mix onda wordpress" data-value="5">
 					<span class="number">05</span>
 					<span class="info">
 						<h4 class="title">Onda</h4>
@@ -140,10 +151,12 @@
 				</li>
 			</ol>
 
+			<!-- 
 			<a href="#" class="load-more js-btn-more">
 				<i class="icon icon-plus"></i>
 				<span>Carregar Mais</span>
-			</a>
+			</a> 
+			-->
 		</section>
 
 		<?php include('_includes/like.php'); ?>

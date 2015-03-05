@@ -18,6 +18,7 @@ module.exports = function(grunt){
                         'content/js/_preloader.js',
                         // 'content/js/_hash.js', // Required to projects with ajax
                         'content/js/_carousel.js',
+                        'content/js/_mixitup.js',
                         'content/js/_contact.js',
                         'content/js/_custom.js'
                     ]

@@ -1,5 +1,7 @@
 // Pages
 
+
+
 #page {
 	position: relative;
 	overflow: hidden;
@@ -168,45 +170,75 @@
 
 
 // Projects
-#projects {
-	.load-more {
+.project-navigation {
+	display: block;
+	position: absolute;
+	z-index: 9998;
+	bottom: 60px;
+	left: 50%;
+	margin: 0 0 0 -420px;
+	@include transform(rotate(-3.9deg));
+	@include transform-style('preserve-3d');
+	li {
 		display: block;
-		margin: 40px auto 20px auto;
-		width: 60px;
-		height: 60px;
-		color: #dadada;
-		border: 1px solid #dadada;
-		text-align: center;
-		@include transform(rotate(-45deg));
-		i {
-			display: block;
-			width: 60px;
-			height: 60px;
-			font-size: 30px;
-			text-indent: -3px;
-			padding-top: 15px;
-			@include transform(rotate(45deg));
-		}
-		span {
-			display: none; 
+		position: relative;
+		float: left;
+		color: lighten($black, 60%);
+		background-color: $white;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-right: 1px;
+		padding: 10px 20px;
+		cursor: pointer;
+		@include border-radius(2px 2px 0 0);
+		@include transform-style('preserve-3d');
+		@include transition(all 0.2s $ease-out);
+		&:after {
+			top: 0;
 		}
 		&:hover {
-			border-color: $black;
+			margin-top: -4px;
+		}
+		&.active {
+			margin-top: -4px;
 			color: $black;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -6px;
+				// top: -1px;
+				left: 50%;
+				margin: 0 0 0 -5px;
+				@include arrow(12px, 7px, 'up', $white);
+				// @include arrow(12px, 7px, 'down', $black);
+				@include transition(all 0.2s $ease-out);
+			}
 		}
 	}
+}
 
+// Portfolio
+#projects { 
 	$project-height: 305px;
-	ol {
+	#portfolio {
+		display: block;
+		overflow: hidden;
 		> li {
-			display: block;
+			// display: block; 
+			width: 100%;
 			position: relative; 
 			border-bottom: 1px solid #e6e6e6;
 			text-align: center;
 			height: $project-height;
 			overflow: hidden; 
+			@include transform-style('preserve-3d');
+			// @include transition(all 0.1s $ease-out);
+			@include backface-visibility('hidden');
 			&:last-child {
 				border-bottom: none;
+			}
+			&.mix {
+				display: none;
 			}
 			.number {
 				font-family: 'DidotItalic';
@@ -338,6 +370,34 @@
 			}
 		}
 	}
+	/*
+	.load-more {
+		display: block;
+		margin: 40px auto 20px auto;
+		width: 60px;
+		height: 60px;
+		color: #dadada;
+		border: 1px solid #dadada;
+		text-align: center;
+		@include transform(rotate(-45deg));
+		i {
+			display: block;
+			width: 60px;
+			height: 60px;
+			font-size: 30px;
+			text-indent: -3px;
+			padding-top: 15px;
+			@include transform(rotate(45deg));
+		}
+		span { 
+			display: none; 
+		}
+		&:hover {
+			border-color: $black;
+			color: $black;
+		}
+	}
+	*/
 }
 
 .project-details {

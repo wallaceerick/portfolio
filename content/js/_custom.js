@@ -32,13 +32,14 @@ $(document).ready(function(){
         serviceSection  	  = $('.js-services-section'),
         skillSection  		  = $('.js-skills-section'),
 
+        projectsFilter        = $('#portfolio'),
         projectsCarousel      = $('.js-projects-carousel'),
         projectItem 		  = $('.js-projects li'),
         projectPrev 		  = $('.js-project-prev-button'),
         projectNext 		  = $('.js-project-next-button'),
 
-        btnMore 		     = $('.js-btn-more'),
-        btnBlog 		     = $('.js-btn-blog');
+        btnMore 		      = $('.js-btn-more'),
+        btnBlog 		      = $('.js-btn-blog');
 				        
     // Preloader
     loadedContent.jpreLoader({
@@ -118,6 +119,18 @@ $(document).ready(function(){
     		alert('Estou atualizando o layout do Blog pra ficar fininho também, logo eu atualizo esse link! :D');
     	});
     }
+
+    // Mix It Up
+    projectsFilter.mixItUp({
+		load: {
+			filter: document.location.hash == '' ? 'all' : ('.' + document.location.hash.substring(1))
+		},
+		animation: {
+			duration:  600,
+			effects:  'fade translateZ(-360px) stagger(3ms) scale(0.01)',
+			easing:   'ease'
+		}	
+	});
 
     // Menu
     pullButton.click(function(e){
