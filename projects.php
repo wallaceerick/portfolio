@@ -57,16 +57,6 @@
 				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
-			<ul class="project-navigation animated-content js-animated-content">
-				<li class="filter active" data-filter="all">Tudo</li>
-				<li class="filter" data-filter=".institucional">Institucional</li>
-				<li class="filter" data-filter=".sistemas">Sistema</li>
-				<li class="filter" data-filter=".wordpress">Wordpress</li>
-				<li class="filter" data-filter=".loja">Loja Virtual</li>
-				<li class="filter" data-filter=".responsivo">Responsivo</li>
-				<li class="filter" data-filter=".mobile">Mobile</li>
-			</ul>
-
 			<span class="diagonal"></span>
 
 			<!--
@@ -77,13 +67,24 @@
 
 		</section>
 
-		<section id="projects" class="animated-content js-animated-content"> 
+		<section id="projects" class="animated-content js-animated-content js-projects-parent"> 
+
+			<ul class="project-navigation animated-content js-navigation js-animated-content">
+				<li class="filter active" data-filter="all">Tudo</li>
+				<li class="filter" data-filter=".institucional">Institucional</li>
+				<li class="filter" data-filter=".sistemas">Sistema</li>
+				<li class="filter" data-filter=".wordpress">Wordpress</li>
+				<li class="filter" data-filter=".loja">Loja Virtual</li>
+				<li class="filter" data-filter=".responsivo">Responsivo</li>
+				<li class="filter" data-filter=".mobile">Mobile</li>
+			</ul>
 
 			<ol id="portfolio" class="js-projects">
+
 				<li class="mix sadia sistemas" data-value="1">
 					<span class="number">01</span>
 					<span class="info">
-						<h4 class="title">Sadia</h4>
+						<h4 class="title">Sadia <span>#jogapramim</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
 						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
@@ -97,7 +98,7 @@
 				<li class="mix toyota institucional" data-value="2">
 					<span class="number">02</span>
 					<span class="info">
-						<h4 class="title">Toyota</h4>
+						<h4 class="title">Toyota <span>Tour</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
 						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
@@ -111,7 +112,7 @@
 				<li class="mix natura sistemas" data-value="3">
 					<span class="number">03</span>
 					<span class="info">
-						<h4 class="title">Natura</h4>
+						<h4 class="title">Natura <span>#sounovasescolhas</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
 						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
@@ -149,14 +150,229 @@
 						<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda">
 					</span> <!-- /image -->
 				</li>
-			</ol>
 
+				<li class="mix sadia sistemas" data-value="6">
+					<span class="number">01</span>
+					<span class="info">
+						<h4 class="title">Sadia</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image init-animation">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/preview.jpg" alt="Sadia #jogapramim">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix toyota institucional" data-value="7">
+					<span class="number">02</span>
+					<span class="info">
+						<h4 class="title">Toyota</h4>
+						<h5 class="category">Institucional</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota Tour">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix natura sistemas" data-value="8">
+					<span class="number">03</span>
+					<span class="info">
+						<h4 class="title">Natura</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/natura/preview.jpg" alt="Natura SOU">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix biopet wordpress" data-value="9">
+					<span class="number">04</span>
+					<span class="info">
+						<h4 class="title">Biopet</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>biopet" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/preview.jpg" alt="Biopet">
+					</span> <!-- /image -->
+				</li>
+				
+				<li class="mix onda wordpress" data-value="10">
+					<span class="number">05</span>
+					<span class="info">
+						<h4 class="title">Onda</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>onda" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix sadia sistemas" data-value="11">
+					<span class="number">01</span>
+					<span class="info">
+						<h4 class="title">Sadia</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image init-animation">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/preview.jpg" alt="Sadia #jogapramim">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix toyota institucional" data-value="12">
+					<span class="number">02</span>
+					<span class="info">
+						<h4 class="title">Toyota</h4>
+						<h5 class="category">Institucional</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota Tour">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix natura sistemas" data-value="13">
+					<span class="number">03</span>
+					<span class="info">
+						<h4 class="title">Natura</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/natura/preview.jpg" alt="Natura SOU">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix biopet wordpress" data-value="14">
+					<span class="number">04</span>
+					<span class="info">
+						<h4 class="title">Biopet</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>biopet" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/preview.jpg" alt="Biopet">
+					</span> <!-- /image -->
+				</li>
+				
+				<li class="mix onda wordpress" data-value="15">
+					<span class="number">05</span>
+					<span class="info">
+						<h4 class="title">Onda</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>onda" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix sadia sistemas" data-value="16">
+					<span class="number">01</span>
+					<span class="info">
+						<h4 class="title">Sadia</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image init-animation">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/sadia/preview.jpg" alt="Sadia #jogapramim">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix toyota institucional" data-value="17">
+					<span class="number">02</span>
+					<span class="info">
+						<h4 class="title">Toyota</h4>
+						<h5 class="category">Institucional</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota Tour">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix natura sistemas" data-value="18">
+					<span class="number">03</span>
+					<span class="info">
+						<h4 class="title">Natura</h4>
+						<h5 class="category">Sistemas</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/natura/preview.jpg" alt="Natura SOU">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix biopet wordpress" data-value="19">
+					<span class="number">04</span>
+					<span class="info">
+						<h4 class="title">Biopet</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>biopet" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/biopet/preview.jpg" alt="Biopet">
+					</span> <!-- /image -->
+				</li>
+				
+				<li class="mix onda wordpress" data-value="20">
+					<span class="number">05</span>
+					<span class="info">
+						<h4 class="title">Onda</h4>
+						<h5 class="category">Wordpress</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>onda" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda">
+					</span> <!-- /image -->
+				</li>
+			</ol>
+			
 			<!-- 
-			<a href="#" class="load-more js-btn-more">
+			<a href="#" class="load-button js-btn-more">
 				<i class="icon icon-plus"></i>
 				<span>Carregar Mais</span>
 			</a> 
+			<a href="#" class="load-button js-btn-less">
+				<i class="icon icon-minus"></i>
+				<span>Carregar Mais</span>
+			</a>
 			-->
+			
 		</section>
 
 		<?php include('_includes/like.php'); ?>

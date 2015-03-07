@@ -171,37 +171,68 @@
 
 // Projects
 .project-navigation {
-	display: block;
-	position: absolute;
-	z-index: 9998;
-	bottom: 60px;
-	left: 50%;
-	margin: 0 0 0 -420px;
-	@include transform(rotate(-3.9deg));
-	@include transform-style('preserve-3d');
+	width: 100%;
+	display: table;
+	text-align: center;
+	margin: 0 auto;
+	clear: both;
+	height: 100px;
+	padding: 20px 0 0 0;
+	// position: absolute;
+	// z-index: 9998;
+	// bottom: 60px;
+	// left: 50%;
+	// margin: 0 0 0 -420px;
+	// @include transform(rotate(-3.9deg));
+	// @include transform-style('preserve-3d');
+	&.fixed {
+		position: fixed;
+		top: 0;
+		padding: 35px 0 0 0;
+		// left: 50%;
+		// margin: 0 0 0 -510px;
+		z-index: 9990;
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include background-image(linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 36%,rgba(255,255,255,0.5) 66%,rgba(255,255,255,0) 100%));
+		}
+	}
 	li {
-		display: block;
+		// display: block;
+		display: inline-block;
 		position: relative;
-		float: left;
+		// float: left;
 		color: lighten($black, 60%);
-		background-color: $white;
+		// background-color: $white;
 		font-size: 16px;
+		font-weight: $light;
 		text-transform: uppercase;
 		margin-right: 1px;
 		padding: 10px 20px;
 		cursor: pointer;
+		letter-spacing: 2px;
 		@include border-radius(2px 2px 0 0);
 		@include transform-style('preserve-3d');
-		@include transition(all 0.2s $ease-out);
+		@include transition(color 0.4s $ease-out); 
 		&:after {
 			top: 0;
 		}
 		&:hover {
-			margin-top: -4px;
+			// margin-top: -4px;
+			color: $black;
 		}
 		&.active {
-			margin-top: -4px;
+			// margin-top: -4px;
 			color: $black;
+			font-weight: $regular;
+			// text-decoration: underline;
+			/*
 			&:before {
 				content: '';
 				position: absolute;
@@ -213,6 +244,7 @@
 				// @include arrow(12px, 7px, 'down', $black);
 				@include transition(all 0.2s $ease-out);
 			}
+			*/
 		}
 	}
 }
@@ -220,9 +252,14 @@
 // Portfolio
 #projects { 
 	$project-height: 305px;
+	&.fixed {
+		padding-top: 100px!important;
+	}
 	#portfolio {
 		display: block;
 		overflow: hidden;
+		clear: both;
+		width: 100%;
 		> li {
 			// display: block; 
 			width: 100%;
@@ -237,8 +274,15 @@
 			&:last-child {
 				border-bottom: none;
 			}
+			&.hidden {
+				visibility: hidden;
+			}
 			&.mix {
 				display: none;
+			}
+			&.column-2 {
+				width: 50%;
+				float: left;
 			}
 			.number {
 				font-family: 'DidotItalic';
@@ -269,7 +313,20 @@
 				.title {
 					font-weight: $extra-bold;
 					font-size: 40px;
+					position: relative;
 					// letter-spacing: 20px;
+					span {
+						position: absolute;
+						width: 300px;
+						left: 50%;
+						margin: 0 0 0 -150px;
+						text-align: center;
+						bottom: -18px;
+						font-size: 17px!important;
+						font-weight: $thin!important;
+						color: lighten($black, 70%)!important;
+						letter-spacing: 4px!important;
+					}
 				}
 				.category {
 					font-weight: $bold;
@@ -370,10 +427,14 @@
 			}
 		}
 	}
-	/*
-	.load-more {
+	.load-buttons {
 		display: block;
-		margin: 40px auto 20px auto;
+		padding: 40px 0 20px 0;
+		text-align: center;
+	}
+	.load-button {
+		display: inline-block;
+		margin: 0 20px;
 		width: 60px;
 		height: 60px;
 		color: #dadada;
@@ -397,7 +458,6 @@
 			color: $black;
 		}
 	}
-	*/
 }
 
 .project-details {
@@ -514,52 +574,9 @@
 		.next-button {
 			display: block;
 			position: absolute;
-			top: 400px;
-			// color: $white;
-			color: $black;
-			// font-size: 100px;
-			// padding: 10px 30px 0 30px;
-			// background-color: rgba(0, 0, 0, 0.40);
-			width: 50px;
-			height: 50px;
-			z-index: 100;
-			@include transition(all 0.2s $ease);
-			&:after, 
-			&:before {
-				display: block;
-				content: '';
-				background-color: $black;
-				position: absolute;
-				width: 100%;
-				height: 8px;
-				left: 0;
-				@include transition(all 0.2s $ease);
-			}
-			&:after {
-				top: 7px;
-				@include transform(rotate(40deg));
-			}
-			&:before {
-				bottom: 7px;
-				@include transform(rotate(-40deg));
-			}
+			top: 100px;
+			z-index: 9990;
 			&:hover {
-				// background-color: rgba(0, 0, 0, 0.70);
-				&:after, 
-				&:before {
-					left: 8px;
-				}
-				&:after {
-					top: 9px;
-					@include transform(rotate(35deg));
-				}
-				&:before {
-					bottom: 9px;
-					@include transform(rotate(-35deg));
-				}
-			}
-			span {
-				display: none;
 			}
 			&.fixed {
 				position: fixed;
@@ -569,7 +586,6 @@
 		}
 		.prev-button {
 			left: 40px;
-			@include transform(rotate(-180deg));
 		}
 		.next-button {
 			right: 40px;
@@ -579,7 +595,7 @@
 
 .quick-projects {
 	display: block;
-	margin-top: 100px;
+	margin-top: 100px; 
 	.project {
 		display: block;
 		width: 50%;
@@ -745,14 +761,16 @@
 		}
 		.subtitle {
 			color: $white;
-		}
+		} 
 		a {
 			border-color: $white;
-			color: $white;
+			// color: $white;
+			color: #222322;
+			background-color: $white;
 			&:hover {
-				background-color: $white;
+				// background-color: $white;
 				span, i {
-					color: #222322!important;
+					color: $black;
 				}
 			}
 		}

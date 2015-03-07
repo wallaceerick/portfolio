@@ -105,8 +105,8 @@
 		    </div> <!-- /row -->
 
 		    <div class="projects-carousel">
-		        <a href="#" class="prev-button js-project-prev-button"></a>
-		        <a href="#" class="next-button js-project-next-button"></a>
+		        <a href="#" class="prev-button icon-big-arrow-left js-project-prev-button"></a>
+		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
 		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />

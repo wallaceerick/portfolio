@@ -5,7 +5,6 @@
  * Version: 1.0
  */
 
-
 $(document).ready(function(){
 
     // Cached selectors to improve performance
@@ -32,13 +31,18 @@ $(document).ready(function(){
         serviceSection  	  = $('.js-services-section'),
         skillSection  		  = $('.js-skills-section'),
 
-        projectsFilter        = $('#portfolio'),
+        projectsParent        = $('.js-projects-parent'),
+        projectsNav           = $('.js-navigation'),
         projectsCarousel      = $('.js-projects-carousel'),
+        projectsFilter 		  = $('.js-projects'),
         projectItem 		  = $('.js-projects li'),
+		projectSize 	      = projectItem.size(),
+		projectQuantity 	  = 5,
         projectPrev 		  = $('.js-project-prev-button'),
         projectNext 		  = $('.js-project-next-button'),
 
         btnMore 		      = $('.js-btn-more'),
+        btnLess 		      = $('.js-btn-less'),
         btnBlog 		      = $('.js-btn-blog');
 				        
     // Preloader
@@ -107,12 +111,6 @@ $(document).ready(function(){
     });
 
     // REMOVER
-    if(btnMore[0]){
-    	btnMore.click(function(e){
-    		e.preventDefault();
-    		alert('Por enquanto, só coloquei esses 5. Em breve vou inserir a lista completa pra você visualizar! :)');
-    	});
-    }
     if(btnBlog[0]){
     	btnBlog.click(function(e){
     		e.preventDefault();
@@ -129,7 +127,34 @@ $(document).ready(function(){
 			duration:  600,
 			effects:  'fade translateZ(-360px) stagger(3ms) scale(0.01)',
 			easing:   'ease'
-		}	
+		},
+		callbacks: {
+			onMixStart: function(state){
+				$('html, body').stop().animate({
+		            scrollTop: 615
+		        }, 1000); 
+			}
+			/*
+			onMixEnd: function(state){
+
+				projectItem.hide();
+				$('#portfolio li:lt(' + projectQuantity + ')').show();
+
+				// View More
+			    btnMore.click(function () {
+			        projectQuantity = (projectQuantity + 5 <= projectSize) ? projectQuantity + 5 : projectSize;
+			        $('#portfolio li:lt(' + projectQuantity + ')').show();
+			    });
+
+			    // View Less
+			    btnLess.click(function () {
+			        projectQuantity = (projectQuantity - 5 < 0) ? 3 : projectQuantity - 5;
+			        projectItem.not(':lt(' + projectQuantity + ')').hide();
+			    });
+
+			}
+			*/
+		}
 	});
 
     // Menu
@@ -219,6 +244,7 @@ $(document).ready(function(){
     	var windowTop = $(window).scrollTop();
 
     	// console.log(windowTop);
+    	console.log($('.quick-projects').position().top);
 
     	// Pull Button
 		if (windowTop >= 460) {
@@ -239,13 +265,24 @@ $(document).ready(function(){
 	    // About Page
 	    if(serviceSection[0] && skillSection[0]){
 	    	if (windowTop > 1130 && windowTop < 2095) {
-	    		// alert('agora eh');
 	    		logoHeader.removeClass('dark').addClass('light');
 				pullButton.removeClass('dark').addClass('light');
 		    }
 	    	if (windowTop > 2096) {
 	    		logoHeader.removeClass('light').addClass('dark');
 				pullButton.removeClass('light').addClass('dark');
+		    }
+	    }
+
+	    // Projects
+	    if(projectsNav[0] && projectsParent[0]){
+	    	if (windowTop >= 615) {
+	    		projectsNav.addClass('fixed');
+				projectsParent.addClass('fixed');
+		    }
+		    else {
+	    		projectsNav.removeClass('fixed');
+				projectsParent.removeClass('fixed');
 		    }
 	    }
 

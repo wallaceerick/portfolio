@@ -173,7 +173,7 @@
 // Animated Content
 .animated-content {
 	@include opacity(0);
-	@include transition(all 0.5s $ease-out);
+	@include transition(opacity 0.5s $ease-out);
 
 	ol li {
 		.title {

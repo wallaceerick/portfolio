@@ -1,21 +1,28 @@
 // Header
 
 header#header {
-	display: block;
-	position: fixed;
-	top: 40px;
-	left: 40px;
-	right: 40px;
-	height: 40px;
-	z-index: 9995;
-	overflow: hidden;
+	// display: block;
+	// position: fixed;
+	// top: 40px;
+	// left: 40px;
+	// right: 40px;
+	// height: 40px;
+	// z-index: 9995;
+	// overflow: hidden;
 	// background-color: red;
 	// pointer-events: none;
 	.logo-icon {
-		float: left;
+		position: fixed;
+		top: 40px;
+		left: 40px;
+		z-index: 9995;
+		// float: left;
 		@include transform(scale(0.7) translate(-40px, -95px));
 		i {
 			border-color: transparent;
+		}
+		span {
+			visibility: hidden;
 		}
 		&.hide {
 			display: none;
@@ -30,8 +37,12 @@ header#header {
 }
 
 .pull-menu {
-	position: relative;
-	float: right;
+	// position: relative;
+	// float: right;
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	z-index: 9995;
 	width: 40px;
 	height: 31px;
 	p {
