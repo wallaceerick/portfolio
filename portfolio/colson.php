@@ -1,11 +1,11 @@
-<?php require_once('_config.php'); ?>
+<?php require_once('../_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Natura • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Sadia • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -38,16 +38,16 @@
 
 	<body>
 		
-		<?php include('_includes/header.php'); ?>
+		<?php include('../_includes/header.php'); ?>
 
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-natura"></i>
+				<i class="icon icon-sadia"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Natura</h2>
+				<h2>Sadia <span class="type">#jogapramim</span></h2>
 				<h3 class="single">Sistemas</h3>
 			</span>
 
@@ -72,7 +72,7 @@
 		<article class="project-details animated-content js-animated-content">
 
 		    <div class="row wrapper">
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
 		    			<li><strong>Agência:</strong> DigiPronto</li>
@@ -83,7 +83,7 @@
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Tecnologias:</h6>
 		    		<ul class="check-list">
 		    			<li>CSS3</li>
@@ -94,7 +94,7 @@
 		    			<li>PHP</li>
 		    		</ul>
 		    	</span>
-		    	<span class="column column-third">
+		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
 		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
 		            <a href="http://sadia.com.br" target="_blank" class="external">
@@ -105,15 +105,15 @@
 		    </div> <!-- /row -->
 
 		    <div class="projects-carousel">
-		        <a href="#" class="prev-button js-project-prev-button"></a>
-		        <a href="#" class="next-button js-project-next-button"></a>
+		        <a href="#" class="prev-button icon-big-arrow-left js-project-prev-button"></a>
+		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/natura/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/natura/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/natura/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/natura/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/natura/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/2.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -121,6 +121,15 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
+				<a href="<?php echo $base_url ?>onda">
+					<div class="title">
+						<h3>Onda</h3>
+					</div>
+					<span></span>
+					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+				</a>
+			</div>
+			<div class="project project-right">
 				<a href="<?php echo $base_url ?>toyota">
 					<div class="title">
 						<h3>Toyota</h3>
@@ -129,20 +138,11 @@
 					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
 				</a>
 			</div>
-			<div class="project project-right">
-				<a href="<?php echo $base_url ?>biopet">
-					<div class="title">
-						<h3>Biopet</h3>
-					</div>
-					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/biopet/preview.jpg" alt="Biopet" />
-				</a>
-			</div>
 		</section>
 
 		<br class="clear" />
 
-		<?php include('_includes/footer.php'); ?>
+		<?php include('../_includes/footer.php'); ?>
 
 	</body>
 	</html>

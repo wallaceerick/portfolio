@@ -54,11 +54,14 @@ $(document).ready(function(){
             // console.log('Carregando...');
         }
     }, function(){
+
+    	$('html, body').stop().animate({
+            scrollTop: 0
+        }, 500); 
     	
     	if(animatedHead[0]){
     		animatedHead.addClass('init-animation');
-    	}
-    	
+    	} 
 
     	// Animations
     	setTimeout(function(){
@@ -244,7 +247,7 @@ $(document).ready(function(){
     	var windowTop = $(window).scrollTop();
 
     	// console.log(windowTop);
-    	console.log($('.quick-projects').position().top);
+    	// console.log($('.quick-projects').position().top);
 
     	// Pull Button
 		if (windowTop >= 460) {

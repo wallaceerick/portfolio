@@ -46,4 +46,4 @@
 			</a>
 		</footer>
 		
-		<?php include('_includes/scripts.php'); ?>
+		<?php include('scripts.php'); ?>

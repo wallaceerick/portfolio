@@ -84,14 +84,14 @@ RewriteEngine on
 # Commom Pages
 RewriteRule ^home$ index.php [L]
 RewriteRule ^about$ about.php [L]
-RewriteRule ^projects$ projects.php [L]
+RewriteRule ^works$ works.php [L]
 RewriteRule ^contact$ contact.php [L]
 RewriteRule ^not-found$ not-found.php [L]
 
 # Projects
-RewriteRule ^sadia$ sadia.php [L]
-RewriteRule ^toyota$ toyota.php [L]
-RewriteRule ^natura$ natura.php [L]
-RewriteRule ^biopet$ biopet.php [L]
-RewriteRule ^onda$ onda.php [L]
+RewriteRule ^portfolio/sadia$ portfolio/sadia.php [L]
+RewriteRule ^portfolio/toyota$ portfolio/toyota.php [L]
+RewriteRule ^portfolio/natura$ portfolio/natura.php [L]
+RewriteRule ^portfolio/biopet$ portfolio/biopet.php [L]
+RewriteRule ^portfolio/onda$ portfolio/onda.php [L]
 

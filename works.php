@@ -76,10 +76,9 @@
 				<li class="filter" data-filter=".wordpress">Wordpress</li>
 				<li class="filter" data-filter=".loja">Loja Virtual</li>
 				<li class="filter" data-filter=".responsivo">Responsivo</li>
-				<li class="filter" data-filter=".mobile">Mobile</li>
 			</ul>
 
-			<ol id="portfolio" class="js-projects">
+			<ol id="portfolio" class="js-projects animated-content js-animated-content">
 
 				<li class="mix sadia sistemas" data-value="1">
 					<span class="number">01</span>

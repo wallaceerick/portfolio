@@ -1,4 +1,4 @@
-<?php require_once('_config.php'); ?>
+<?php require_once('../_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
 
@@ -38,7 +38,7 @@
 
 	<body>
 		
-		<?php include('_includes/header.php'); ?>
+		<?php include('../_includes/header.php'); ?>
 
 		<section id="page" class="animated-page-head js-animated-page-head">
 
@@ -47,7 +47,7 @@
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Sadia</h2>
+				<h2>Sadia <span class="type">#jogapramim</span></h2>
 				<h3 class="single">Sistemas</h3>
 			</span>
 
@@ -142,7 +142,7 @@
 
 		<br class="clear" />
 
-		<?php include('_includes/footer.php'); ?>
+		<?php include('../_includes/footer.php'); ?>
 
 	</body>
 	</html>
