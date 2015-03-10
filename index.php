@@ -17,7 +17,6 @@
 
 		<meta property="fb:admins" content="100000907604118" />
 		<meta property="og:locale" content="pt_BR" />
-		<meta property="og:type" content="Page" />
 		<meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
 		<meta property="og:url" content="<?php echo $base_url ?>" />
 		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
