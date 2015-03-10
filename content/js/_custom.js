@@ -25,8 +25,10 @@ $(document).ready(function(){
         animatedContent 	  = $('.js-animated-content'),
         animatedForm	      = $('.js-animated-form'),
         animatedHead     	  = $('.js-animated-page-head'),
+        animatedWords     	  = $('.js-animated-words'),
 
         contactForm  		  = $('.js-contact-form'),
+        contactPhoneMask  	  = $('.js-phone-mask'),
 
         serviceSection  	  = $('.js-services-section'),
         skillSection  		  = $('.js-skills-section'),
@@ -111,6 +113,15 @@ $(document).ready(function(){
 		        }, 500); 
 		    });
 		}
+
+		// Word Rotation
+		if(animatedWords[0]){
+			animatedWords.rotaterator({
+				fadeSpeed: 800, 
+				pauseSpeed: 5000
+			});
+		}
+
     });
 
     // REMOVER
@@ -216,11 +227,27 @@ $(document).ready(function(){
 
 	//contactForm
 	if(contactForm[0]){
+		// Form
 		contactForm.find('input').focusin(function(){
 			$('.fs-continue').removeClass('is-textarea').fadeIn(300);
 		});
 		contactForm.find('textarea').focusin(function(){
 			$('.fs-continue').addClass('is-textarea').fadeIn(300);
+		});
+
+		// Mask
+		contactPhoneMask.mask('(99) 9999?9-9999');
+		contactPhoneMask.on('blur', function(){
+		    var last = $(this).val().substr( $(this).val().indexOf('-') + 1 );
+		    
+		    if( last.length == 3 ) {
+		        var move = $(this).val().substr( $(this).val().indexOf('-') - 1, 1 );
+		        var lastfour = move + last;
+		        
+		        var first = $(this).val().substr( 0, 9 );
+		        
+		        $(this).val( first + '-' + lastfour );
+		    }
 		});
 	}
 
@@ -246,15 +273,14 @@ $(document).ready(function(){
     $(window).scroll(function(){
     	var windowTop = $(window).scrollTop();
 
-    	// console.log(windowTop);
-    	// console.log($('.quick-projects').position().top);
-
-    	// Pull Button
+    	// Pull and Top Button
 		if (windowTop >= 460) {
 			pullButton.addClass('dark');
+			backToTop.fadeIn(300);
 	    }
 	    else {
 	    	pullButton.removeClass('dark');
+	    	backToTop.hide();
 	    }
 
 	    // Header Logo

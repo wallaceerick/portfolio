@@ -19,7 +19,7 @@
 	<div class="overlay overlay-menu js-overlay-menu">
 		<nav id="menu" class="js-menu-content">
 			<ul>
-				<li class="projects <?php if($url == 'projects.php'){ echo 'current'; } ?>">
+				<li class="works <?php if($url == 'works.php'){ echo 'current'; } ?>">
 					<span>
 						<a href="<?php echo $base_url ?>projects">
 							<strong>P</strong>

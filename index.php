@@ -55,10 +55,14 @@
 				
 			<span class="animated-text js-animated-text">
 				<h2><span class="step-1">Fro</span><span class="step-2">nt</span> <span class="step-3">End</span></h2>
-				<h3>Desenvolvedor</h3>
+				<h3 class="js-animated-words">
+					<div>Desenvolvedor</div>
+					<div>Programador</div>
+					<div>Entusiasta</div>
+				</h3>
 			</span>
 
-			<a href="<?php echo $base_url ?>projects" class="button animated-content js-animated-content">
+			<a href="<?php echo $base_url ?>works" class="button animated-content js-animated-content">
 				<span>Meus Projetos</span>
 				<i class="icon icon-arrow-right"></i>
 			</a> 

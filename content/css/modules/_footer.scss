@@ -58,18 +58,25 @@ footer#footer {
 		}
 	}
 	.to-top {
-		position: absolute;
+		display: none;
+		position: fixed;
 		bottom: 35px;
 		right: 40px;
 		color: $black;
 		text-transform: uppercase;
 		font-size: 17px;
 		font-weight: $regular;
+		// background-color: $white;
+		padding: 20px;
+		z-index: 9999;
+		@include border-radius(100%);
 		i {
 			display: block;
 			margin-bottom: 4px;
 		}
 		&:hover {
+			// background-color: $black;
+			// color: $white;
 			@include transform(translateY(-10px));
 		}
 	}

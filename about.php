@@ -48,7 +48,11 @@
 				
 			<span class="animated-text js-animated-text">
 				<h2><span class="about">Sobre</span> <span class="me">Mim</span></h2>
-				<h3 class="single-line">Habilidades</h3>
+				<h3 class="single-line js-animated-words">
+					<div>Habilidades</div>
+					<div>Tecnologias</div>
+					<div>Serviços</div>
+				</h3>
 			</span>
 
 			<span class="animated-image animate-vertical">

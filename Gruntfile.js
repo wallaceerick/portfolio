@@ -20,6 +20,8 @@ module.exports = function(grunt){
                         'content/js/_carousel.js',
                         'content/js/_mixitup.js',
                         'content/js/_contact.js',
+                        'content/js/_rotate.js',
+                        'content/js/_mask.js',
                         'content/js/_custom.js'
                     ]
                 },

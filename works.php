@@ -49,7 +49,11 @@
 				
 			<span class="animated-text js-animated-text">
 				<h2 class="single-word">Projetos</h2>
-				<h3 class="double-line">Corpo <span>&amp;</span> Mente</h3>
+				<h3 class="double-line js-animated-words">
+					<div>Corpo <span>&amp;</span> Mente</div>
+					<div>Criação <span>&amp;</span> Desenvolvimento</div>
+					<div>Design <span>&amp;</span> Front-End</div>
+				</h3>
 			</span>
 
 			<span class="animated-image animate-vertical">

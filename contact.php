@@ -50,7 +50,11 @@
 					
 				<span class="animated-text js-animated-text form-response js-response-form">
 					<h2>Contato</h2>
-					<h3>Posso <span>te ajudar?</span></h3>
+					<h3 class="js-animated-words">
+						<div>Posso <span>te ajudar?</span></div>
+						<div>Precisa de <span>um orçamento?</span></div>
+						<div>Procura alguém <span>comprometido?</span></div>
+					</h3>
 				</span>
 
 			</div>
@@ -69,7 +73,7 @@
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="phone">Telefone?</label>
-							<input class="fs-anim-lower" id="phone" name="phone" type="text" autocomplete="off" required />
+							<input class="fs-anim-lower js-phone-mask" id="phone" name="phone" type="text" autocomplete="off" required />
 						</li>
 						<li class="fs-message-box">
 							<label class="fs-field-label fs-anim-upper" for="message">O que está precisando?</label>
