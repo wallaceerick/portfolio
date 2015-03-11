@@ -53,39 +53,6 @@ module.exports = function(grunt){
             }
         },
 
-        // Image Compressor
-        image: {
-            static: {
-                options: {
-                pngquant: true,
-                optipng: true,
-                advpng: true,
-                zopflipng: true,
-                pngcrush: true,
-                pngout: true,
-                mozjpeg: true,
-                jpegRecompress: true,
-                jpegoptim: true,
-                gifsicle: true,
-                svgo: true
-            },
-            files: { 
-                'dist/img.png': 'src/img.png',
-                'dist/img.jpg': 'src/img.jpg',
-                'dist/img.gif': 'src/img.gif',
-                'dist/img.svg': 'src/img.svg'
-            }
-            },
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'src/', 
-                    src: ['**/*.{png,jpg,gif,svg}'],
-                    dest: 'dist/'
-                }]
-            }
-        },
-
         // Deploy
         'ftp-deploy': {
             build: {
@@ -139,7 +106,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-spritesmith');
     grunt.loadNpmTasks('grunt-ftp-deploy');
-    grunt.loadNpmTasks('grunt-image');
 
     // Taks
     grunt.registerTask('default', 
