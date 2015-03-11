@@ -21,7 +21,7 @@
 			<ul>
 				<li class="works <?php if($url == 'works.php'){ echo 'current'; } ?>">
 					<span>
-						<a href="<?php echo $base_url ?>projects">
+						<a href="<?php echo $base_url ?>works">
 							<strong>P</strong>
 							<span>Portfólio</span>
 						</a>

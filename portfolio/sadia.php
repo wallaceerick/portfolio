@@ -61,7 +61,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>projects" class="back">
+				<a href="<?php echo $base_url ?>works" class="back">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>
@@ -80,7 +80,7 @@
 		    			<li><strong>Duração:</strong> 2 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
 		    			<li><strong>Categoria:</strong> Sistemas</li>
-		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
+		    			<li><strong>Status:</strong> Promoção Finalizada <span class="offline">*</span></li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
@@ -96,11 +96,13 @@
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
-		            <a href="http://sadia.com.br" target="_blank" class="external">
+		    		<p>O desenvolvimento da interface do projeto, recursos em javascript e integração com o Back-End que foi feito em PHP utilizando o framework Code Igniter.</p>
+		            <!--
+		            <a href="http://promo.sadia.com.br/" target="_blank" class="external">
 		                <i class="icon icon-link"></i>
 		                <span>Acessar</span>
 		            </a>
+		        	-->
 		    	</span>
 		    </div> <!-- /row -->
 

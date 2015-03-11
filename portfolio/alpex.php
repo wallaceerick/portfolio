@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Sadia • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Alpex • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -47,7 +47,7 @@
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Sadia <span class="type">#jogapramim</span></h2>
+				<h2>Alpex</h2>
 				<h3 class="single">Sistemas</h3>
 			</span>
 
@@ -61,7 +61,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>projects" class="back">
+				<a href="<?php echo $base_url ?>works" class="back">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>

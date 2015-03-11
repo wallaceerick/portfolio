@@ -57,6 +57,9 @@ $(document).ready(function(){
         }
     }, function(){
 
+    	var pathname = window.location.pathname;
+    	// alert(pathname);
+
     	$('html, body').stop().animate({
             scrollTop: 0
         }, 500); 

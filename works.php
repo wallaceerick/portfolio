@@ -80,7 +80,7 @@
 			<ul class="project-navigation animated-content js-navigation js-animated-content">
 				<li class="filter active" data-filter="all">Tudo</li>
 				<li class="filter" data-filter=".institucional">Institucional</li>
-				<li class="filter" data-filter=".sistemas">Sistema</li>
+				<li class="filter" data-filter=".sistemas">Sistemas</li>
 				<li class="filter" data-filter=".wordpress">Wordpress</li>
 				<li class="filter" data-filter=".loja-virtual">Loja Virtual</li>
 				<li class="filter" data-filter=".responsivo">Responsivo</li>
@@ -94,7 +94,7 @@
 						<h4 class="title">Sadia <span>jogapramim</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>sadia" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/sadia" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -108,7 +108,7 @@
 						<h4 class="title">Navegatium</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>navegatium" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/navegatium" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -122,7 +122,7 @@
 						<h4 class="title">Natura <span>sounovasescolhas</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>natura" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/natura" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -136,7 +136,7 @@
 						<h4 class="title">Fashion Walk</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>fashion-walk" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/fashion-walk" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -150,7 +150,7 @@
 						<h4 class="title">Onda</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>onda" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/onda" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -164,7 +164,7 @@
 						<h4 class="title">Toyota <span>Tour</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>toyota" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/toyota" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -178,7 +178,7 @@
 						<h4 class="title">Gendai</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>gendai" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/gendai" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -192,7 +192,7 @@
 						<h4 class="title">Paganelli Shop</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>paganelli-shop" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/paganelli-shop" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -206,7 +206,7 @@
 						<h4 class="title">Home Refill</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>home-refill" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/home-refill" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -220,7 +220,7 @@
 						<h4 class="title">Biopet</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>biopet" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/biopet" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -234,7 +234,7 @@
 						<h4 class="title">Tim <span>Reconhece</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>tim" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/tim" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -248,7 +248,7 @@
 						<h4 class="title">Tam <span>Clube do Agente</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>tam" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/tam" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -262,7 +262,7 @@
 						<h4 class="title">Positivo <span>English Solution</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>positivo-english-solution" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/positivo-english-solution" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -276,7 +276,7 @@
 						<h4 class="title">Íntegra Medical</h4>
 						<h5 class="category">institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>integra-medical" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/integra-medical" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -290,7 +290,7 @@
 						<h4 class="title">Smartia</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>smartia" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/smartia" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -304,7 +304,7 @@
 						<h4 class="title">Galvão <span>Engenharia</span></h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>galvao" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/galvao" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -318,7 +318,7 @@
 						<h4 class="title">Mercado Arte</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>mercado-arte" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/mercado-arte" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -332,7 +332,7 @@
 						<h4 class="title">Oi <span>Vida Saudável</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>oi" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/oi" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -346,7 +346,7 @@
 						<h4 class="title">Colson</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>colson" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/colson" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -360,7 +360,7 @@
 						<h4 class="title">Cubos <span>Lagos</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>cubos-lagos" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-lagos" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -374,7 +374,7 @@
 						<h4 class="title">Cubos <span>Revestimentos</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>cubos-revestimentos" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-revestimentos" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -388,7 +388,7 @@
 						<h4 class="title">Cubos <span>Monte Seu Lago</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>cubos-monte-seu-lago" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-monte-seu-lago" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -402,7 +402,7 @@
 						<h4 class="title">Cubos <span>Meu Primeiro Lago</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>cubos-meu-primeiro-lago" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-meu-primeiro-lago" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -416,7 +416,7 @@
 						<h4 class="title">Positivo <span>Nuvem</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>positivo-nuvem" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/positivo-nuvem" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -430,7 +430,7 @@
 						<h4 class="title">Sarlo</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>sarlo" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/sarlo" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -444,7 +444,7 @@
 						<h4 class="title">Digitaliza</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>digitaliza" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/digitaliza" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -458,7 +458,7 @@
 						<h4 class="title">Alpex</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>alpex" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/alpex" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -472,7 +472,7 @@
 						<h4 class="title">Lorpen</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>lorpen" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/lorpen" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -486,7 +486,7 @@
 						<h4 class="title">Lechen</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>lechen" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/lechen" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -500,7 +500,7 @@
 						<h4 class="title">Mondial <span>Curtindo a Casa</span></h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>mondial" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/mondial" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -514,7 +514,7 @@
 						<h4 class="title">Azteq</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>azteq" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/azteq" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -528,7 +528,7 @@
 						<h4 class="title">Deuter</h4>
 						<h5 class="category">sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>deuter" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/deuter" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -542,7 +542,7 @@
 						<h4 class="title">Azul Fish</h4>
 						<h5 class="category">wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>azul-fish" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/azul-fish" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -556,7 +556,7 @@
 						<h4 class="title">Chevrolet <span>Aba Motors</span></h4>
 						<h5 class="category">Mobile</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>chevrolet" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/chevrolet" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -570,11 +570,25 @@
 						<h4 class="title">Honda <span>H Motors</span></h4>
 						<h5 class="category">Mobile</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>honda" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/honda" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
 						<img src="<?php echo $base_url ?>content/images/portfolio/honda/preview.jpg" alt="Honda">
+					</span> <!-- /image -->
+				</li>
+
+				<li class="mix 7ball institucional" data-value="36">
+					<span class="number">36</span>
+					<span class="info">
+						<h4 class="title">7ball</span></h4>
+						<h5 class="category">Institucional</h5>
+						<hr />
+						<a href="<?php echo $base_url ?>portfolio/7ball" class="hidden">Detalhes</a>
+					</span> <!-- /info -->
+					<span class="image">
+						<span></span>
+						<img src="<?php echo $base_url ?>content/images/portfolio/7ball/preview.jpg" alt="7ball">
 					</span> <!-- /image -->
 				</li>
 			</ol>
