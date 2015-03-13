@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Projetos • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Portfólio • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
@@ -22,7 +22,7 @@
 		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta property="og:description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
 		<meta property="og:article:tags" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
-		<meta property="og:article:author" content="Wallace Erick" />
+		<meta property="og:article:author" content="Wallace Erick" /> 
 
 		<meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
 		<meta itemprop="url" content="<?php echo $base_url ?>works" />
