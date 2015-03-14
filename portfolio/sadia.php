@@ -123,21 +123,21 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>onda">
+				<a href="<?php echo $base_url ?>navegatium">
 					<div class="title">
-						<h3>Onda</h3>
+						<h3>Navegatium</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/navegatium/preview.jpg" alt="Navegatium" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>toyota">
+				<a href="<?php echo $base_url ?>7ball">
 					<div class="title">
-						<h3>Toyota</h3>
+						<h3>7ball</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/7ball/preview.jpg" alt="7ball" />
 				</a>
 			</div>
 		</section>
