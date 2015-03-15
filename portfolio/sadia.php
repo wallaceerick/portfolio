@@ -119,7 +119,7 @@
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
-		</article>
+		</article>    
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
