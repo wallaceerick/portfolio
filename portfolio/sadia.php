@@ -77,7 +77,7 @@
 		    		<ul>
 		    			<li><strong>Agência:</strong> DigiPronto</li>
 		    			<li><strong>Data:</strong> Março de 2014</li>
-		    			<li><strong>Duração:</strong> 2 Semanas</li>
+		    			<li><strong>Duração:</strong> 4 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
 		    			<li><strong>Categoria:</strong> Sistemas</li>
 		    			<li><strong>Status:</strong> Promoção Finalizada <span class="offline">*</span></li>
@@ -89,7 +89,7 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>SASS</li>
+		    			<li>Sass</li>
 		    			<li>Responsive Design</li>
 		    			<li>PHP</li>
 		    		</ul>
@@ -116,6 +116,7 @@
 		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
 		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
 		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/6.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -123,21 +124,21 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>navegatium">
-					<div class="title">
-						<h3>Navegatium</h3>
-					</div>
-					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/navegatium/preview.jpg" alt="Navegatium" />
-				</a>
-			</div>
-			<div class="project project-right">
-				<a href="<?php echo $base_url ?>7ball">
+				<a href="<?php echo $base_url ?>/portfolio/7ball">
 					<div class="title">
 						<h3>7ball</h3>
 					</div>
 					<span></span>
 					<img src="<?php echo $base_url ?>content/images/portfolio/7ball/preview.jpg" alt="7ball" />
+				</a>
+			</div>
+			<div class="project project-right">
+				<a href="<?php echo $base_url ?>/portfolio/navegatium">
+					<div class="title">
+						<h3>Navegatium</h3>
+					</div>
+					<span></span>
+					<img src="<?php echo $base_url ?>content/images/portfolio/navegatium/preview.jpg" alt="Navegatium" />
 				</a>
 			</div>
 		</section>
