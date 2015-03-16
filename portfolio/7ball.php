@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Honda [H Motors] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>7Ball • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -43,11 +43,11 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-honda"></i>
+				<i class="icon icon-7ball"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Honda <span class="type">H Motors</span></h2>
+				<h2>7Ball</h2>
 				<h3 class="single">Institucional</h3>
 			</span>
 
