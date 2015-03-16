@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Positivo [Nuvem] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Chevrolet [Aba Motors] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -43,11 +43,11 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-cubos-positivo-nuvem"></i>
+				<i class="icon icon-azul-fish"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Positivo <span class="type">Nuvem</span></h2>
+				<h2>Chevrolet <span class="type">Aba Motors</span></h2>
 				<h3 class="single">Institucional</h3>
 			</span>
 
@@ -75,34 +75,36 @@
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
-		    			<li><strong>Agência:</strong> Imaginera</li>
-		    			<li><strong>Data:</strong> Julho de 2011</li>
-		    			<li><strong>Duração:</strong> 2 Semanas</li>
+		    			<li><strong>Agência:</strong> DigiPronto</li>
+		    			<li><strong>Data:</strong> Janeiro de 2014</li>
+		    			<li><strong>Duração:</strong> 1 Semana</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
 		    			<li><strong>Categoria:</strong> Institucional</li>
-		    			<li><strong>Status:</strong> Offline <span class="offline">*</span></li>
+		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Tecnologias:</h6>
 		    		<ul class="check-list">
-		    			<li>CSS</li>
-		    			<li>HTML</li>
+		    			<li>CSS3</li>
+		    			<li>HTML5</li>
 		    			<li>JS</li>
+		    			<li>Sass/Grunt</li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento da interface do projeto, recursos em javascript e CSS.</p>
+		    		<p>O desenvolvimento da interface do projeto e recursos em javascript e css.</p>
+		            <a href="http://abamotors.com.br/mobile/" target="_blank" class="external">
+		                <i class="icon icon-link"></i>
+		                <span>Acessar</span>
+		            </a>  
 		    	</span>
 		    </div> <!-- /row -->
 
 		    <div class="projects-carousel">
-		        <a href="#" class="prev-button icon-big-arrow-left js-project-prev-button"></a>
-		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
-
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/positivo/nuvem/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/chevrolet/1.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -110,21 +112,21 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>/portfolio/cubos-meu-primeiro-lago">
+				<a href="<?php echo $base_url ?>/portfolio/azul-fish">
 					<div class="title">
-						<h3>Cubos <span>Meu Primeiro Lago</span></h3>
+						<h3>Azul Fish</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/cubos/meu-primeiro-lago/preview.jpg" alt="Cubos Meu Primeiro Lago" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/azul-fish/preview.jpg" alt="Azul Fish" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>/portfolio/sarlo">
+				<a href="<?php echo $base_url ?>/portfolio/honda">
 					<div class="title">
-						<h3>Sarlo</h3>
+						<h3>Honda <span>H Motors</span></h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/sarlo/preview.jpg" alt="Sarlo" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/honda/preview.jpg" alt="Honda H Motors" />
 				</a>
 			</div>
 		</section>

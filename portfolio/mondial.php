@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Sadia • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Mondial [Curtindo a Casa] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -43,12 +43,12 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-sadia"></i>
+				<i class="icon icon-lechen"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Sadia <span class="type">#jogapramim</span></h2>
-				<h3 class="single">Sistemas</h3>
+				<h2>Mondial <span class="type">Curtindo a Casa</span></h2>
+				<h3 class="single">Wordpress</h3>
 			</span>
 
 			<span class="animated-image animate-vertical">
@@ -61,7 +61,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>projects" class="back">
+				<a href="<?php echo $base_url ?>works" class="back">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>
@@ -75,32 +75,30 @@
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
-		    			<li><strong>Agência:</strong> DigiPronto</li>
-		    			<li><strong>Data:</strong> Março de 2014</li>
-		    			<li><strong>Duração:</strong> 2 Semanas</li>
+		    			<li><strong>Agência:</strong> Imaginera</li>
+		    			<li><strong>Data:</strong> Dezembro de 2011</li>
+		    			<li><strong>Duração:</strong> 3 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
-		    			<li><strong>Categoria:</strong> Sistemas</li>
+		    			<li><strong>Categoria:</strong> Wordpress</li>
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Tecnologias:</h6>
 		    		<ul class="check-list">
-		    			<li>CSS3</li>
-		    			<li>HTML5</li>
+		    			<li>CSS</li>
+		    			<li>HTML</li>
 		    			<li>JS</li>
-		    			<li>SASS</li>
-		    			<li>Responsive Design</li>
-		    			<li>PHP</li>
+		    			<li>Wordpress</li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
-		            <a href="http://sadia.com.br" target="_blank" class="external">
+		    		<p>O desenvolvimento da interface do projeto, recursos em javascript e integração com o Wordpress.</p>
+		            <a href="http://www.curtindoacasa.com.br/" target="_blank" class="external">
 		                <i class="icon icon-link"></i>
 		                <span>Acessar</span>
-		            </a>
+		            </a>  
 		    	</span>
 		    </div> <!-- /row -->
 
@@ -109,33 +107,30 @@
 		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/mondial/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/mondial/2.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
-		</article>
+		</article>    
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>onda">
+				<a href="<?php echo $base_url ?>/portfolio/lechen">
 					<div class="title">
-						<h3>Onda</h3>
+						<h3>Lechen</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/lechen/preview.jpg" alt="Lechen" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>toyota">
+				<a href="<?php echo $base_url ?>/portfolio/azteq">
 					<div class="title">
-						<h3>Toyota</h3>
+						<h3>Azteq</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/azteq/preview.jpg" alt="Azteq" />
 				</a>
 			</div>
 		</section>

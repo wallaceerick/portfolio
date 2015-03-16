@@ -76,10 +76,10 @@
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
 		    			<li><strong>Agência:</strong> Freelancer</li>
-		    			<li><strong>Data:</strong> Novembro de 2011</li>
-		    			<li><strong>Duração:</strong> 3 Semanas</li>
+		    			<li><strong>Data:</strong> Junho de 2012</li>
+		    			<li><strong>Duração:</strong> 2 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
-		    			<li><strong>Categoria:</strong> Sistemas</li>
+		    			<li><strong>Categoria:</strong> Institucional</li>
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>

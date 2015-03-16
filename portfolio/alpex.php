@@ -43,7 +43,7 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-sadia"></i>
+				<i class="icon icon-alpex"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
@@ -75,9 +75,9 @@
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
-		    			<li><strong>Agência:</strong> DigiPronto</li>
-		    			<li><strong>Data:</strong> Março de 2014</li>
-		    			<li><strong>Duração:</strong> 2 Semanas</li>
+		    			<li><strong>Agência:</strong> Imaginera</li>
+		    			<li><strong>Data:</strong> Maio de 2012</li>
+		    			<li><strong>Duração:</strong> 7 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
 		    			<li><strong>Categoria:</strong> Sistemas</li>
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
@@ -89,18 +89,17 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>SASS</li>
-		    			<li>Responsive Design</li>
-		    			<li>PHP</li>
+		    			<li>Flash</li>
+		    			<li>Ruby on Rails</li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
-		            <a href="http://sadia.com.br" target="_blank" class="external">
+		    		<p>O desenvolvimento da interface do projeto, recursos em javascript e integração com o Back-End feito em Ruby.</p>
+		            <a href="http://www.alpex.com.br/" target="_blank" class="external">
 		                <i class="icon icon-link"></i>
 		                <span>Acessar</span>
-		            </a>
+		            </a>  
 		    	</span>
 		    </div> <!-- /row -->
 
@@ -109,33 +108,34 @@
 		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/2.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/3.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/4.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/alpex/6.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
-		</article>
+		</article>    
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>onda">
+				<a href="<?php echo $base_url ?>/portfolio/digitaliza">
 					<div class="title">
-						<h3>Onda</h3>
+						<h3>Digitaliza</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/digitaliza/preview.jpg" alt="Digitaliza" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>toyota">
+				<a href="<?php echo $base_url ?>/portfolio/lorpen">
 					<div class="title">
-						<h3>Toyota</h3>
+						<h3>Lorpen</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/lorpen/preview.jpg" alt="Lorpen" />
 				</a>
 			</div>
 		</section>
