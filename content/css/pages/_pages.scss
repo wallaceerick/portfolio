@@ -481,6 +481,12 @@
 				color: $black;
 				font-weight: $light;
 			}
+			.online {
+				color: #00b100;
+			}
+			.offline {
+				color: #da0000;
+			} 
 		}
 		&.check-list {
 			li {

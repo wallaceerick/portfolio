@@ -89,7 +89,7 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>Sass</li>
+		    			<li>Sass/Grunt</li>
 		    			<li>Responsive Design</li>
 		    			<li>.Net</li>
 		    		</ul>

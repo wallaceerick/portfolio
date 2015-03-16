@@ -228,17 +228,17 @@
 					</span> <!-- /image -->
 				</li>
 
-				<li class="mix tim-reconhece institucional" data-value="11">
+				<li class="mix reconhece institucional" data-value="11">
 					<span class="number">11</span>
 					<span class="info">
-						<h4 class="title">Tim <span>Reconhece</span></h4>
+						<h4 class="title">Reconhece</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/tim" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/reconhece" class="hidden">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
-						<img src="<?php echo $base_url ?>content/images/portfolio/tim/preview.jpg" alt="Tim">
+						<img src="<?php echo $base_url ?>content/images/portfolio/reconhece/preview.jpg" alt="Tim">
 					</span> <!-- /image -->
 				</li>
 

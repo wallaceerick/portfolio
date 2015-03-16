@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Sadia • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Biopet • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -43,12 +43,12 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-sadia"></i>
+				<i class="icon icon-biopet"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Sadia <span class="type">#jogapramim</span></h2>
-				<h3 class="single">Sistemas</h3>
+				<h2>Biopet</h2>
+				<h3 class="single">Wordpress</h3>
 			</span>
 
 			<span class="animated-image animate-vertical">
@@ -75,11 +75,11 @@
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
-		    			<li><strong>Agência:</strong> DigiPronto</li>
-		    			<li><strong>Data:</strong> Março de 2014</li>
+		    			<li><strong>Agência:</strong> Imaginera</li>
+		    			<li><strong>Data:</strong> Maio de 2014</li>
 		    			<li><strong>Duração:</strong> 2 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
-		    			<li><strong>Categoria:</strong> Sistemas</li>
+		    			<li><strong>Categoria:</strong> Wordpress</li>
 		    			<li><strong>Status:</strong> Online <span class="online">*</span></li>
 		    		</ul>
 		    	</span>
@@ -89,15 +89,14 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>SASS</li>
-		    			<li>Responsive Design</li>
-		    			<li>PHP</li>
+		    			<li>Sass/Grunt</li>
+		    			<li>Wordpress</li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
-		            <a href="http://sadia.com.br" target="_blank" class="external">
+		    		<p>O desenvolvimento da interface do projeto, recursos em JS e CSS e integração com Wordpress.</p>
+		            <a href="http://biopet.bio.br" target="_blank" class="external">
 		                <i class="icon icon-link"></i>
 		                <span>Acessar</span>
 		            </a>
@@ -109,11 +108,7 @@
 		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/biopet/1.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -121,21 +116,21 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>onda">
+				<a href="<?php echo $base_url ?>/portfolio/home-refill">
 					<div class="title">
-						<h3>Onda</h3>
+						<h3>Home Refill</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/home-refill/preview.jpg" alt="Home Refill" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>toyota">
+				<a href="<?php echo $base_url ?>/portfolio/reconhece">
 					<div class="title">
-						<h3>Toyota</h3>
+						<h3>Reconhece</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/reconhece/preview.jpg" alt="tim" />
 				</a>
 			</div>
 		</section>

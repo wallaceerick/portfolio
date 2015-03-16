@@ -75,7 +75,7 @@
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
-		    			<li><strong>Agência:</strong> Freelancer</li>
+		    			<li><strong>Agência:</strong> Freelance</li>
 		    			<li><strong>Data:</strong> Julho de 2014</li>
 		    			<li><strong>Duração:</strong> 2 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
@@ -89,7 +89,7 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>Sass</li>
+		    			<li>Sass/Grunt</li>
 		    			<li>Responsive Design</li>
 		    			<li>PHP</li>
 		    		</ul>

@@ -5,7 +5,7 @@
 	<head prefix="og: http://ogp.me/ns#">
 		<meta charset="UTF-8">
 
-		<title>Sadia • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
+		<title>Tam [Clube do Agente] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="" />
@@ -43,11 +43,11 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-sadia"></i>
+				<i class="icon icon-tam"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
-				<h2>Sadia <span class="type">#jogapramim</span></h2>
+				<h2>Tam <span class="type">Clube do Agente</span></h2>
 				<h3 class="single">Sistemas</h3>
 			</span>
 
@@ -61,7 +61,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>projects" class="back">
+				<a href="<?php echo $base_url ?>works" class="back">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>
@@ -76,7 +76,7 @@
 		    		<h6 class="title">Detalhes:</h6>
 		    		<ul>
 		    			<li><strong>Agência:</strong> DigiPronto</li>
-		    			<li><strong>Data:</strong> Março de 2014</li>
+		    			<li><strong>Data:</strong> Setembro de 2014</li>
 		    			<li><strong>Duração:</strong> 2 Semanas</li>
 		    			<li><strong>Ferramentas:</strong> Photoshop e Sublime Text </li>
 		    			<li><strong>Categoria:</strong> Sistemas</li>
@@ -89,18 +89,17 @@
 		    			<li>CSS3</li>
 		    			<li>HTML5</li>
 		    			<li>JS</li>
-		    			<li>SASS</li>
-		    			<li>Responsive Design</li>
-		    			<li>PHP</li>
+		    			<li>Sass/Grunt</li>
+		    			<li>.Net</li>
 		    		</ul>
 		    	</span>
 		    	<span class="column column-third animated-column">
 		    		<h6 class="title">O que eu fiz?</h6>
-		    		<p>O desenvolvimento completo de toda a interface do projeto, homologação e integração com o Back-End.</p>
-		            <a href="http://sadia.com.br" target="_blank" class="external">
+		    		<p>O desenvolvimento da interface do projeto, recursos em javascript e integração com o Back-End feito em .Net.</p>
+		            <a href="http://clubedoagente.com.br/" target="_blank" class="external">
 		                <i class="icon icon-link"></i>
 		                <span>Acessar</span>
-		            </a>
+		            </a>  
 		    	</span>
 		    </div> <!-- /row -->
 
@@ -109,33 +108,32 @@
 		        <a href="#" class="next-button icon-big-arrow-right js-project-next-button"></a>
 
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/1.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/2.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/3.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/4.jpg" alt="" />
-		            <img src="<?php echo $base_url ?>content/images/portfolio/sadia/5.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/tam/1.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/tam/2.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/tam/3.jpg" alt="" />
+		            <img src="<?php echo $base_url ?>content/images/portfolio/tam/4.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
-		</article>
+		</article>    
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>onda">
+				<a href="<?php echo $base_url ?>/portfolio/reconhece">
 					<div class="title">
-						<h3>Onda</h3>
+						<h3>Reconhece</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/onda/preview.jpg" alt="Grupo Onda" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/reconhece/preview.jpg" alt="tim" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>toyota">
+				<a href="<?php echo $base_url ?>/portfolio/positivo-english-solution">
 					<div class="title">
-						<h3>Toyota</h3>
+						<h3>Positivo</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/toyota/preview.jpg" alt="Toyota" />
+					<img src="<?php echo $base_url ?>content/images/portfolio/positivo/english-solution/preview.jpg" alt="Positivo English Solution" />
 				</a>
 			</div>
 		</section>
