@@ -16,6 +16,7 @@ $(document).ready(function(){
         scrollLinks      	  = $('.js-scroll'),
         overlayMenu      	  = $('.js-overlay-menu'),
         audioPlayer      	  = $('.js-audio-player'),
+        videoPlayer      	  = $('#teste'),
 
         pullButton 			  = $('.js-pull'),
         pullContent 		  = $('.js-menu-content'),
@@ -57,7 +58,7 @@ $(document).ready(function(){
         }
     }, function(){
 
-    	var pathname = window.location.pathname;
+    	// var pathname = window.location.pathname;
     	// alert(pathname);
 
     	$('html, body').stop().animate({
@@ -66,7 +67,7 @@ $(document).ready(function(){
     	
     	if(animatedHead[0]){
     		animatedHead.addClass('init-animation');
-    	} 
+    	}
 
     	// Animations
     	setTimeout(function(){
@@ -83,7 +84,8 @@ $(document).ready(function(){
 	    		animatedForm.addClass('init-animation');
 	    	}
 	    	// Sound
-    		audioPlayer[0].play();
+    		// audioPlayer[0].play();
+    		
     	}, 1000);  
 
 		// Slider

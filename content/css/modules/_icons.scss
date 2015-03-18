@@ -24,6 +24,78 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-devices:before {
+	content: "\e000";
+}
+
+.icon-laptop:before {
+	content: "\e001";
+}
+
+.icon-desktop:before {
+	content: "\e002";
+}
+
+.icon-tablet:before {
+	content: "\e003";
+}
+
+.icon-phone:before {
+	content: "\e004";
+}
+
+.icon-browser:before {
+	content: "\e00c";
+}
+
+.icon-picture:before {
+	content: "\e00f";
+}
+
+.icon-heart:before {
+	content: "\e601";
+}
+
+.icon-star:before {
+	content: "\e602";
+}
+
+.icon-trash:before {
+	content: "\e603";
+}
+
+.icon-user:before {
+	content: "\e604";
+}
+
+.icon-lock:before {
+	content: "\e605";
+}
+
+.icon-bulb:before {
+	content: "\e606";
+}
+
+.icon-pen:before {
+	content: "\e607";
+}
+
+.icon-location:before {
+	content: "\e608";
+}
+
+.icon-bubble:before {
+	content: "\e609";
+}
+
+.icon-mail:before {
+	content: "\e60a";
+}
+
+.icon-paperplane:before {
+	content: "\e60b";
+}
+
 .icon-keyboard-right:before {
 	content: "\e60c";
 }
@@ -122,50 +194,6 @@
 
 .icon-codepen:before {
 	content: "\eae4";
-}
-
-.icon-heart:before {
-	content: "\e601";
-}
-
-.icon-star:before {
-	content: "\e602";
-}
-
-.icon-trash:before {
-	content: "\e603";
-}
-
-.icon-user:before {
-	content: "\e604";
-}
-
-.icon-lock:before {
-	content: "\e605";
-}
-
-.icon-bulb:before {
-	content: "\e606";
-}
-
-.icon-pen:before {
-	content: "\e607";
-}
-
-.icon-location:before {
-	content: "\e608";
-}
-
-.icon-bubble:before {
-	content: "\e609";
-}
-
-.icon-mail:before {
-	content: "\e60a";
-}
-
-.icon-paperplane:before {
-	content: "\e60b";
 }
 
 

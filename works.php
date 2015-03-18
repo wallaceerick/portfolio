@@ -64,7 +64,6 @@
 				<span class="overlay"></span>
 				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
-
 			<span class="diagonal"></span>
 
 			<!--

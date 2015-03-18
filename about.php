@@ -78,7 +78,7 @@
 			<p>Atualmente moro em Caieiras/SP. Atuo como desenvolvedor Front-End desde 2007.</p>
 			<p>Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, <br />SEO e Responsive Design, além de frameworks como Wordpress e Opencart.</p>
 			<p>Tecnologias como Sass e Grunt são de uso obrigatório em meus projetos.</p>
-			<p>Faça o <a href="<?php echo $base_url ?>content/download/curriculo.pdf">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
+			<p>Faça o <a href="<?php echo $base_url ?>content/download/curriculo.pdf" target="_blank">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
 		</section>
 
 		<section class="services js-services-section animated-content js-animated-content">

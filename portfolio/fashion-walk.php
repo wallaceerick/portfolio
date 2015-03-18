@@ -43,7 +43,7 @@
 		<section id="page" class="animated-page-head js-animated-page-head">
 
 			<span class="page-icon js-animated-icon">
-				<i class="icon icon-fashion-walk"></i>
+				<i class="icon icon-desktop"></i>
 			</span>
 				
 			<span class="animated-text js-animated-text">
