@@ -293,8 +293,13 @@
 				position: absolute;
 				top: 42px;
 				left: 50%;
-				margin: 0 0 0 -130px;
+				// margin: 0 0 0 -130px;
+				margin: 0 0 0 -170px;
 				z-index: 5;
+
+				width: 360px;
+				padding: 0 50px 0 0;
+				text-align: center;
 			}
 			.info {
 				display: block;
