@@ -1,3 +1,28 @@
+<!--
+ 
+     `@@             `@@               '@+     
+    `@@@@           `@@@@             '@@@+    
+   `@@@@@@         `@@@@@@           '@@@@@+   
+  `@@@@@@@@       `@@@@@@@@         '@@@@@@@+  
+ `@@@@@@@@@@     `@@@@@@@@@@       '@@@@@@@@@+ 
+`@@@@@@@@@@@@   `@@@@@@@@@@@@     '@@@@@@@@@@@+
+ +@@@@@@@@@@@@ `@@@@@@@@@@@@     '@@@@@@@@@@@@ 
+  +@@@@@@@@@@@@@@@@@@@@@@@@     '@@@@@@@@@@@@  
+   +@@@@@@@@@@@@@@@@@@@@@@     '@@@@@@@@@@@@   
+    +@@@@@@@@@@@@@@@@@@@@     '@@@@@@@@@@@@    
+     +@@@@@@@@@@@@@@@@@@     '@@@@@@@@@@@@     
+      +@@@@@@@@@@@@@@@@     '@@@@@@@@@@@@      
+       +@@@@@@@@@@@@@@     '@@@@@@@@@@@@       
+        +@@@@@@@@@@@@     '@@@@@@@@@@@@        
+         +@@@@@@@@@@       @@@@@@@@@@@         
+          +@@@@@@@@         @@@@@@@@@          
+           +@@@@@@           @@@@@@@           
+            +@@@@             @@@@@            
+             +@@               @@@             
+              +                 @              
+
+	Ainda não está responsivo! :(
+-->                                                                                  
 <?php require_once('_config.php'); ?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
@@ -33,7 +58,7 @@
 		<link rel="canonical" href="<?php echo $base_url ?>" />
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
 
 	    <!--[if lt IE 9]>
 			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
