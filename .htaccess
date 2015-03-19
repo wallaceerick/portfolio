@@ -1,26 +1,11 @@
-# Compactação GZIP
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/rss+xml
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
-AddType x-font/otf .otf
-AddType x-font/ttf .ttf
-AddType x-font/eot .eot
-AddType x-font/woff .woff
-AddType image/x-icon .ico
-AddType image/png .png
-
-#Força a utilizar Cache-Control e Expires header
+# Cache-Control e Expires header
 <IfModule mod_headers.c>
-	Header unset ETag
-	Header add Access-Control-Allow-Origin "*" 
+Header set Access-Control-Allow-Origin "*"
+	Header unset Pragma
+	Header unset ETag 
+	FileETag None
 </IfModule>
-FileETag None
+
 <IfModule mod_expires.c>
 	ExpiresActive on
 	ExpiresDefault "access plus 1 month"
@@ -55,9 +40,9 @@ FileETag None
 	ExpiresByType text/x-component "access plus 1 month"
 
 	# Webfonts
-	ExpiresByType application/x-font-ttf "access plus 1 month"
 	ExpiresByType font/opentype "access plus 1 month"
 	ExpiresByType application/x-font-woff "access plus 1 month"
+	ExpiresByType application/x-font-ttf "access plus 1 month"
 	ExpiresByType image/svg+xml "access plus 1 month"
 	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
 
@@ -75,12 +60,71 @@ FileETag None
 	</FilesMatch>
 </IfModule>
 
+# Compactação GZIP
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddType x-font/otf .otf
+AddType x-font/ttf .ttf
+AddType x-font/eot .eot
+AddType x-font/woff .woff
+AddType image/x-icon .ico
+AddType image/png .png
+
+# Redirect's
+redirect 301 /m/ /
+redirect 301 /m /
+redirect 301 /sobre-mim/ /about
+redirect 301 /sobre-mim /about
+redirect 301 /contato/ /contact
+redirect 301 /contato /contact
+
+redirect 301 /portfolio/gendai/ /portfolio/gendai
+redirect 301 /portfolio/biopet/ /portfolio/biopet
+redirect 301 /portfolio/fashion-walk/ /portfolio/fashion-walk
+redirect 301 /portfolio/tim-reconhece/ /portfolio/reconhece
+redirect 301 /portfolio/natura-sou-novas-escolhas/ /portfolio/natura
+redirect 301 /portfolio/sadia/ /portfolio/sadia
+redirect 301 /portfolio/tam-clube-do-agente/ /portfolio/tam
+redirect 301 /portfolio/monte-seu-lago-cubos/ /portfolio/cubos-monte-seu-lago
+redirect 301 /portfolio/digitaliza-empresas/ /portfolio/digitaliza
+redirect 301 /portfolio/smartia/ /portfolio/smartia
+redirect 301 /portfolio/cubos-revestimentos/ /portfolio/cubos-revestimentos
+redirect 301 /portfolio/paganelli-shop/ /portfolio/paganelli-shop
+redirect 301 /portfolio/cubos-meu-primeiro-lago/ /portfolio/cubos-meu-primeiro-lago
+redirect 301 /portfolio/integra-medical/ /portfolio/integra-medical
+redirect 301 /portfolio/7ball/ /portfolio/7ball
+redirect 301 /portfolio/lechen/ /portfolio/lechen
+redirect 301 /portfolio/azteq/ /portfolio/azteq
+redirect 301 /portfolio/colson/ /portfolio/colson
+redirect 301 /portfolio/toyota-tour/ /portfolio/toyota
+redirect 301 /portfolio/oi-vida-saudavel/ /portfolio/oi
+redirect 301 /portfolio/azul-fish-farm/ /portfolio/azul-fish
+
+redirect 301 /portfolio/umanni/ /works
+redirect 301 /portfolio/revista-live-marketing/ /works
+redirect 301 /portfolio/portfolio-versao-mobile/ /works
+redirect 301 /portfolio/informe-federal/ /works
+redirect 301 /portfolio/infoshade/ /works
+redirect 301 /portfolio/winebrands/ /works
+redirect 301 /portfolio/winesociety/ /works 
+
 # Error Documents
-ErrorDocument 404 http://wallaceerick.com.br/not-found
+ErrorDocument 404 /not-found
 
 # URL Friendly
 Options +FollowSymLinks
-RewriteEngine on
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^wallaceerick.com.br
+RewriteRule ^ http://www.wallaceerick.com.br%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
+#RewriteRule ^(.*) http://%1/$1 [R=301,L]
 
 # Commom Pages
 RewriteRule ^home$ index.php [L]
