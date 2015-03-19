@@ -77,12 +77,12 @@
 		<section id="projects" class="animated-content js-animated-content js-projects-parent"> 
 
 			<ul class="project-navigation animated-content js-navigation js-animated-content">
-				<li class="filter active" data-filter="all">Tudo</li>
-				<li class="filter" data-filter=".institucional">Institucional</li>
-				<li class="filter" data-filter=".sistemas">Sistemas</li>
-				<li class="filter" data-filter=".wordpress">Wordpress</li>
-				<li class="filter" data-filter=".loja-virtual">Loja Virtual</li>
-				<li class="filter" data-filter=".responsivo">Responsivo</li>
+				<li class="filter active" data-filter="all" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: All'}">Tudo</li>
+				<li class="filter" data-filter=".institucional" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Institutional'}">Institucional</li>
+				<li class="filter" data-filter=".sistemas" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Systems'}">Sistemas</li>
+				<li class="filter" data-filter=".wordpress" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Wordpress'}">Wordpress</li>
+				<li class="filter" data-filter=".loja-virtual" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: E-commerce'}">Loja Virtual</li>
+				<li class="filter" data-filter=".responsivo" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Responsive'}">Responsivo</li>
 			</ul>
 
 			<ol id="portfolio" class="js-projects animated-content js-animated-content">
@@ -93,7 +93,7 @@
 						<h4 class="title">Sadia <span>jogapramim</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/sadia" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/sadia" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Sadia'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -107,7 +107,7 @@
 						<h4 class="title">Navegatium</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/navegatium" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/navegatium" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Navegatium'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -121,7 +121,7 @@
 						<h4 class="title">Natura <span>sounovasescolhas</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/natura" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/natura" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Natura'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -135,7 +135,7 @@
 						<h4 class="title">Fashion Walk</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/fashion-walk" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/fashion-walk" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Fashion Walk'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -149,7 +149,7 @@
 						<h4 class="title">Onda</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/onda" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/onda" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Onda'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -163,7 +163,7 @@
 						<h4 class="title">Toyota <span>Tour</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/toyota" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/toyota" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Toyota'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -177,7 +177,7 @@
 						<h4 class="title">Gendai</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/gendai" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/gendai" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Gendai'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -191,7 +191,7 @@
 						<h4 class="title">Paganelli Shop</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/paganelli-shop" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/paganelli-shop" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Paganelli Shop'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -205,7 +205,7 @@
 						<h4 class="title">Home Refill</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/home-refill" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/home-refill" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Home Refill'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -219,7 +219,7 @@
 						<h4 class="title">Biopet</h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/biopet" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/biopet" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Biopet'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -233,7 +233,7 @@
 						<h4 class="title">Reconhece</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/reconhece" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/reconhece" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Reconhece'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -247,7 +247,7 @@
 						<h4 class="title">Tam <span>Clube do Agente</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/tam" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/tam" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Tam'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -261,7 +261,7 @@
 						<h4 class="title">Positivo <span>English Solution</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/positivo-english-solution" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/positivo-english-solution" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Positivo English Solution'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -275,7 +275,7 @@
 						<h4 class="title">Íntegra Medical</h4>
 						<h5 class="category">institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/integra-medical" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/integra-medical" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Íntegra Medical'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -289,7 +289,7 @@
 						<h4 class="title">Smartia</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/smartia" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/smartia" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Smartia'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -303,7 +303,7 @@
 						<h4 class="title">Galvão <span>Engenharia</span></h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/galvao" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/galvao" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Galvão'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image init-animation">
 						<span></span>
@@ -317,7 +317,7 @@
 						<h4 class="title">Mercado Arte</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/mercado-arte" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/mercado-arte" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Mercado Arte'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -331,7 +331,7 @@
 						<h4 class="title">Oi <span>Vida Saudável</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/oi" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/oi" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Oi'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -345,7 +345,7 @@
 						<h4 class="title">Colson</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/colson" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/colson" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Colson'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -359,7 +359,7 @@
 						<h4 class="title">Cubos <span>Lagos</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/cubos-lagos" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-lagos" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Cubos Lagos'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -373,7 +373,7 @@
 						<h4 class="title">Cubos <span>Revestimentos</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/cubos-revestimentos" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-revestimentos" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Cubos Revestimentos'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -387,7 +387,7 @@
 						<h4 class="title">Cubos <span>Monte Seu Lago</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/cubos-monte-seu-lago" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-monte-seu-lago" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Cubos Monte Seu Lago'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -401,7 +401,7 @@
 						<h4 class="title">Cubos <span>Meu Primeiro Lago</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/cubos-meu-primeiro-lago" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/cubos-meu-primeiro-lago" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Cubos Meu Primeiro Lago'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -415,7 +415,7 @@
 						<h4 class="title">Positivo <span>Nuvem</span></h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/positivo-nuvem" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/positivo-nuvem" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Positivo Nuvem'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -429,7 +429,7 @@
 						<h4 class="title">Sarlo</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/sarlo" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/sarlo" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Sarlo'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -443,7 +443,7 @@
 						<h4 class="title">Digitaliza</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/digitaliza" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/digitaliza" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Digitaliza'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -457,7 +457,7 @@
 						<h4 class="title">Alpex</h4>
 						<h5 class="category">Sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/alpex" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/alpex" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Alpex'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -471,7 +471,7 @@
 						<h4 class="title">Lorpen</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/lorpen" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/lorpen" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Lorpen'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -485,7 +485,7 @@
 						<h4 class="title">Lechen</h4>
 						<h5 class="category">Loja Virtual</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/lechen" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/lechen" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Lechen'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -499,7 +499,7 @@
 						<h4 class="title">Mondial <span>Curtindo a Casa</span></h4>
 						<h5 class="category">Wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/mondial" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/mondial" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Mondial'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -513,7 +513,7 @@
 						<h4 class="title">Azteq</h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/azteq" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/azteq" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Azteq'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -527,7 +527,7 @@
 						<h4 class="title">Deuter</h4>
 						<h5 class="category">sistemas</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/deuter" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/deuter" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Deuter'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -541,7 +541,7 @@
 						<h4 class="title">Azul Fish</h4>
 						<h5 class="category">wordpress</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/azul-fish" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/azul-fish" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Azul Fish'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -555,7 +555,7 @@
 						<h4 class="title">Chevrolet <span>Aba Motors</span></h4>
 						<h5 class="category">Mobile</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/chevrolet" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/chevrolet" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Chevrolet'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -569,7 +569,7 @@
 						<h4 class="title">Honda <span>H Motors</span></h4>
 						<h5 class="category">Mobile</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/honda" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/honda" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: Honda'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>
@@ -583,7 +583,7 @@
 						<h4 class="title">7ball</span></h4>
 						<h5 class="category">Institucional</h5>
 						<hr />
-						<a href="<?php echo $base_url ?>portfolio/7ball" class="hidden">Detalhes</a>
+						<a href="<?php echo $base_url ?>portfolio/7ball" class="hidden" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Works: 7ball'}">Detalhes</a>
 					</span> <!-- /info -->
 					<span class="image">
 						<span></span>

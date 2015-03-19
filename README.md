@@ -1,4 +1,4 @@
-![Wallace Erick](http://wallaceerick.com.br/new/content/images/logo-dark.png)
+![Wallace Erick](http://wallaceerick.com.br/content/images/logo-dark.png)
 
 ## Browser Support
 
@@ -89,6 +89,8 @@ sudo find . -name '*.DS_Store' -type f -delete
 
 
 ## Changelog
+ * **2015-03-19**   v0.1.0.1   *GA Tracking*
+ * **2015-03-18**   v0.1.0.0   *First Release*
  * **2015-02-24**   v0.0.0.6   *About Me*
  * **2015-02-23**   v0.0.0.5   *Contact*
  * **2015-02-19**   v0.0.0.4   *Project Detail*

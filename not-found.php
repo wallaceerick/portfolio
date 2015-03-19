@@ -57,7 +57,7 @@
 				<h3>Página não encontrada!</h3>
 			</span>
 
-			<a href="<?php echo $base_url ?>" class="button">
+			<a href="<?php echo $base_url ?>" class="button" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Homepage'}">
 				<span>Página Inicial</span>
 				<i class="icon icon-arrow-right"></i>
 			</a> 
