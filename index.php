@@ -86,7 +86,7 @@
 				</h3>
 			</span>
 
-			<a href="<?php echo $base_url ?>works" class="button animated-content js-animated-content" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Home: Work'}">
+			<a href="<?php echo $base_url ?>works" class="button animated-content js-animated-content" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Home: Works'});">
 				<span>Meus Projetos</span>
 				<i class="icon icon-arrow-right"></i>
 			</a> 

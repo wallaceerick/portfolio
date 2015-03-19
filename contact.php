@@ -85,7 +85,7 @@
 							<textarea class="fs-anim-lower" id="message" name="message"></textarea>
 						</li>
 					</ol>
-					<button id="submit-form" class="button fs-submit" type="submit">
+					<button id="submit-form" class="button fs-submit" type="submit" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Send Form'});">
 						<span>Enviar</span>
 						<i class="icon icon-arrow-right"></i>
 					</button>

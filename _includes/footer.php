@@ -40,7 +40,7 @@
 			
 			<a href="mailto:wallaceerick.dev@gmail.com?subject=Contato pelo Site" class="quick-mail">wallaceerick.dev@gmail.com</a>
 			<p>Copyright &copy; 2008/2015. <span>Alguns Direitos Reservados.</span></p>
-			<a href="#" class="to-top js-to-top" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Back to Top'}">
+			<a href="#" class="to-top js-to-top" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Back to Top'});">
 				<i class="icon icon-arrow-up"></i>
 				<span>Subir</span>
 			</a>

@@ -66,7 +66,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>works" class="back" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Back to Works'}">
+				<a href="<?php echo $base_url ?>works" class="back" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Back to Works'});">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>
