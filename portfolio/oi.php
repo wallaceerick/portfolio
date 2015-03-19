@@ -8,24 +8,29 @@
 		<title>Oi [Vida Saudável] • Wallace Erick | Desenvolvedor Front-End &amp; Designer</title>
 
  		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="" />
-	    <meta name="keywords" content="" />
-	    <meta name="revisit" content="3 days" />
-	    <meta name="robots" content="index, follow" />
-	    <meta name="url" content="" />
-	    <meta name="copyright" content="" />
-	    <meta name="author" content="" />
+		<meta name="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
+		<meta name="description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
+		<meta name="author" content="Wallace Erick" />
+		<meta name="google-site-verification" content="l7y8qVdO4aooy_Lx5uuGlUWIVCLZHHC4h3aI1EHpL7I" />
+		<meta name="msvalidate.01" content="B1A626B27A883372CCAB1253F50ED9B0" />
+		<meta name="robots" content="index, follow" />
 
-	    <meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
-	    <meta property="og:title" content="" />
-	    <meta property="og:url" content="" />
-	    <meta property="og:description" content="" />
- 
-	    <meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
-	    <meta itemprop="name" content="" />
-	    <meta itemprop="url" content="" />
+		<meta property="fb:admins" content="100000907604118" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
+		<meta property="og:url" content="<?php echo $base_url ?>works" />
+		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
+		<meta property="og:description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
+		<meta property="og:article:tags" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
+		<meta property="og:article:author" content="Wallace Erick" /> 
 
-		<link rel="canonical" href="<?php echo $base_url ?>detail" />
+		<meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
+		<meta itemprop="url" content="<?php echo $base_url ?>works" />
+		<meta itemprop="name" content="Wallace Erick | Desenvolvedor Front-End" />
+		<meta itemprop="description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
+		<meta itemprop="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
+
+		<link rel="canonical" href="<?php echo $base_url ?>works" />
 		
 		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
 	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
