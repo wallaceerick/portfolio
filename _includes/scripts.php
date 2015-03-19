@@ -1,10 +1,10 @@
 <!-- <audio class="js-audio-player" src="<?php echo $base_url ?>content/audio/smoke.mp3" type="audio/mp3"></audio> -->
 
-		<script src="<?php echo $base_url ?>content/js/application.js"></script>
+		<script async type="text/javascript" src="<?php echo $base_url ?>content/js/application.js"></script>
 <?php if($url == "contact.php"){ ?>
-		<script src="<?php echo $base_url ?>content/js/_form.js"></script>
+		<script async type="text/javascript" src="<?php echo $base_url ?>content/js/_form.js"></script>
 <?php } ?>
-		<script>
+		<script async type="text/javascript">
 			// TypeKit
 			(function(d) {
 				var config = {
