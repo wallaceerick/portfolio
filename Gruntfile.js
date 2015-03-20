@@ -43,13 +43,15 @@ module.exports = function(grunt){
                 padding:    5,
                 algorithm:  'binary-tree',
                 src:        'content/images/sprites/*.png',
-                destImg:    'content/images/sprite.png',
-                destCSS:    'content/css/sprites/_sprite.scss',
+                dest:       'content/images/sprite.png',
+                destCss:    'content/css/sprites/_sprite.scss',
                 cssFormat:  'css',
                 imgPath:    '../images/sprite.png',
-                cssClass: function (sprite){
-                    sprite.name = 'sprite-' + sprite.name;
-                },
+                cssOpts: {
+                    cssClass: function (item) {
+                        return '.sprite-' + item.name;
+                    }
+                }
             }
         },
 
