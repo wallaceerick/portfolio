@@ -42,26 +42,26 @@
 
 		<meta property="fb:admins" content="100000907604118" />
 		<meta property="og:locale" content="pt_BR" />
-		<meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta property="og:url" content="<?php echo $base_url ?>" />
+		<meta property="og:image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta property="og:url" content="<?php base_url(); ?>" />
 		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta property="og:description" content="Desenvolvedor Front-End, especialista em CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e viciado em código, esse é Wallace Erick." />
 		<meta property="og:article:tags" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 		<meta property="og:article:author" content="Wallace Erick" />
 
-		<meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta itemprop="url" content="<?php echo $base_url ?>" />
+		<meta itemprop="image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta itemprop="url" content="<?php base_url(); ?>" />
 		<meta itemprop="name" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta itemprop="description" content="Desenvolvedor Front-End, especialista em CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e viciado em código, esse é Wallace Erick." />
 		<meta itemprop="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 
-		<link rel="canonical" href="<?php echo $base_url ?>" />
+		<link rel="canonical" href="<?php base_url(); ?>" />
 		
-		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
-		<link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php base_url(); ?>content/css/application.css" media="all" />
+		<link rel="shortcut icon" type="image/x-icon" href="<?php base_url(); ?>content/images/favicon.ico" />
 
 	    <!--[if lt IE 9]>
-			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+			<script src="<?php base_url(); ?>content/js/html5.js"></script>
 		<![endif]--> 
 		
 	</head>  
@@ -86,14 +86,14 @@
 				</h3>
 			</span>
 
-			<a href="<?php echo $base_url ?>works" class="button animated-content js-animated-content" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Home: Works'});">
+			<a href="<?php base_url(); ?>works" class="button animated-content js-animated-content" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Home: Works'});">
 				<span>Meus Projetos</span>
 				<i class="icon icon-arrow-right"></i>
 			</a> 
 
 			<span class="animated-image animate-scale">
 				<span class="overlay"></span>
-				<img src="<?php echo $base_url ?>content/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php base_url(); ?>content/images/landscape.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 		</section>

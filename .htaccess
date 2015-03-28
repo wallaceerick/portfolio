@@ -1,11 +1,12 @@
-# Cache-Control e Expires header
+# Cache-Control
 <IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
+	Header set Access-Control-Allow-Origin "*"
 	Header unset Pragma
 	Header unset ETag 
 	FileETag None
 </IfModule>
 
+# Expires header
 <IfModule mod_expires.c>
 	ExpiresActive on
 	ExpiresDefault "access plus 1 month"

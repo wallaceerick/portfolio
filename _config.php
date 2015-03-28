@@ -10,7 +10,12 @@ Configuração da URL Base
 #$base_url = "http://www.wallaceerick.com.br/";
 
 # Desenvolvimento
-$base_url = "http://localhost/~wallace/portfolio/";
+// $base_url = "http://localhost/~wallace/portfolio/";
+
+function base_url(){
+	// echo 'http://www.wallaceerick.com.br/';
+	echo 'http://localhost/~wallace/portfolio/';
+}
 
 
 /* 

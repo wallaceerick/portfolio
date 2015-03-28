@@ -17,26 +17,26 @@
 
 		<meta property="fb:admins" content="100000907604118" />
 		<meta property="og:locale" content="pt_BR" />
-		<meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta property="og:url" content="<?php echo $base_url ?>about" />
+		<meta property="og:image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta property="og:url" content="<?php base_url(); ?>about" />
 		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta property="og:description" content="Atuo como desenvolvedor Front-End desde 2007. Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, SEO e Responsive Design, além de frameworks como Wordpress e Opencart." />
 		<meta property="og:article:tags" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 		<meta property="og:article:author" content="Wallace Erick" />
 
-		<meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta itemprop="url" content="<?php echo $base_url ?>about" />
+		<meta itemprop="image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta itemprop="url" content="<?php base_url(); ?>about" />
 		<meta itemprop="name" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta itemprop="description" content="Atuo como desenvolvedor Front-End desde 2007. Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, SEO e Responsive Design, além de frameworks como Wordpress e Opencart." />
 		<meta itemprop="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 
-		<link rel="canonical" href="<?php echo $base_url ?>about" />
+		<link rel="canonical" href="<?php base_url(); ?>about" />
 		
-		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php base_url(); ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php base_url(); ?>content/images/favicon.ico" />
 
 	    <!--[if lt IE 9]>
-			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+			<script src="<?php base_url(); ?>content/js/html5.js"></script>
 		<![endif]--> 
 		
 	</head>  
@@ -62,7 +62,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php base_url(); ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -78,7 +78,7 @@
 			<p>Atualmente moro em Caieiras/SP. Atuo como desenvolvedor Front-End desde 2007.</p>
 			<p>Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, <br />SEO e Responsive Design, além de frameworks como Wordpress e Opencart.</p>
 			<p>Tecnologias como Sass e Grunt são de uso obrigatório em meus projetos.</p>
-			<p>Faça o <a href="<?php echo $base_url ?>content/download/curriculo.pdf" target="_blank" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Curriculum Vitae'});">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
+			<p>Faça o <a href="<?php base_url(); ?>content/download/curriculo.pdf" target="_blank" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Curriculum Vitae'});">download do meu currículo</a> para outras informações relevantes sobre mim.</p>
 		</section>
 
 		<section class="services js-services-section animated-content js-animated-content">

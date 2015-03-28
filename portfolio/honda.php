@@ -17,26 +17,26 @@
 
 		<meta property="fb:admins" content="100000907604118" />
 		<meta property="og:locale" content="pt_BR" />
-		<meta property="og:image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta property="og:url" content="<?php echo $base_url ?>works" />
+		<meta property="og:image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta property="og:url" content="<?php base_url(); ?>works" />
 		<meta property="og:title" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta property="og:description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
 		<meta property="og:article:tags" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 		<meta property="og:article:author" content="Wallace Erick" /> 
 
-		<meta itemprop="image" content="<?php echo $base_url ?>content/images/share.png" />
-		<meta itemprop="url" content="<?php echo $base_url ?>works" />
+		<meta itemprop="image" content="<?php base_url(); ?>content/images/share.png" />
+		<meta itemprop="url" content="<?php base_url(); ?>works" />
 		<meta itemprop="name" content="Wallace Erick | Desenvolvedor Front-End" />
 		<meta itemprop="description" content="Esses são alguns dos projetos que desenvolvi trabalhando como Front-End desde 2007, em sua maioria utilizei CSS/CSS3, HTML/HTML5, jQuery/Javascript, Sass/Grunt e alguns frameworks." />
 		<meta itemprop="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 
-		<link rel="canonical" href="<?php echo $base_url ?>works" />
+		<link rel="canonical" href="<?php base_url(); ?>works" />
 		
-		<link rel="stylesheet" type="text/css" href="<?php echo $base_url ?>content/css/application.css" media="all" />
-	    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $base_url ?>content/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="<?php base_url(); ?>content/css/application.css" media="all" />
+	    <link rel="shortcut icon" type="image/x-icon" href="<?php base_url(); ?>content/images/favicon.ico" />
 
 	    <!--[if lt IE 9]>
-			<script src="<?php echo $base_url ?>content/js/html5.js"></script>
+			<script src="<?php base_url(); ?>content/js/html5.js"></script>
 		<![endif]--> 
 		
 	</head>
@@ -58,7 +58,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="<?php echo $base_url ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php base_url(); ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
@@ -66,7 +66,7 @@
 			</span>
 
 			<span class="diagonal">
-				<a href="<?php echo $base_url ?>works" class="back" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Back to Works'});">
+				<a href="<?php base_url(); ?>works" class="back" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Button: Back to Works'});">
 					<span>Voltar</span>
 					<i class="icon icon-keyboard-left"></i>
 				</a>
@@ -109,7 +109,7 @@
 
 		    <div class="projects-carousel">
 		        <div class="owl-carousel js-projects-carousel">
-		            <img src="<?php echo $base_url ?>content/images/portfolio/honda/1.jpg" alt="" />
+		            <img src="<?php base_url(); ?>content/images/portfolio/honda/1.jpg" alt="" />
 		        </div> <!-- /owl-carousel -->
 		    </div>
 
@@ -117,21 +117,21 @@
 
 		<section class="quick-projects animated-content js-animated-content">
 			<div class="project project-left">
-				<a href="<?php echo $base_url ?>/portfolio/chevrolet">
+				<a href="<?php base_url(); ?>/portfolio/chevrolet">
 					<div class="title">
 						<h3>Chevrolet <span>Aba Motors</span></h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/chevrolet/preview.jpg" alt="Chevrolet Aba Motors" />
+					<img src="<?php base_url(); ?>content/images/portfolio/chevrolet/preview.jpg" alt="Chevrolet Aba Motors" />
 				</a>
 			</div>
 			<div class="project project-right">
-				<a href="<?php echo $base_url ?>/portfolio/7ball">
+				<a href="<?php base_url(); ?>/portfolio/7ball">
 					<div class="title">
 						<h3>7ball</h3>
 					</div>
 					<span></span>
-					<img src="<?php echo $base_url ?>content/images/portfolio/7ball/preview.jpg" alt="7ball" />
+					<img src="<?php base_url(); ?>content/images/portfolio/7ball/preview.jpg" alt="7ball" />
 				</a>
 			</div>
 		</section>
