@@ -8,15 +8,11 @@
 
 <?php get_header(); ?>
 
-	<section id="projects" class="animated-content js-animated-content js-projects-parent"> 
+	<section id="projects" class="animated-content js-animated-content js-projects-parent">
 
 			<ul class="project-navigation animated-content js-navigation js-animated-content">
-				<li class="filter active" data-filter="all" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: All'});">Tudo</li>
-				<li class="filter" data-filter=".institucional" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Institutional'});">Institucional</li>
-				<li class="filter" data-filter=".sistemas" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Systems'});">Sistemas</li>
-				<li class="filter" data-filter=".wordpress" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Wordpress'});">Wordpress</li>
-				<li class="filter" data-filter=".loja-virtual" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: E-commerce'});">Loja Virtual</li>
-				<li class="filter" data-filter=".responsivo" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: Responsive'});">Responsivo</li>
+				<!-- <li class="filter active" data-filter="all" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Filter: All'});">Tudo</li> -->
+				<?php wp_list_categories('sort_column=menu_order&title_li=&depth=0' ); ?>
 			</ul>
 
 			<ol id="portfolio" class="js-projects animated-content js-animated-content">

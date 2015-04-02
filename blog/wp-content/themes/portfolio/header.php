@@ -57,15 +57,19 @@
 			<section id="page" class="animated-page-head js-animated-page-head">
 
 				<span class="page-icon js-animated-icon">
-					<i class="icon icon-user"></i>
+					<i class="icon icon-pen"></i>
 				</span>
 					
 				<span class="animated-text js-animated-text">
-					<h2><span class="about">Sobre</span> <span class="me">Mim</span></h2>
-					<h3 class="single-line js-animated-words">
-						<div>Habilidades</div>
-						<div>Tecnologias</div>
-						<div>Serviços</div>
+					<h2 class="single-word">Blog</h2>
+					<h3 class="double-line js-animated-words">
+						<div>Front-End <span>&amp;</span> Design</div>
+						<div>CSS <span>&amp;</span> CSS3</div>
+						<div>HTML <span>&amp;</span> HTML5</div>
+						<div>Javascript <span>&amp;</span> jQuery</div>
+						<div>Wordpress <span>&amp;</span> Opencart</div>
+						<div>Sass <span>&amp;</span> Stylus</div>
+						<div>Grunt <span>&amp;</span> Gulp</div>
 					</h3>
 				</span>
 
