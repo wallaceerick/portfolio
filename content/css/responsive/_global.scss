@@ -1,21 +1,35 @@
 // Media Queries
 
 @media (max-width: 700px){
- 
-	nav#menu {
-		@include transform(scale(0.5) rotate(-45deg));
-	}  
 
+	body {
+		overflow-x: hidden;
+	}
+ 	
+ 	/* Header */
+ 	header#header {
+		.logo-icon {
+			top: 22px;
+			left: 20px;
+		}
+
+		.pull-menu { 
+			top: 20px;
+			right: 18px;
+		}
+ 	}
+	nav#menu {
+		@include transform(scale(0.4) rotate(-45deg));
+	} 
+	
+	/* Home */
 	#home {
 		height: 100%;
+		overflow: hidden;
 
 		.logo-icon,
 		.button {
 			@include transform(scale(0.8));
-		}
-
-		.logo-icon {
-			top: 15px;
 		}
 
 		.button {
@@ -28,7 +42,7 @@
 			}
 		}
 
-		.animated-text {
+		.animated-text { 
 			margin-top: -125px!important;
 			@include transform(scale(0.5));
 			h3 {
@@ -43,13 +57,13 @@
 		}
 
 	}
-
-
+	
+	/* Page */
 	#page  {
-		height: 450px;
+		height: 350px;
 		.animated-image,
 		.overlay {
-			height: 450px;
+			height: 350px;
 		}
 
 		.page-icon,
@@ -60,21 +74,28 @@
 			font-size: 40px;
 		}
 		.page-icon {
-			margin-top: 35px;
-			margin-left: -45px;
+			margin-top: -40px;
+			margin-left: -25px;
 		}
 		.page-icon i {
 			padding-top: 15px;
 		}
 
 		.animated-text {
-			margin-top: 55px;
+			top: 185px; 
 			h2 {
-				font-size: 60px;
+				font-size: 50px;
+				padding-top: 0!important;
+				span {
+					display: inline!important;
+					@include transform(translateX(0px));
+				}
 			}
 			h3 {
-				font-size: 25px;
-				line-height: 35px;
+				font-size: 22px;
+				letter-spacing: 5px;
+				line-height: 30px;
+				@include transform(translateY(-108px));
 			}
 			.single-word {
 				padding-top: 0;
@@ -85,6 +106,55 @@
 		}
 	}
 
+	/* About */
+	#about {
+		text-align: left;
+		font-size: 18px;
+		margin: 0!important;
+		padding: 45px 20px 30px 20px!important;
+		p {
+			margin-bottom: 15px;
+			line-height: 25px;
+		}
+	}
+	.services, 
+	.skills {
+		padding: 35px 25px;
+		text-align: left;
+		h3 {
+			font-size: 33px;
+			line-height: normal;
+			letter-spacing:3px;
+		}
+		h4 {
+			font-size: 15px;
+			line-height: normal;
+			&:after, 
+			&:before {
+				display: none;
+			}
+		}
+		ul {
+			min-width: 0;
+			margin: 0;
+			padding: 30px 0 0 3px;
+			li {
+				width: auto;	
+				display: block;
+				float: none;
+				margin: 0;
+				padding: 5px 0;
+				h5 {
+					font-size: 20px; 
+				}
+				i {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	/* Works */
 	#projects {
 		ol {
 			li {
@@ -97,11 +167,88 @@
 		}
 	}
 
+	/* Loader */
+	#overlay {
+		overflow: hidden;
+		#loader {
+			display: block;
+			margin: -160px 0 0 -150px;
+			@include transform(rotate(-45deg) scale(0.4));
+		}
+	}
+
+	/* Like */
+	#like  {
+		margin: 0;
+		padding: 30px 0 30px 0;
+		.title {
+			font-size: 20px;
+		}
+		.subtitle {
+			font-size: 17px;
+			font-weight: $light;
+			line-height: 25px;
+			padding: 25px 0;
+			span {
+				// display: inline;
+			}
+		}
+		a {
+			padding: 15px 30px;
+		}
+	}
+
+	footer#footer {
+		padding: 30px 0;
+		.social {
+			padding: 0 30px; 
+			li {
+				a {
+					border: none;
+					text-align: center;
+					@include transform(rotate(0deg));
+					i {
+						@include transform(rotate(0deg));
+					}
+				}
+			}
+		}
+
+		.quick-mail {
+			margin: 15px 0;
+		}
+
+		.quick-mail, p {
+			position: relative;
+			bottom: auto;
+			left: auto;
+			display: block;
+			text-align: center;
+			float: none;
+			padding: 10px 0;
+		}
+
+		.to-top {
+			background-color: $black;
+			color: $white;
+			font-size: 20px;
+			// width: 40px;
+			// height: 40px;
+			bottom: 10px;
+			right: 10px;
+			text-align: center;
+			padding: 10px 12px;
+			@include border-radius(100%);
+			span {
+				display: none;
+			}
+		}
+	}
 
 }
 
 @media (max-width: 320px){
-
+	/* Header */
 	.pull-menu {
 		// @include transform(scale(0.5));
 	}
@@ -109,7 +256,8 @@
 	nav#menu {
 		@include transform(scale(0.5));
 	}
-
+	
+	/* Home */
 	#home {
 		.logo-icon {
 			top: -15px;

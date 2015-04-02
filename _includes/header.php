@@ -2,7 +2,7 @@
 	$url = basename($_SERVER['PHP_SELF']);
 	$directory =  dirname($_SERVER['PHP_SELF']);
 ?>
-	<header id="header">
+	<header id="header" class="js-animated-header">
 		<h1 class="logo-icon <?php if($url == 'index.php' && ($directory != '/~wallace/portfolio/blog' || $directory != 'blog')){ echo 'hide js-logo-home '; } ?>js-logo-icon">
 			<a href="<?php base_url(); ?>" onclick="ga('send', 'event', {eventCategory: 'Button', eventAction: 'Header: Home'});">
 				<i></i>

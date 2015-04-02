@@ -24,6 +24,5 @@
 			ga('send', 'pageview');
 		</script>
 		
-		<?php if($base_url == "http://localhost/~wallace/portfolio/"){ ?>
-			<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-		<?php } ?>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		

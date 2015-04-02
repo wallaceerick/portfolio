@@ -30,7 +30,7 @@
 		<meta itemprop="description" content="Atuo como desenvolvedor Front-End desde 2007. Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, SEO e Responsive Design, além de frameworks como Wordpress e Opencart." />
 		<meta itemprop="keywords" content="desenvolvedor, front-end, wallace, erick, freelancer, programador, interface, web, portfólio, front, end" />
 
-		<link rel="canonical" href="<?php base_url(); ?>about" />
+		<link rel="canonical" href="<?php base_url(); ?>about" /> 
 		
 		<link rel="stylesheet" type="text/css" href="<?php base_url(); ?>content/css/application.css" media="all" />
 	    <link rel="shortcut icon" type="image/x-icon" href="<?php base_url(); ?>content/images/favicon.ico" />
@@ -74,7 +74,9 @@
 		</section>
 
 		<section id="about" class="animated-content js-animated-content">
-			<i class="icon icon-profile"></i>
+			<?php if (!$detect->isMobile()) { ?>
+				<i class="icon icon-profile"></i>
+			<?php } ?>
 			<p>Atualmente moro em Caieiras/SP. Atuo como desenvolvedor Front-End desde 2007.</p>
 			<p>Especialista em HTML5 e CSS3, com sólidos conhecimentos em Javascript/jQuery, <br />SEO e Responsive Design, além de frameworks como Wordpress e Opencart.</p>
 			<p>Tecnologias como Sass e Grunt são de uso obrigatório em meus projetos.</p>
@@ -104,7 +106,7 @@
 				</li>
 				<li>
 					<i class="icon icon-e-commerce"></i>
-					<h5>Lojas <span>Virtuais</span></h5>
+					<h5>Lojas <span>Virtuais</span></h5> 
 				</li>
 			</ul>
 		</section>

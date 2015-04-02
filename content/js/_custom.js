@@ -21,6 +21,7 @@ $(document).ready(function(){
         pullButton 			  = $('.js-pull'),
         pullContent 		  = $('.js-menu-content'),
 
+        animatedHeader 		  = $('.js-animated-header'),
         animatedText 		  = $('.js-animated-text'),
         animatedIcon 		  = $('.js-animated-icon'),
         animatedContent 	  = $('.js-animated-content'),
@@ -86,7 +87,12 @@ $(document).ready(function(){
 	    	// Sound
     		// audioPlayer[0].play();
     		
-    	}, 1000);  
+    	}, 1000); 
+    	setTimeout(function(){
+	    	if(animatedHeader[0]){
+	    		animatedHeader.addClass('init-animation');
+	    	} 
+	    }, 1500); 
 
 		// Slider
 		if(projectsCarousel[0]){

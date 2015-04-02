@@ -22,7 +22,8 @@ Configuração da URL Base
 
 function base_url(){
 	// echo 'http://www.wallaceerick.com.br/';
-	echo 'http://localhost/~wallace/portfolio/';
+	// echo 'http://localhost/~wallace/portfolio/';
+	echo 'http://192.168.1.40/~wallace/portfolio/';
 }
 
 

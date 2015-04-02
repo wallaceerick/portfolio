@@ -11,6 +11,11 @@ header#header {
 	// overflow: hidden;
 	// background-color: red;
 	// pointer-events: none;
+	@include opacity(0);
+	@include transition(all 0.3s $ease-out);
+	&.init-animation {
+		@include opacity(1);
+	}
 	.logo-icon {
 		position: fixed;
 		top: 40px;
@@ -45,6 +50,7 @@ header#header {
 	z-index: 9995;
 	width: 40px;
 	height: 31px;
+	@include transition(all 0.3s $ease-out);
 	p {
 		color: $white;
 		font-weight: bold;
@@ -113,7 +119,7 @@ header#header {
 
 .overlay-menu {
 	display: none;
-	background-color: $black!important;
+	background-color: rgba(0, 0, 0, 0.96);
 	z-index: 9980!important;
 }
 
