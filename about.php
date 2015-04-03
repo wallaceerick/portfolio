@@ -62,7 +62,7 @@
 
 			<span class="animated-image animate-vertical">
 				<span class="overlay"></span>
-				<img src="<?php base_url(); ?>content/images/cloud.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
+				<img src="<?php base_url(); ?>content/images/cloud<?php if ($detect->isMobile()) { echo '-mobile'; } ?>.jpg" alt="Wallace Erick | Desenvolvedor Front-End &amp; Designer" />
 			</span>
 
 			<span class="mouse">
